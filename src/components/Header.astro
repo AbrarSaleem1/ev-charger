@@ -1,19 +1,21 @@
 ---
 import siteConfig from '../data/site-config.json';
 import services from '../data/services.json';
-import statesList from '../data/states-list.json';
+import neighborhoodsList from '../data/neighborhoods-list.json';
 
 const currentPath = Astro.url.pathname;
-const topStates = statesList.slice(0, 10);
+const featuredNeighborhoods = neighborhoodsList.slice(0, 10);
 ---
 
 <header class="site-header" id="site-header">
   <div class="header-inner container">
     <a href="/" class="logo" aria-label={`${siteConfig.businessName} - Home`}>
-      <span class="logo-icon">🔥</span>
+      <span class="logo-icon-wrap" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      </span>
       <span class="logo-text">
-        <span class="logo-name">HotWater</span>
-        <span class="logo-rescue">Rescue</span>
+        <span class="logo-name">Los Gatos <span class="logo-green">EV Charger</span></span>
+        <span class="logo-sub">Pros & Electric</span>
       </span>
     </a>
 
@@ -34,7 +36,7 @@ const topStates = statesList.slice(0, 10);
               </li>
             ))}
             <li role="menuitem" class="dropdown-all">
-              <a href="/services/">All Services →</a>
+              <a href="/services/">All EV Services →</a>
             </li>
           </ul>
         </li>
@@ -43,22 +45,22 @@ const topStates = statesList.slice(0, 10);
             Locations
             <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <ul class="dropdown" role="menu">
-            {topStates.map((state) => (
+          <ul class="dropdown dropdown-locations" role="menu">
+            {featuredNeighborhoods.map((n) => (
               <li role="menuitem">
-                <a href={`/locations/${state.slug}/`}>{state.name}</a>
+                <a href={`/locations/${n.slug}/`}>{n.name}</a>
               </li>
             ))}
             <li role="menuitem" class="dropdown-all">
-              <a href="/locations/">All 50 States →</a>
+              <a href="/locations/">All 25 Neighborhoods & Areas →</a>
             </li>
           </ul>
         </li>
         <li class="nav-item">
-          <a href="/blog/" class:list={["nav-link", { active: currentPath.startsWith('/blog') }]}>Blog</a>
+          <a href="/about-us/" class:list={["nav-link", { active: currentPath === '/about-us/' }]}>About</a>
         </li>
         <li class="nav-item">
-          <a href="/about-us/" class:list={["nav-link", { active: currentPath === '/about-us/' }]}>About</a>
+          <a href="/blog/" class:list={["nav-link", { active: currentPath.startsWith('/blog') }]}>Guides & Blog</a>
         </li>
         <li class="nav-item">
           <a href="/contact-us/" class:list={["nav-link", { active: currentPath === '/contact-us/' }]}>Contact</a>
@@ -69,27 +71,28 @@ const topStates = statesList.slice(0, 10);
     <div class="header-actions">
       <a href={`tel:${siteConfig.phone}`} class="header-phone phone-link" aria-label={`Call us at ${siteConfig.phoneFormatted}`}>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        {siteConfig.phoneFormatted}
+        <span>{siteConfig.phoneFormatted}</span>
       </a>
-      <a href="/contact-us/" class="btn btn-primary btn-sm header-cta">Get an Estimate</a>
+      <a href="/contact-us/" class="btn btn-lime-teal btn-sm header-cta">Get a Quote</a>
     </div>
 
-    <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+    <button class="mobile-toggle" id="mobile-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
   </div>
 
-  <!-- Mobile Menu -->
+  <!-- Mobile Drawer Menu -->
   <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
     <div class="mobile-menu-inner">
       <div class="mobile-menu-header">
         <a href="/" class="logo">
-          <span class="logo-icon">🔥</span>
+          <span class="logo-icon-wrap" style="width: 32px; height: 32px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </span>
           <span class="logo-text">
-            <span class="logo-name">HotWater</span>
-            <span class="logo-rescue">Rescue</span>
+            <span class="logo-name">Los Gatos <span class="logo-green">EV Pros</span></span>
           </span>
         </a>
         <button class="mobile-close" id="mobile-close" aria-label="Close menu">
@@ -97,7 +100,7 @@ const topStates = statesList.slice(0, 10);
         </button>
       </div>
 
-      <nav class="mobile-nav" aria-label="Mobile navigation">
+      <nav class="mobile-nav" aria-label="Mobile navigation links">
         <a href="/" class="mobile-nav-link">Home</a>
 
         <div class="mobile-accordion">
@@ -115,19 +118,19 @@ const topStates = statesList.slice(0, 10);
 
         <div class="mobile-accordion">
           <button class="mobile-accordion-trigger" aria-expanded="false">
-            Locations
+            Locations (Los Gatos Areas)
             <svg width="12" height="7" viewBox="0 0 12 7" fill="none" aria-hidden="true"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
           <div class="mobile-accordion-content" hidden>
-            {topStates.map((state) => (
-              <a href={`/locations/${state.slug}/`} class="mobile-sub-link">{state.name}</a>
+            {neighborhoodsList.map((n) => (
+              <a href={`/locations/${n.slug}/`} class="mobile-sub-link">{n.name}</a>
             ))}
-            <a href="/locations/" class="mobile-sub-link mobile-sub-all">All 50 States →</a>
+            <a href="/locations/" class="mobile-sub-link mobile-sub-all">All 25 Neighborhoods Hub →</a>
           </div>
         </div>
 
-        <a href="/blog/" class="mobile-nav-link">Blog</a>
-        <a href="/about-us/" class="mobile-nav-link">About</a>
+        <a href="/about-us/" class="mobile-nav-link">About Us</a>
+        <a href="/blog/" class="mobile-nav-link">Blog & Guides</a>
         <a href="/contact-us/" class="mobile-nav-link">Contact</a>
       </nav>
 
@@ -136,7 +139,7 @@ const topStates = statesList.slice(0, 10);
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           Call {siteConfig.phoneFormatted}
         </a>
-        <p class="mobile-hours">Available 24/7 — Emergency Service</p>
+        <p class="mobile-hours">Open 24/7 • Emergency EV Charger Repair & Dispatch in Los Gatos</p>
       </div>
     </div>
   </div>
@@ -147,56 +150,77 @@ const topStates = statesList.slice(0, 10);
   .site-header {
     position: sticky;
     top: 0;
-    z-index: var(--z-sticky);
-    background: var(--color-navy);
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    z-index: var(--z-sticky, 100);
+    background-color: #FFFFFF;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+                      url('/images/los-gatos-ev-charger-installation-repair-hero.jpg');
+    background-size: cover;
+    background-position: center top;
+    box-shadow: 0 2px 12px rgba(11, 19, 43, 0.06);
+    border-bottom: 1px solid #E2E8F0;
   }
 
   .header-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 72px;
-    gap: var(--space-4);
+    height: 74px;
+    gap: var(--space-4, 1rem);
   }
 
-  /* Logo */
   .logo {
     display: flex;
     align-items: center;
-    gap: var(--space-2);
+    gap: 0.5rem;
     text-decoration: none;
     flex-shrink: 0;
   }
 
-  .logo-icon {
-    font-size: 1.6rem;
+  .logo-icon-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+  }
+
+  .logo:hover .logo-icon-wrap {
+    transform: scale(1.08);
+  }
+
+  .logo-green {
+    color: #10B981;
   }
 
   .logo-text {
     display: flex;
     flex-direction: column;
-    line-height: 1.1;
+    line-height: 1.15;
   }
 
   .logo-name {
-    font-family: var(--font-heading);
+    font-family: var(--font-heading, system-ui);
     font-weight: 800;
-    font-size: 1.15rem;
-    color: var(--color-white);
+    font-size: 1.05rem;
+    color: #0B132B;
     letter-spacing: -0.02em;
   }
 
-  .logo-rescue {
-    font-family: var(--font-heading);
-    font-weight: 600;
-    font-size: 0.8rem;
-    color: var(--color-red);
+  .logo-sub {
+    font-family: var(--font-heading, system-ui);
+    font-weight: 700;
+    font-size: 0.72rem;
+    color: #10B981;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.12em;
   }
 
-  /* Navigation */
   .main-nav {
     display: flex;
     align-items: center;
@@ -205,33 +229,46 @@ const topStates = statesList.slice(0, 10);
   .nav-list {
     display: flex;
     align-items: center;
-    gap: var(--space-1);
+    gap: 0.35rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   .nav-link {
     display: flex;
     align-items: center;
-    gap: var(--space-1);
-    padding: var(--space-2) var(--space-3);
-    color: rgba(255, 255, 255, 0.85);
-    font-size: var(--text-sm);
-    font-weight: 500;
-    border-radius: var(--radius-md);
-    transition: all var(--transition-fast);
+    gap: 0.35rem;
+    padding: 0.5rem 0.85rem;
+    color: #0B132B;
+    font-size: 0.925rem;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    text-decoration: none;
     white-space: nowrap;
   }
 
-  .nav-link:hover,
+  .nav-link:hover {
+    color: #10B981;
+    background: rgba(16, 185, 129, 0.08);
+  }
+
   .nav-link.active {
-    color: var(--color-white);
-    background: rgba(255, 255, 255, 0.1);
+    color: #10B981;
+    background: rgba(16, 185, 129, 0.1);
+    font-weight: 700;
   }
 
   .nav-link svg {
-    transition: transform var(--transition-fast);
+    transition: transform 0.2s ease;
+    color: #64748B;
   }
 
-  /* Dropdown */
+  .nav-link:hover svg {
+    color: #10B981;
+  }
+
   .has-dropdown {
     position: relative;
   }
@@ -241,16 +278,24 @@ const topStates = statesList.slice(0, 10);
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    min-width: 240px;
-    background: var(--color-white);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-xl);
-    padding: var(--space-2);
+    min-width: 260px;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    box-shadow: 0 16px 36px rgba(11, 19, 43, 0.12);
+    padding: 0.5rem;
     opacity: 0;
     visibility: hidden;
-    transition: all var(--transition-fast);
-    z-index: var(--z-dropdown);
-    margin-top: var(--space-2);
+    transition: all 0.2s ease;
+    z-index: 1000;
+    margin-top: 0.5rem;
+    list-style: none;
+  }
+
+  .dropdown-locations {
+    min-width: 280px;
+    max-height: 400px;
+    overflow-y: auto;
   }
 
   .has-dropdown:hover .dropdown,
@@ -266,51 +311,74 @@ const topStates = statesList.slice(0, 10);
 
   .dropdown li a {
     display: block;
-    padding: var(--space-2) var(--space-3);
-    color: var(--color-charcoal);
-    font-size: var(--text-sm);
-    border-radius: var(--radius-md);
-    transition: all var(--transition-fast);
+    padding: 0.55rem 0.85rem;
+    color: #1E293B;
+    font-size: 0.875rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    font-weight: 500;
   }
 
   .dropdown li a:hover {
-    background: var(--color-gray-100);
-    color: var(--color-navy);
+    background: #F0FDF4;
+    color: #10B981;
+    font-weight: 600;
   }
 
   .dropdown-all a {
-    color: var(--color-orange) !important;
-    font-weight: 600;
-    border-top: 1px solid var(--color-gray-200);
-    margin-top: var(--space-1);
-    padding-top: var(--space-3) !important;
+    color: #10B981 !important;
+    font-weight: 700;
+    border-top: 1px solid #E2E8F0;
+    margin-top: 0.35rem;
+    padding-top: 0.6rem !important;
   }
 
-  /* Header Actions */
   .header-actions {
     display: flex;
     align-items: center;
-    gap: var(--space-4);
+    gap: 1rem;
     flex-shrink: 0;
   }
 
   .header-phone {
     display: flex;
     align-items: center;
-    gap: var(--space-2);
-    font-size: var(--text-sm);
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #0B132B;
+    font-weight: 700;
+    text-decoration: none;
+    background: #F8FAFC;
+    padding: 0.45rem 0.85rem;
+    border-radius: 9999px;
+    border: 1px solid #CBD5E1;
+    transition: all 0.2s ease;
+  }
+
+  .header-phone:hover {
+    background: #F0FDF4;
+    color: #10B981;
+    border-color: #10B981;
+  }
+
+  .header-phone svg {
+    color: #10B981;
   }
 
   .header-cta {
-    font-size: var(--text-sm);
+    font-weight: 700;
+    padding: 0.5rem 1.15rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
-  /* Mobile Toggle */
   .mobile-toggle {
     display: none;
     flex-direction: column;
     gap: 5px;
-    padding: var(--space-2);
+    padding: 0.5rem;
     background: none;
     border: none;
     cursor: pointer;
@@ -320,12 +388,11 @@ const topStates = statesList.slice(0, 10);
     display: block;
     width: 24px;
     height: 2px;
-    background: var(--color-white);
+    background: #0B132B;
     border-radius: 2px;
-    transition: all var(--transition-base);
+    transition: all 0.2s ease;
   }
 
-  /* Mobile Menu */
   .mobile-menu {
     position: fixed;
     top: 0;
@@ -333,9 +400,9 @@ const topStates = statesList.slice(0, 10);
     width: 320px;
     max-width: 85vw;
     height: 100vh;
-    background: var(--color-white);
-    z-index: var(--z-modal);
-    transition: right var(--transition-slow);
+    background: #FFFFFF;
+    z-index: 1200;
+    transition: right 0.3s ease;
     overflow-y: auto;
   }
 
@@ -346,11 +413,11 @@ const topStates = statesList.slice(0, 10);
   .mobile-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: var(--z-overlay);
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1100;
     opacity: 0;
     visibility: hidden;
-    transition: all var(--transition-base);
+    transition: all 0.25s ease;
   }
 
   .mobile-overlay.open {
@@ -362,54 +429,51 @@ const topStates = statesList.slice(0, 10);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding: var(--space-5);
+    padding: 1.25rem;
   }
 
   .mobile-menu-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: var(--space-5);
-    border-bottom: 1px solid var(--color-gray-200);
-    margin-bottom: var(--space-4);
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #EAEAEA;
+    margin-bottom: 1rem;
   }
 
   .mobile-menu-header .logo-name {
-    color: var(--color-navy);
+    color: #0B192C;
   }
 
   .mobile-close {
-    padding: var(--space-2);
+    padding: 0.5rem;
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--color-charcoal);
-    border-radius: var(--radius-md);
-  }
-
-  .mobile-close:hover {
-    background: var(--color-gray-100);
+    color: #2D2D2D;
+    border-radius: 6px;
   }
 
   .mobile-nav {
     display: flex;
     flex-direction: column;
-    gap: var(--space-1);
+    gap: 0.25rem;
     flex: 1;
   }
 
   .mobile-nav-link {
     display: block;
-    padding: var(--space-3) var(--space-3);
-    color: var(--color-charcoal);
-    font-size: var(--text-lg);
-    font-weight: 500;
-    border-radius: var(--radius-md);
-    transition: background var(--transition-fast);
+    padding: 0.75rem;
+    color: #2D2D2D;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.15s ease;
   }
 
   .mobile-nav-link:hover {
-    background: var(--color-gray-100);
+    background: #F5F5F5;
   }
 
   .mobile-accordion-trigger {
@@ -417,23 +481,24 @@ const topStates = statesList.slice(0, 10);
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: var(--space-3);
+    padding: 0.75rem;
     background: none;
     border: none;
     cursor: pointer;
-    font-size: var(--text-lg);
-    font-weight: 500;
-    color: var(--color-charcoal);
-    border-radius: var(--radius-md);
-    transition: background var(--transition-fast);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #2D2D2D;
+    border-radius: 6px;
+    text-align: left;
+    transition: background 0.15s ease;
   }
 
   .mobile-accordion-trigger:hover {
-    background: var(--color-gray-100);
+    background: #F5F5F5;
   }
 
   .mobile-accordion-trigger svg {
-    transition: transform var(--transition-base);
+    transition: transform 0.2s ease;
   }
 
   .mobile-accordion-trigger[aria-expanded="true"] svg {
@@ -441,57 +506,66 @@ const topStates = statesList.slice(0, 10);
   }
 
   .mobile-accordion-content {
-    padding-left: var(--space-4);
+    padding-left: 1rem;
+    max-height: 260px;
+    overflow-y: auto;
   }
 
   .mobile-sub-link {
     display: block;
-    padding: var(--space-2) var(--space-3);
-    color: var(--color-charcoal-light);
-    font-size: var(--text-base);
-    border-radius: var(--radius-md);
-    transition: all var(--transition-fast);
+    padding: 0.45rem 0.75rem;
+    color: #555555;
+    font-size: 0.925rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.15s ease;
   }
 
   .mobile-sub-link:hover {
-    background: var(--color-gray-100);
-    color: var(--color-navy);
+    background: #F0F7FF;
+    color: #10B981;
   }
 
   .mobile-sub-all {
-    color: var(--color-orange);
-    font-weight: 600;
-    margin-top: var(--space-1);
+    color: #10B981;
+    font-weight: 700;
+    margin-top: 0.25rem;
   }
 
   .mobile-menu-footer {
     margin-top: auto;
-    padding-top: var(--space-5);
-    border-top: 1px solid var(--color-gray-200);
+    padding-top: 1.25rem;
+    border-top: 1px solid #EAEAEA;
     text-align: center;
   }
 
   .mobile-phone-btn {
-    width: 100%;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.85rem;
+    background: #10B981;
+    color: #FFFFFF;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
   }
 
   .mobile-hours {
-    margin-top: var(--space-3);
-    font-size: var(--text-sm);
-    color: var(--color-charcoal-light);
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: #666666;
   }
 
-  /* Responsive */
   @media (max-width: 1024px) {
     .main-nav {
       display: none;
     }
-
     .header-phone {
       display: none;
     }
-
     .mobile-toggle {
       display: flex;
     }
@@ -505,7 +579,6 @@ const topStates = statesList.slice(0, 10);
 </style>
 
 <script>
-  // Mobile menu toggle
   const toggle = document.getElementById('mobile-toggle');
   const closeBtn = document.getElementById('mobile-close');
   const menu = document.getElementById('mobile-menu');
@@ -531,10 +604,9 @@ const topStates = statesList.slice(0, 10);
   closeBtn?.addEventListener('click', closeMenu);
   overlay?.addEventListener('click', closeMenu);
 
-  // Mobile accordion
   document.querySelectorAll('.mobile-accordion-trigger').forEach((trigger) => {
     trigger.addEventListener('click', () => {
-      const content = trigger.nextElementSibling;
+      const content = trigger.nextElementSibling as HTMLElement;
       const isOpen = trigger.getAttribute('aria-expanded') === 'true';
       trigger.setAttribute('aria-expanded', String(!isOpen));
       if (content) {
@@ -543,21 +615,7 @@ const topStates = statesList.slice(0, 10);
     });
   });
 
-  // Close menu on escape
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeMenu();
   });
-
-  // Sticky header shadow on scroll
-  const header = document.getElementById('site-header');
-  let lastScroll = 0;
-  window.addEventListener('scroll', () => {
-    const currentScroll = window.scrollY;
-    if (currentScroll > 10) {
-      header?.classList.add('scrolled');
-    } else {
-      header?.classList.remove('scrolled');
-    }
-    lastScroll = currentScroll;
-  }, { passive: true });
 </script>

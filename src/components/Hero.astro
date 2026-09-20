@@ -16,16 +16,14 @@ const {
   showCtas = true,
   breadcrumbs,
   variant = 'full',
-  backgroundImage,
+  backgroundImage = '/images/los-gatos-ev-charger-installation-repair-hero.jpg',
 } = Astro.props;
 ---
 
 <section class:list={["hero", `hero-${variant}`]}>
-  {backgroundImage && (
-    <div class="hero-bg">
-      <img src={backgroundImage} alt="" loading="eager" width="1920" height="800" />
-    </div>
-  )}
+  <div class="hero-bg">
+    <img src={backgroundImage} alt="Licensed EV Charger Installation in Los Gatos, CA" loading="eager" width="1920" height="800" class="hero-showcase-img" />
+  </div>
   <div class="hero-overlay"></div>
   <div class="hero-content container">
     {breadcrumbs && breadcrumbs.length > 0 && (
@@ -52,7 +50,7 @@ const {
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           Call {siteConfig.phoneFormatted}
         </a>
-        <a href="/contact-us/" class="btn btn-secondary btn-lg">Request an Estimate</a>
+        <a href="/contact-us/" class="btn btn-secondary btn-lg">Request Consultation</a>
       </div>
     )}
   </div>
@@ -93,9 +91,8 @@ const {
     inset: 0;
     background: linear-gradient(
       135deg,
-      rgba(27, 42, 74, 0.92) 0%,
-      rgba(27, 42, 74, 0.8) 50%,
-      rgba(18, 29, 51, 0.88) 100%
+      rgba(11, 19, 43, 0.82) 0%,
+      rgba(15, 23, 42, 0.74) 100%
     );
     z-index: 1;
   }

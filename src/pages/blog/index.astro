@@ -1,81 +1,133 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import Hero from '../../components/Hero.astro';
 import TrustStrip from '../../components/TrustStrip.astro';
+import HeroShowcaseImage from '../../components/HeroShowcaseImage.astro';
+import ContentImage from '../../components/ContentImage.astro';
 import siteConfig from '../../data/site-config.json';
 import blogs from '../../data/blogs.json';
 
-const categories = Array.from(new Set(blogs.map(b => b.category)));
+const categories = Array.from(new Set(blogs.map((b) => b.category)));
 
-const breadcrumbs = [
-  { label: 'Home', href: '/' },
-  { label: 'Blog' }
-];
+const pageTitle = "EV Charging Guides & Electrical Knowledge Base | Los Gatos EV Pros";
+const pageDescription = "Explore 20 comprehensive technical guides on EV charger installation, Tesla Wall Connector diagnostics, 200A panel upgrades, and local Los Gatos code compliance.";
+const canonicalUrl = `${siteConfig.domain}/blog/`;
 
 const blogSchema = {
   "@context": "https://schema.org",
   "@type": "Blog",
-  "name": `${siteConfig.businessName} Professional Water Heater Knowledge Base`,
-  "description": "28 in-depth homeowner advice guides, maintenance protocols, emergency troubleshooting instructions, and equipment comparison from master licensed plumbers.",
-  "url": `${siteConfig.domain}/blog/`,
+  "name": `${siteConfig.businessName} EV Charging Knowledge Base`,
+  "description": "20 in-depth homeowner and commercial advice guides covering EV charging speed, cost, troubleshooting, and code compliance in Los Gatos.",
+  "url": canonicalUrl,
   "publisher": {
     "@type": "Organization",
     "name": siteConfig.businessName,
     "url": siteConfig.domain
   }
 };
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": siteConfig.domain
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": canonicalUrl
+    }
+  ]
+};
 ---
 
 <BaseLayout
-  title={`28 Expert Water Heater Guides, Maintenance & Troubleshooting | ${siteConfig.businessName}`}
-  description="Comprehensive 28-article plumbing library covering gas, electric, and tankless water heaters. Diagnostics, anode rod maintenance, code compliance, and emergency procedures."
-  breadcrumbs={breadcrumbs}
-  jsonLd={blogSchema}
+  title={pageTitle}
+  description={pageDescription}
+  canonicalUrl={canonicalUrl}
+  jsonLd={[blogSchema, breadcrumbSchema]}
 >
-  <Hero
-    title="Master Plumber Knowledge Base"
-    subtitle={`Explore 28 in-depth technical guides, safety checklists, and diagnostic walkthroughs authored by licensed master plumbers.`}
-    breadcrumbs={breadcrumbs}
-    variant="short"
-  />
+  <!-- Hero Section -->
+  <section class="blog-hero">
+    <div class="container">
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <ol class="breadcrumb-list">
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Blog</li>
+        </ol>
+      </nav>
+
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="badge-tag">Electrical Knowledge Hub</span>
+          <h1>Los Gatos EV Charging Guides & Technical Library</h1>
+          <p class="hero-lead">
+            Explore 20 comprehensive, electrician-authored guides covering Level 2 home charging, Tesla Wall Connector error code diagnostics, electrical panel heavy-ups, and Town of Los Gatos permitting.
+          </p>
+        </div>
+
+        <HeroShowcaseImage
+          alt="Los Gatos EV Charging Guides and Electrical Knowledge Base"
+          title="Los Gatos EV Charging Technical Articles and Knowledge Base"
+          badgeText="20 Electrician-Authored EV Guides"
+        />
+      </div>
+    </div>
+  </section>
 
   <TrustStrip />
 
   <!-- Blog Posts Grid -->
-  <section class="section">
+  <section class="section blog-grid-section">
     <div class="container">
-      <div class="text-center" style="margin-bottom: var(--space-8);">
-        <span class="badge badge-navy">28 Certified Articles</span>
-        <h2 class="section-title">Complete Water Heater Guides & Troubleshooting Library</h2>
+      <div class="section-header text-center">
+        <span class="section-badge">{blogs.length} Technical Articles</span>
+        <h2>Master Electrician EV Knowledge Base</h2>
         <p class="section-subtitle">
-          Search our field-tested diagnostic procedures, code compliance guides, and preventative maintenance strategies.
+          Practical advice, diagnostic protocols, and code compliance answers from our licensed local technicians.
         </p>
 
-        <!-- Category Filter Pills -->
+        <!-- Category Pills -->
         <div class="category-pills">
-          <span class="pill pill-active">All Categories ({blogs.length})</span>
+          <span class="pill pill-active">All Topics ({blogs.length})</span>
           {categories.map((cat) => (
             <span class="pill">{cat}</span>
           ))}
         </div>
       </div>
 
+      <!-- In-Content Technical Spotlight Image -->
+      <div style="max-width: 960px; margin: 0 auto 3rem;">
+        <ContentImage
+          src="/images/tesla-wall-connector-repair-diagnostics.jpg"
+          alt="Licensed electrician using digital multimeter to diagnose Tesla Wall Connector in Los Gatos"
+          title="Electrician EV Diagnostic & Repair Procedures"
+          caption="Our technical guides break down complex NEC continuous load requirements, load calculations, and diagnostic troubleshooting protocols."
+          badge="Technical Diagnostic Library • Los Gatos, CA"
+        />
+      </div>
+
       <div class="blog-grid">
         {blogs.map((post) => (
-          <article class="blog-card card">
-            <div class="card-body">
-              <div class="blog-meta">
-                <span class="blog-cat badge badge-orange">{post.category}</span>
+          <article class="blog-card">
+            <div class="blog-card-inner">
+              <div class="blog-meta-top">
+                <span class="blog-cat">{post.category}</span>
                 <span class="blog-read">{post.readTime}</span>
               </div>
-              <h3 class="blog-title">
+              <h3 class="blog-card-title">
                 <a href={`/blog/${post.slug}/`}>{post.title}</a>
               </h3>
               <p class="blog-snippet">{post.snippet}</p>
-              <div class="blog-footer">
-                <span class="blog-date">📅 {post.date}</span>
-                <a href={`/blog/${post.slug}/`} class="blog-action">
-                  Read Full Guide →
+              <div class="blog-meta-bottom">
+                <span class="blog-date">{post.date}</span>
+                <a href={`/blog/${post.slug}/`} class="read-more-link">
+                  <span>Read Guide</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                 </a>
               </div>
             </div>
@@ -85,135 +137,299 @@ const blogSchema = {
     </div>
   </section>
 
-  <!-- CTA Banner -->
+  <!-- CTA Band -->
   <section class="cta-band">
-    <div class="container cta-band-inner text-center">
-      <h2>Need Immediate In-Person Help?</h2>
-      <p>If DIY troubleshooting didn't resolve your issue, our licensed master technicians are on call 24/7 across the nation.</p>
-      <div class="cta-band-actions">
-        <a href={`tel:${siteConfig.phone}`} class="btn btn-primary btn-lg">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2>Have a Specific EV Electrical Question in Los Gatos?</h2>
+        <p>Our licensed electricians are available 7 days a week for immediate phone consultations and on-site service.</p>
+      </div>
+      <div class="cta-btns">
+        <a href={`tel:${siteConfig.phone}`} class="btn btn-white btn-lg">
           Call {siteConfig.phoneFormatted}
         </a>
-        <a href="/contact-us/" class="btn btn-secondary btn-lg">24/7 Phone Estimate Desk</a>
+        <a href="/contact-us/" class="btn btn-outline-white btn-lg">
+          Request Consultation Online
+        </a>
       </div>
     </div>
   </section>
 </BaseLayout>
 
 <style>
+  .blog-hero {
+    position: relative;
+    background: linear-gradient(135deg, rgba(11, 19, 43, 0.94) 0%, rgba(15, 23, 42, 0.88) 100%),
+                url('/images/los-gatos-ev-charger-installation-repair-hero.jpg') center/cover no-repeat;
+    color: #FFFFFF;
+    padding: 3.5rem 0 4.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .breadcrumb-nav {
+    margin-bottom: 1.5rem;
+  }
+
+  .breadcrumb-list {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  .breadcrumb-list a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+  }
+
+  .breadcrumb-list a:hover {
+    color: #10B981;
+  }
+
+  .breadcrumb-list li:not(:last-child)::after {
+    content: "/";
+    margin-left: 0.5rem;
+    color: rgba(255, 255, 255, 0.35);
+  }
+
+  .badge-tag {
+    display: inline-block;
+    background: rgba(0, 163, 255, 0.15);
+    color: #10B981;
+    border: 1px solid rgba(0, 163, 255, 0.35);
+    padding: 0.35rem 0.85rem;
+    border-radius: 9999px;
+    font-size: 0.825rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 1.25rem;
+  }
+
+  .blog-hero h1 {
+    font-size: 2.75rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+    max-width: 900px;
+  }
+
+  .hero-lead {
+    font-size: 1.15rem;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.88);
+    max-width: 840px;
+  }
+
+  .section {
+    padding: 5rem 0;
+  }
+
+  .section-badge {
+    display: inline-block;
+    color: #10B981;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.825rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+  }
+
   .category-pills {
     display: flex;
-    justify-content: center;
-    gap: var(--space-2);
+    gap: 0.5rem;
     flex-wrap: wrap;
-    margin-top: var(--space-4);
+    justify-content: center;
+    margin-top: 1.5rem;
   }
 
   .pill {
-    font-size: var(--text-xs);
+    font-size: 0.825rem;
     font-weight: 600;
-    padding: 6px 14px;
-    border-radius: var(--radius-full);
-    background: var(--color-gray-100);
-    color: var(--color-charcoal);
-    cursor: default;
-    transition: background 0.2s;
+    padding: 0.4rem 0.85rem;
+    background: #F1F5F9;
+    color: #475569;
+    border-radius: 9999px;
+    border: 1px solid #E2E8F0;
   }
 
   .pill-active {
-    background: var(--color-navy);
-    color: #fff;
+    background: #10B981;
+    color: #FFFFFF;
+    border-color: #10B981;
   }
 
   .blog-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-6);
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 2rem;
+    margin-top: 3.5rem;
   }
 
   .blog-card {
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    transition: all 0.25s ease;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    transition: transform 0.2s, box-shadow 0.2s;
   }
 
   .blog-card:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.07);
+    border-color: #10B981;
   }
 
-  .blog-meta {
+  .blog-card-inner {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .blog-meta-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: var(--space-3);
+    margin-bottom: 0.85rem;
+  }
+
+  .blog-cat {
+    font-size: 0.775rem;
+    font-weight: 700;
+    color: #10B981;
+    background: #EFF6FF;
+    padding: 0.25rem 0.65rem;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
   }
 
   .blog-read {
-    font-size: var(--text-xs);
-    color: var(--color-charcoal-light);
+    font-size: 0.8rem;
+    color: #64748B;
   }
 
-  .blog-title {
-    font-size: var(--text-lg);
+  .blog-card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
     line-height: 1.35;
-    margin-bottom: var(--space-3);
+    margin-bottom: 0.75rem;
   }
 
-  .blog-title a {
-    color: var(--color-navy);
+  .blog-card-title a {
+    color: #0B192C;
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color 0.15s ease;
   }
 
-  .blog-title a:hover {
-    color: var(--color-orange);
+  .blog-card-title a:hover {
+    color: #10B981;
   }
 
   .blog-snippet {
-    font-size: var(--text-sm);
-    color: var(--color-charcoal-light);
+    font-size: 0.925rem;
     line-height: 1.6;
-    margin-bottom: var(--space-6);
-    flex-grow: 1;
+    color: #555555;
+    margin-bottom: 1.5rem;
+    flex: 1;
   }
 
-  .blog-footer {
+  .blog-meta-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid var(--color-gray-200);
-    padding-top: var(--space-3);
-    margin-top: auto;
+    border-top: 1px solid #F1F5F9;
+    padding-top: 1rem;
   }
 
   .blog-date {
-    font-size: var(--text-xs);
-    color: var(--color-charcoal-light);
+    font-size: 0.8rem;
+    color: #64748B;
   }
 
-  .blog-action {
-    font-size: var(--text-xs);
+  .read-more-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.875rem;
     font-weight: 700;
-    color: var(--color-orange);
+    color: #10B981;
     text-decoration: none;
   }
 
-  .blog-action:hover {
-    text-decoration: underline;
+  .cta-band {
+    background: linear-gradient(135deg, #10B981 0%, #0D9488 100%);
+    color: #FFFFFF;
+    padding: 4.5rem 0;
   }
 
-  @media (max-width: 1024px) {
-    .blog-grid {
-      grid-template-columns: repeat(2, 1fr);
+  .cta-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .cta-text h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+  }
+
+  .cta-text p {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.92);
+    margin: 0;
+  }
+
+  .cta-btns {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-white {
+    background: #FFFFFF;
+    color: #10B981;
+    font-weight: 700;
+    padding: 0.85rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  .btn-white:hover {
+    background: #F0F7FF;
+  }
+
+  .btn-outline-white {
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    font-weight: 700;
+    padding: 0.85rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  @media (max-width: 900px) {
+    .blog-hero h1 {
+      font-size: 2.15rem;
     }
-  }
-
-  @media (max-width: 640px) {
-    .blog-grid {
-      grid-template-columns: 1fr;
+    .cta-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+    .cta-btns {
+      justify-content: center;
     }
   }
 </style>

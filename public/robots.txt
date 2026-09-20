@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://proheatrepair.com/sitemap-index.xml
+Sitemap: https://losgatosevchargerrepair.com/sitemap-index.xml

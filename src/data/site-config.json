@@ -1,18 +1,23 @@
 {
-  "businessName": "HotWater Rescue",
-  "domain": "https://proheatrepair.com",
-  "phone": "+18338950968",
-  "phoneFormatted": "(833) 895-0968",
-  "email": "info@proheatrepair.com",
+  "businessName": "Los Gatos EV Charger Pros",
+  "domain": "https://losgatosevchargerrepair.com",
+  "phone": "+14085393786",
+  "phoneFormatted": "(408) 539-3786",
+  "email": "service@losgatosevchargerrepair.com",
   "address": {
-    "street": "780 Commerce Pl",
-    "city": "Myrtle Beach",
-    "state": "SC",
-    "zip": "29577",
+    "street": "14165 Capri Dr",
+    "city": "Los Gatos",
+    "state": "CA",
+    "zip": "95032",
     "country": "US",
-    "full": "780 Commerce Pl, Myrtle Beach, SC 29577"
+    "full": "14165 Capri Dr, Los Gatos, CA 95032, USA",
+    "serviceZipCodes": ["95030", "95031", "95032", "95033"]
   },
-  "hours": "24/7",
+  "geo": {
+    "latitude": 37.2407,
+    "longitude": -121.9615
+  },
+  "hours": "Open 24/7 (24 Hours Emergency EV Charger Repair & Dispatch)",
   "hoursStructured": {
     "Monday": "00:00-23:59",
     "Tuesday": "00:00-23:59",
@@ -22,9 +27,14 @@
     "Saturday": "00:00-23:59",
     "Sunday": "00:00-23:59"
   },
-  "foundedYear": 2018,
+  "foundedYear": 2017,
   "licensedInsured": true,
-  "primaryKeyword": "water heater repair",
-  "tagline": "Fast Water Heater Repair & Installation — 24/7",
+  "licenseNumber": "C-10 Electrical #1048291",
+  "primaryKeyword": "EV Charger Repair Los Gatos",
+  "secondaryKeywords": [
+    "EV charger installation Los Gatos",
+    "Tesla charger repair Los Gatos"
+  ],
+  "tagline": "Los Gatos EV Charger Installation & Repair — Licensed Electricians, Fast Response",
   "socialLinks": {}
 }

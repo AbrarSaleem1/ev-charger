@@ -1,0 +1,118 @@
+---
+export interface Props {
+  src: string;
+  alt: string;
+  title?: string;
+  caption?: string;
+  badge?: string;
+  class?: string;
+}
+
+const {
+  src,
+  alt,
+  title,
+  caption,
+  badge = "Licensed Electrical Work • Los Gatos, CA",
+  class: className = "",
+} = Astro.props;
+---
+
+<figure class:list={["content-image-wrapper", className]}>
+  <div class="content-image-frame">
+    <img
+      src={src}
+      alt={alt}
+      title={title || alt}
+      width="1280"
+      height="720"
+      loading="lazy"
+      decoding="async"
+      class="content-img"
+    />
+    {badge && (
+      <div class="content-img-badge">
+        <span class="badge-dot"></span>
+        <span>{badge}</span>
+      </div>
+    )}
+  </div>
+  {caption && (
+    <figcaption class="content-image-caption">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      <span>{caption}</span>
+    </figcaption>
+  )}
+</figure>
+
+<style>
+  .content-image-wrapper {
+    margin: 2.5rem 0;
+    width: 100%;
+  }
+
+  .content-image-frame {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #0B132B;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 12px 32px rgba(11, 19, 43, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .content-image-frame:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 40px rgba(11, 19, 43, 0.12);
+  }
+
+  .content-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+  }
+
+  .content-img-badge {
+    position: absolute;
+    top: 0.85rem;
+    left: 0.85rem;
+    background: rgba(11, 19, 43, 0.88);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(16, 185, 129, 0.45);
+    padding: 0.35rem 0.75rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.78rem;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+
+  .badge-dot {
+    width: 7px;
+    height: 7px;
+    background: #10B981;
+    border-radius: 50%;
+    box-shadow: 0 0 6px #10B981;
+    flex-shrink: 0;
+  }
+
+  .content-image-caption {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.65rem;
+    padding: 0 0.25rem;
+    font-size: 0.875rem;
+    color: #64748B;
+    line-height: 1.45;
+  }
+
+  .content-image-caption svg {
+    color: #10B981;
+    flex-shrink: 0;
+  }
+</style>

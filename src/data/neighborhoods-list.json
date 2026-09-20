@@ -1,0 +1,227 @@
+[
+  {
+    "name": "Downtown Los Gatos",
+    "slug": "downtown-los-gatos",
+    "zip": "95030, 95031",
+    "shortDescription": "Historic commercial district and central postal corridor (ZIP 95030 & 95031) along N Santa Cruz Avenue and Forbes Mill, featuring high demand for Level 2 home chargers and commercial destination stations.",
+    "primaryKeyword": "EV Charger Repair Downtown Los Gatos",
+    "landmarks": ["North Santa Cruz Avenue", "Town Plaza Park", "Forbes Mill", "Old Town Los Gatos", "Bachman Park"],
+    "housingStyle": "Historic homes, luxury lofts, mixed-use retail corridors, and classic cottages."
+  },
+  {
+    "name": "Almond Grove Historic District",
+    "slug": "almond-grove-historic-district",
+    "zip": "95030",
+    "shortDescription": "Protected historic district with turn-of-the-century Victorian and Craftsman homes requiring specialized 200A electrical service heavy-ups and discreet conduit routing.",
+    "primaryKeyword": "EV Charger Repair Almond Grove Los Gatos",
+    "landmarks": ["Bean Avenue", "Wilder Avenue", "Nicholson Avenue", "Tait Avenue", "Bachman Avenue"],
+    "housingStyle": "Preserved late-1800s to early-1900s Victorians, Craftsman bungalows, and Queen Annes."
+  },
+  {
+    "name": "Blossom Hill",
+    "slug": "blossom-hill",
+    "zip": "95032",
+    "shortDescription": "Well-established residential neighborhood bordering Blossom Hill Park, characterized by mid-century single-family homes upgrading from older Zinsco panels to modern EV circuits.",
+    "primaryKeyword": "EV Charger Repair Blossom Hill Los Gatos",
+    "landmarks": ["Blossom Hill Road", "Blossom Hill Park", "Blossom Hill Elementary School", "Los Gatos Boulevard"],
+    "housingStyle": "1960s single-story ranch homes and renovated suburban properties with attached 2-car garages."
+  },
+  {
+    "name": "Blossom Hill Manor",
+    "slug": "blossom-hill-manor",
+    "zip": "95032",
+    "shortDescription": "Quiet residential community on former orchard grounds near Longwood Drive, known for spacious lots requiring custom conduit trenching and garage subpanel installations.",
+    "primaryKeyword": "EV Charger Installation Blossom Hill Manor Los Gatos",
+    "landmarks": ["Longwood Drive", "Los Gatos-Almaden Road", "Blossom Hill Road", "Fisher Middle School proximity"],
+    "housingStyle": "Expanded mid-century ranch homes on quarter-acre parcels with detached and attached garages."
+  },
+  {
+    "name": "Blossom Crest",
+    "slug": "blossom-crest",
+    "zip": "95032",
+    "shortDescription": "Picturesque pocket nestled between Blossom Hill and hillside vistas, featuring custom family homes with solar-tied Level 2 EV charging configurations.",
+    "primaryKeyword": "EV Charger Installation Blossom Crest Los Gatos",
+    "landmarks": ["Blossom Crest Lane", "Harwood Road", "Foothill views", "Belgatos Park proximity"],
+    "housingStyle": "Sprawling custom ranch residences, renovated contemporary homes, and multi-EV garages."
+  },
+  {
+    "name": "Rinconada",
+    "slug": "rinconada",
+    "zip": "95032",
+    "shortDescription": "Vibrant neighborhood centered near La Rinconada Park, Granada Way, and the Rinconada Hills community, with high adoption of Tesla and universal J1772 chargers.",
+    "primaryKeyword": "EV Charger Repair Rinconada Los Gatos",
+    "landmarks": ["La Rinconada Park", "Granada Way", "Smith Creek", "Pollard Road", "El Camino Health Hospital"],
+    "housingStyle": "Suburban single-family homes and gated residential associations with shared carport circuits."
+  },
+  {
+    "name": "Rancho Carrillo",
+    "slug": "rancho-carrillo",
+    "zip": "95032",
+    "shortDescription": "Quiet residential enclave with tree-lined streets and large setback properties, requiring dedicated 240V high-amp circuit runs for commuter vehicles.",
+    "primaryKeyword": "EV Charger Installation Rancho Carrillo Los Gatos",
+    "landmarks": ["Carrillo Lane", "Los Gatos Boulevard corridor", "Oaks Shopping Center proximity"],
+    "housingStyle": "Classic California ranch houses and custom remodeled single-family residences."
+  },
+  {
+    "name": "East Los Gatos",
+    "slug": "east-los-gatos",
+    "zip": "95032",
+    "shortDescription": "Expansive district connecting Los Gatos Boulevard to the San Jose border, featuring high concentrations of EV commuters needing 48A hardwired chargers.",
+    "primaryKeyword": "EV Charger Repair East Los Gatos",
+    "landmarks": ["Los Gatos Boulevard", "Los Gatos-Almaden Road", "Sammany Park", "Oaks Center"],
+    "housingStyle": "Diverse suburban neighborhoods, townhome communities, and modernized mid-century estates."
+  },
+  {
+    "name": "Austin",
+    "slug": "austin",
+    "zip": "95032",
+    "shortDescription": "Residential neighborhood near Austin Way and Los Gatos foothills, where homeowners frequently pair Level 2 EV chargers with home solar and backup batteries.",
+    "primaryKeyword": "EV Charger Installation Austin Los Gatos",
+    "landmarks": ["Austin Way", "Shannon Road", "Foothill scenic trailheads", "Blossom Hill border"],
+    "housingStyle": "Multi-level custom homes, mid-century properties, and hillside ranch houses."
+  },
+  {
+    "name": "Belwood",
+    "slug": "belwood",
+    "zip": "95032",
+    "shortDescription": "Beloved family neighborhood with community cabana club, where 1960s electrical panels often need modern 200A upgrades to support dual electric vehicles.",
+    "primaryKeyword": "EV Charger Repair Belwood Los Gatos",
+    "landmarks": ["Belwood of Los Gatos Cabana", "Harwood Road", "Belwood Gateway", "Belgatos Park trails"],
+    "housingStyle": "Original and remodeled single-family homes with 2-car garages and landscaped front setbacks."
+  },
+  {
+    "name": "North Forty",
+    "slug": "north-forty",
+    "zip": "95032",
+    "shortDescription": "Modern master-planned mixed-use district near Highways 17 and 85, featuring cutting-edge multi-unit residential charging infrastructure and commercial hubs.",
+    "primaryKeyword": "EV Charger Installation North Forty Los Gatos",
+    "landmarks": ["North 40 Market Hall", "Lark Avenue", "Los Gatos Boulevard", "State Route 85 corridor"],
+    "housingStyle": "Brand-new transit-oriented condominiums, multi-story townhomes, and modern commercial plazas."
+  },
+  {
+    "name": "Los Gatos Creek Trail corridor",
+    "slug": "los-gatos-creek-trail-corridor",
+    "zip": "95030",
+    "shortDescription": "Scenic greenway corridor spanning central Los Gatos, featuring streamside homes and townhouses requiring clean, weather-resistant outdoor EV charging pedestals.",
+    "primaryKeyword": "EV Charger Repair Los Gatos Creek Trail corridor",
+    "landmarks": ["Los Gatos Creek Trail", "Miles Avenue Park", "Balzer Field", "Main Street bridge crossing"],
+    "housingStyle": "Creekside custom houses, contemporary townhouses, and hillside residential clusters."
+  },
+  {
+    "name": "Blossom Manor",
+    "slug": "blossom-manor",
+    "zip": "95032",
+    "shortDescription": "Sought-after residential pocket celebrated for wide tree-canopied roads, active community life, and steady transition to dual-EV households.",
+    "primaryKeyword": "EV Charger Installation Blossom Manor Los Gatos",
+    "landmarks": ["Blossom Manor parkway", "Newbury Park proximity", "Los Gatos High school district"],
+    "housingStyle": "Single-story ranch architecture with expanded garage footprints and modern exterior subpanels."
+  },
+  {
+    "name": "Cambrian-Pioneer",
+    "slug": "cambrian-pioneer",
+    "zip": "95032",
+    "shortDescription": "Border neighborhood connecting Los Gatos with the Cambrian district, where heavy daily Silicon Valley commuting drives rapid adoption of overnight home charging.",
+    "primaryKeyword": "EV Charger Repair Cambrian-Pioneer Los Gatos",
+    "landmarks": ["Union Avenue", "Camden Avenue junction", "Pioneer High boundary", "Los Gatos border"],
+    "housingStyle": "Mid-century suburban tract homes, updated ranch properties, and attached carports."
+  },
+  {
+    "name": "Quito",
+    "slug": "quito",
+    "zip": "95032",
+    "shortDescription": "West Los Gatos corridor along Quito Road leading toward Saratoga, with prestigious custom estates and private driveways requiring long subterranean conduit feeds.",
+    "primaryKeyword": "EV Charger Installation Quito Los Gatos",
+    "landmarks": ["Quito Road", "Pollard Road", "Sacred Heart Church area", "West Valley College border"],
+    "housingStyle": "Expansive custom estates, single-family luxury homes, and detached workshop garages."
+  },
+  {
+    "name": "Noddin",
+    "slug": "noddin",
+    "zip": "95032",
+    "shortDescription": "Quiet residential neighborhood surrounding Noddin Elementary School, where parents rely on reliable overnight Level 2 charging for electric SUVs.",
+    "primaryKeyword": "EV Charger Repair Noddin Los Gatos",
+    "landmarks": ["Noddin Elementary School", "Harwood Road", "Los Gatos-Almaden Road", "Alta Vista area"],
+    "housingStyle": "Established 1960s suburban homes, remodeled two-story family dwellings, and double garages."
+  },
+  {
+    "name": "Vasona area",
+    "slug": "vasona-area",
+    "zip": "95032",
+    "shortDescription": "Scenic area flanking Vasona Lake County Park and Oak Meadow, featuring high EV ownership and properties benefiting from smart energy management systems.",
+    "primaryKeyword": "EV Charger Repair Vasona area Los Gatos",
+    "landmarks": ["Vasona Lake County Park", "Oak Meadow Park", "Billy Jones Wildcat Railroad", "University Avenue north"],
+    "housingStyle": "Parkside executive homes, custom hillside view residences, and lakeside townhome communities."
+  },
+  {
+    "name": "Winchester Blvd corridor",
+    "slug": "winchester-blvd-corridor",
+    "zip": "95032",
+    "shortDescription": "Key arterial connecting northern Los Gatos to Campbell, featuring a vibrant mix of multi-family apartment communities and commercial charging installations.",
+    "primaryKeyword": "EV Charger Installation Winchester Blvd corridor Los Gatos",
+    "landmarks": ["Winchester Boulevard", "Lark Avenue", "Courtside Tennis Club", "Daves Avenue border"],
+    "housingStyle": "Apartment complexes, condominium clusters, medical offices, and garden style townhomes."
+  },
+  {
+    "name": "Lexington Hills",
+    "slug": "lexington-hills",
+    "zip": "95033",
+    "shortDescription": "Rugged hillside community overlooking Lexington Reservoir, where mountain homes require weather-tight outdoor charging stations and generator/battery integration.",
+    "primaryKeyword": "EV Charger Repair Lexington Hills Los Gatos",
+    "landmarks": ["Lexington Reservoir", "Alma Bridge Road", "St. Joseph's Hill Open Space", "Highway 17 overlook"],
+    "housingStyle": "Mountain retreats, custom hillside multi-level estates, and rural properties on steep terrain."
+  },
+  {
+    "name": "Redwood Estates",
+    "slug": "redwood-estates",
+    "zip": "95044",
+    "shortDescription": "Historic mountain community under redwood canopies along Highway 17, demanding heavy-duty surge protection and reliable Level 2 installations amidst frequent grid shifts.",
+    "primaryKeyword": "EV Charger Installation Redwood Estates Los Gatos",
+    "landmarks": ["Redwood Estates Pavilion", "Nonno's Italian Restaurant", "Summit Road junction", "Old Santa Cruz Highway"],
+    "housingStyle": "Rustic mountain cabins, expanded cedar homes, and detached steep-grade carports."
+  },
+  {
+    "name": "Holy City",
+    "slug": "holy-city",
+    "zip": "95044",
+    "shortDescription": "Historic mountain hamlet situated off the Old Santa Cruz Highway, where rural electric supply requires careful voltage drop calculations and subpanel sizing.",
+    "primaryKeyword": "EV Charger Repair Holy City Los Gatos",
+    "landmarks": ["Old Santa Cruz Highway", "Historic Holy City site", "Summit Road foothills", "Moody Gulch"],
+    "housingStyle": "Historic hillside dwellings, rural homesteads, and secluded acreage properties."
+  },
+  {
+    "name": "Chemeketa Park",
+    "slug": "chemeketa-park",
+    "zip": "95033",
+    "shortDescription": "Tightly knit mountain neighborhood along Moody Gulch with steep switchbacks and private water/power infrastructure, requiring specialized electrical engineering.",
+    "primaryKeyword": "EV Charger Installation Chemeketa Park Los Gatos",
+    "landmarks": ["Chemeketa Park clubhouse", "Apache Trail", "Moody Gulch", "Ogallala Warpath trail"],
+    "housingStyle": "Terraced redwood cabins, custom hillside single-family homes, and cantilevered parking decks."
+  },
+  {
+    "name": "Aldercroft Heights",
+    "slug": "aldercroft-heights",
+    "zip": "95033",
+    "shortDescription": "Forested mountain enclave along Los Gatos Creek above the reservoir, requiring high-end weather-shielded NEMA 4X charging stations and whole-home backup safety.",
+    "primaryKeyword": "EV Charger Repair Aldercroft Heights Los Gatos",
+    "landmarks": ["Aldercroft Creek", "Alma Bridge Road", "Wright's Station proximity", "Herbert Creek"],
+    "housingStyle": "Secluded mountain homes, woodland cottages, and multi-tier decks with outdoor vehicle hookups."
+  },
+  {
+    "name": "Alma",
+    "slug": "alma",
+    "zip": "95033",
+    "shortDescription": "Historic mountain gateway region near the former townsite of Alma under Lexington Reservoir, featuring hillside rural residences with high commuter mileage.",
+    "primaryKeyword": "EV Charger Installation Alma Los Gatos",
+    "landmarks": ["Alma Bridge Road", "Lexington Reservoir Dam", "Limekiln Trail", "Bear Creek Road interchange"],
+    "housingStyle": "Spaced rural residential parcels, custom hill-view estates, and ranch gate entries."
+  },
+  {
+    "name": "Old Santa Cruz Highway corridor",
+    "slug": "old-santa-cruz-highway-corridor",
+    "zip": "95033",
+    "shortDescription": "Scenic mountain commuter corridor winding between Los Gatos and Summit Ridge, where daily elevation changes make dependable home overnight charging essential.",
+    "primaryKeyword": "EV Charger Repair Old Santa Cruz Highway corridor Los Gatos",
+    "landmarks": ["Old Santa Cruz Highway", "Summit Road", "Idylwild", "Schultheis Road junction"],
+    "housingStyle": "Wooded estate homes, equestrian properties, custom mountain chalets, and detached barns."
+  }
+]

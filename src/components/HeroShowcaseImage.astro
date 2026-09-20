@@ -1,0 +1,33 @@
+---
+export interface Props {
+  alt?: string;
+  title?: string;
+  badgeText?: string;
+}
+
+const {
+  alt = "Licensed EV Charger Installation and Tesla Wall Connector Repair in Los Gatos, California residential home garage",
+  title = "Tesla Wall Connector and Level 2 EV Charger Installation in Los Gatos, CA",
+  badgeText = "Tesla Wall Connector & Level 2 Active Charging • Los Gatos, CA"
+} = Astro.props;
+---
+
+<div class="hero-visual-card">
+  <div class="hero-img-frame">
+    <img
+      src="/images/los-gatos-ev-charger-installation-repair-hero.jpg"
+      alt={alt}
+      title={title}
+      width="1280"
+      height="720"
+      fetchpriority="high"
+      loading="eager"
+      decoding="async"
+      class="hero-showcase-img"
+    />
+    <div class="hero-img-badge">
+      <span class="badge-pulse"></span>
+      <span>{badgeText}</span>
+    </div>
+  </div>
+</div>

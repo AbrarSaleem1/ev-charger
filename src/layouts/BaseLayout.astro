@@ -19,7 +19,7 @@ const {
   title,
   description,
   canonicalUrl,
-  ogImage = '/images/og-default.jpg',
+  ogImage = '/images/los-gatos-ev-charger-installation-repair-hero.jpg',
   ogType = 'website',
   noindex = false,
   jsonLd,
@@ -48,11 +48,24 @@ const organizationSchema = {
   }
 };
 
+const defaultImageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ImageObject",
+  "contentUrl": `${siteUrl}/images/los-gatos-ev-charger-installation-repair-hero.jpg`,
+  "url": `${siteUrl}/images/los-gatos-ev-charger-installation-repair-hero.jpg`,
+  "name": "Tesla Wall Connector & Level 2 EV Charger Installation in Los Gatos, California",
+  "description": "Licensed residential EV charger installation, Tesla Wall Connector repair, and 240V circuit upgrades in Los Gatos, CA.",
+  "caption": "Professional EV Charger Installation in Los Gatos Home Garage",
+  "representativeOfPage": true,
+  "width": 1280,
+  "height": 720
+};
+
 const allSchemas = jsonLd
   ? Array.isArray(jsonLd)
-    ? [organizationSchema, ...jsonLd]
-    : [organizationSchema, jsonLd]
-  : [organizationSchema];
+    ? [organizationSchema, defaultImageSchema, ...jsonLd]
+    : [organizationSchema, defaultImageSchema, jsonLd]
+  : [organizationSchema, defaultImageSchema];
 ---
 
 <!DOCTYPE html>
@@ -63,6 +76,9 @@ const allSchemas = jsonLd
   <title>{title}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={fullCanonical} />
+
+  <!-- Preload Head Hero Image for Fast LCP -->
+  <link rel="preload" as="image" href="/images/los-gatos-ev-charger-installation-repair-hero.jpg" fetchpriority="high" />
 
   {noindex && <meta name="robots" content="noindex, nofollow" />}
 
@@ -87,7 +103,7 @@ const allSchemas = jsonLd
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <meta name="theme-color" content="#1B2A4A" />
+  <meta name="theme-color" content="#0B132B" />
 
   <!-- Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />

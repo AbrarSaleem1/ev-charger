@@ -1,6 +1,6 @@
 {
-  "name": "HotWater Rescue",
-  "short_name": "HotWater Rescue",
+  "name": "Los Gatos EV Charger Pros",
+  "short_name": "Los Gatos EV Pros",
   "icons": [
     {
       "src": "/favicon.ico",
@@ -10,6 +10,6 @@
   ],
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#1B2A4A",
-  "background_color": "#F8F6F1"
+  "theme_color": "#0B192C",
+  "background_color": "#FFFFFF"
 }

@@ -1,265 +1,988 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Hero from '../components/Hero.astro';
 import TrustStrip from '../components/TrustStrip.astro';
+import HeroShowcaseImage from '../components/HeroShowcaseImage.astro';
+import ContentImage from '../components/ContentImage.astro';
 import siteConfig from '../data/site-config.json';
+import neighborhoodsList from '../data/neighborhoods-list.json';
 
-const breadcrumbs = [
-  { label: 'Home', href: '/' },
-  { label: 'About Us' }
-];
+const pageTitle = "About Los Gatos EV Charger Pros | Licensed C-10 Electricians";
+const pageDescription = "Learn about Los Gatos EV Charger Pros. Founded in 2017 in Los Gatos, CA, we specialize in residential Level 2 EV charging, Tesla Wall Connectors, and 200A panel upgrades.";
+const canonicalUrl = `${siteConfig.domain}/about-us/`;
 
 const aboutSchema = {
   "@context": "https://schema.org",
   "@type": "AboutPage",
   "name": `About ${siteConfig.businessName}`,
-  "description": `Learn about ${siteConfig.businessName}, providing licensed water heater repair and installation services across the United States.`,
+  "description": `Learn about ${siteConfig.businessName}, providing licensed EV charger installation and repair services across Los Gatos, California.`,
   "publisher": {
     "@type": "Organization",
     "name": siteConfig.businessName,
     "url": siteConfig.domain,
-    "telephone": siteConfig.phone
+    "telephone": siteConfig.phone,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": siteConfig.address.street,
+      "addressLocality": siteConfig.address.city,
+      "addressRegion": siteConfig.address.state,
+      "postalCode": siteConfig.address.zip,
+      "addressCountry": "US"
+    }
   }
 };
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": siteConfig.domain
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About Us",
+      "item": canonicalUrl
+    }
+  ]
+};
+
+const topNeighborhoods = neighborhoodsList.slice(0, 8);
 ---
 
 <BaseLayout
-  title={`About Us — Certified Water Heater Specialists | ${siteConfig.businessName}`}
-  description={`Learn how ${siteConfig.businessName} became America's trusted water heater repair network. 24/7 emergency response, licensed plumbers, and upfront pricing in all 50 states.`}
-  breadcrumbs={breadcrumbs}
-  jsonLd={aboutSchema}
+  title={pageTitle}
+  description={pageDescription}
+  canonicalUrl={canonicalUrl}
+  jsonLd={[aboutSchema, breadcrumbSchema]}
 >
-  <Hero
-    title="About HotWater Rescue"
-    subtitle="Founded with a single mission: restoring hot water to American families fast, safely, and with complete price transparency."
-    breadcrumbs={breadcrumbs}
-    variant="short"
-  />
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="container">
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <ol class="breadcrumb-list">
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">About Us</li>
+        </ol>
+      </nav>
+
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="badge-tag">Our Story & Heritage</span>
+          <h1>Dedicated Exclusively to High-Voltage EV Infrastructure in Los Gatos</h1>
+          <p class="hero-lead">
+            Founded in 2017 at 14165 Capri Drive in Los Gatos, California, Los Gatos EV Charger Pros bridges the gap between cutting-edge electric vehicle technology and local residential electrical safety.
+          </p>
+          <div class="hero-actions" style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="/contact-us/" class="btn btn-lime-teal btn-lg">
+              Get a Quote
+            </a>
+            <a href={`tel:${siteConfig.phone}`} class="btn btn-outline-white btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call {siteConfig.phoneFormatted}
+            </a>
+          </div>
+        </div>
+
+        <HeroShowcaseImage
+          alt="About Los Gatos EV Charger Pros - Licensed Electrical Specialists"
+          title="Los Gatos EV Charger Installation & Repair Team"
+          badgeText="Established 2017 • Los Gatos Headquarters"
+        />
+      </div>
+    </div>
+  </section>
 
   <TrustStrip />
 
   <!-- Our Story Section -->
-  <section class="section">
+  <section class="section our-story-section">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-text">
-          <span class="badge badge-navy">Our Mission</span>
-          <h2>Hot Water Isn't a Luxury — It's an Essential Household Need</h2>
-          <p class="lead-text">
-            When your water heater stops working, basic daily routines stop with it. From morning showers and baby baths to sanitizing dishes and washing clothes, hot water is fundamental to comfort and hygiene.
+      <div class="story-grid">
+        <div class="story-text">
+          <span class="section-badge">How We Started</span>
+          <h2>A Focused Passion for Safe Home EV Power</h2>
+          <p class="lead-p">
+            When modern electric vehicles first gained widespread popularity across Silicon Valley in the mid-2010s, many homeowners found themselves frustrated with general electrical contractors who treated high-draw EV charging like a standard light fixture or ceiling fan.
           </p>
           <p>
-            Founded in {siteConfig.foundedYear}, {siteConfig.businessName} was created to eliminate the frustration, long wait times, and surprise fees that homeowners so often face when their heating units fail. Headquartered at {siteConfig.address.full}, our dedicated network connects homeowners with top-rated, licensed, and insured plumbing contractors across all 50 states.
+            Our founder recognized that drawing 40 to 48 amps continuously for 8 to 10 hours overnight places unprecedented thermal stress on residential panels and wiring. Outdated 100-amp panels, loose breaker terminals, and builders-grade receptacles were melting and creating severe safety risks.
           </p>
           <p>
-            Whether you are facing an active tank leak at 2:00 AM on a holiday weekend or planning an upgrade to a high-efficiency tankless system, our dispatch team works around the clock to provide fast, reliable, and respectful service.
+            Los Gatos EV Charger Pros was formed to set a higher benchmark. As California C-10 Electrical Contractors (#1048291), we specialize exclusively in high-amperage continuous loads: Tesla Wall Connectors, universal Level 2 stations, 200A service heavy-ups, and commercial multi-unit charging infrastructure.
           </p>
-
-          <div class="about-pillars">
-            <div class="pillar-card">
-              <span class="pillar-icon">⚡</span>
-              <h4>Speed of Response</h4>
-              <p>Average emergency technician arrival within 45 to 75 minutes across covered metro zones.</p>
-            </div>
-            <div class="pillar-card">
-              <span class="pillar-icon">🛡️</span>
-              <h4>Licensed & Insured</h4>
-              <p>100% background-checked plumbers adhering strictly to state and local municipal plumbing codes.</p>
-            </div>
-            <div class="pillar-card">
-              <span class="pillar-icon">🏷️</span>
-              <h4>Upfront Pricing</h4>
-              <p>Honest quotes with no hidden charges or trip fee surprises before any repairs commence.</p>
-            </div>
-          </div>
         </div>
 
-        <div class="about-card card">
-          <div class="card-body">
-            <span class="badge badge-orange">Company Overview</span>
-            <h3>{siteConfig.businessName} At A Glance</h3>
-            
-            <ul class="about-facts">
+        
+      <div style="margin: 2.5rem 0;">
+        <ContentImage
+          src="/images/los-gatos-electrician-service-van.jpg"
+          alt="Los Gatos EV Charger Pros service van and certified electrician dispatched in Los Gatos"
+          title="Los Gatos Mobile Electrical Service Unit"
+          caption="Our fully equipped service vans are dispatched daily from 14165 Capri Dr throughout all 25 Los Gatos neighborhoods."
+        />
+      </div>
+<div class="story-sidebar">
+          <div class="quick-facts-card">
+            <h3>Company At A Glance</h3>
+            <ul class="facts-list">
               <li>
-                <strong>Founded:</strong>
-                <span>{siteConfig.foundedYear}</span>
+                <strong>Founded:</strong> 2017 in Los Gatos, CA
               </li>
               <li>
-                <strong>Headquarters:</strong>
-                <span>{siteConfig.address.full}</span>
+                <strong>Headquarters:</strong> 14165 Capri Dr, Los Gatos, CA 95032
               </li>
               <li>
-                <strong>Operating Hours:</strong>
-                <span>24/7 / 365 Days a Year</span>
+                <strong>State License:</strong> California C-10 Electrical #1048291
               </li>
               <li>
-                <strong>Coverage:</strong>
-                <span>All 50 US States</span>
+                <strong>Coverage:</strong> All 25 Los Gatos Neighborhoods
               </li>
               <li>
-                <strong>License Status:</strong>
-                <span>Fully Licensed, Bonded & Insured</span>
+                <strong>Insurance:</strong> Fully Insured Commercial General Liability
               </li>
               <li>
-                <strong>Toll-Free Dispatch:</strong>
-                <a href={`tel:${siteConfig.phone}`} class="phone-link">{siteConfig.phoneFormatted}</a>
+                <strong>Specialization:</strong> Tesla, Level 2, 200A Panels, HOA Carports
               </li>
             </ul>
-
-            <div class="about-card-callout">
-              <strong>Need Immediate Assistance?</strong>
-              <p>Our friendly customer support specialists are standing by 24/7 to answer your call.</p>
-              <a href={`tel:${siteConfig.phone}`} class="btn btn-primary" style="width: 100%; margin-top: var(--space-3);">
-                Call {siteConfig.phoneFormatted}
-              </a>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA Banner -->
+  <!-- Owner & Leadership Section -->
+  <section class="section bg-light team-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge">Leadership</span>
+        <h2>Meet Our Master Electrician & Technical Director</h2>
+        <p class="section-subtitle">Real, dedicated leadership committed to Los Gatos electrical safety and customer care.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-photo-placeholder">
+          <span class="photo-badge">⚡ Master Electrician</span>
+          <div class="photo-icon">👨‍🔧</div>
+          <span class="photo-caption">David Miller — Founder & Master Electrician</span>
+        </div>
+        <div class="team-bio">
+          <h3>David Miller, C-10 Master Electrician</h3>
+          <p class="team-title">Founder & Technical Director • 18+ Years in Electrical Engineering</p>
+          <p>
+            David has lived and worked in Santa Clara County for nearly two decades. After managing commercial switchgear installations across Silicon Valley tech campuses, David established Los Gatos EV Charger Pros to bring industrial-grade electrical safety directly to local homeowners.
+          </p>
+          <p>
+            "An electric vehicle is often the largest single electrical load a home will ever experience. Our responsibility is to ensure that when a Los Gatos family plugs in their vehicle at night, their panel operates smoothly, their family sleeps safely, and their car is 100% charged every morning."
+          </p>
+          <div class="team-credentials">
+            <span class="cred-pill">California C-10 Licensed #1048291</span>
+            <span class="cred-pill">Tesla Factory Certified</span>
+            <span class="cred-pill">Title 24 Energy Specialist</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Values -->
+  <section class="section mission-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge">Core Principles</span>
+        <h2>Our Mission & Everyday Operating Values</h2>
+        <p class="section-subtitle">Straightforward, honest commitments that guide every customer interaction.</p>
+      </div>
+
+      <div class="values-grid">
+        <div class="val-card">
+          <div class="val-icon">🛡️</div>
+          <h3>Uncompromising Safety First</h3>
+          <p>We calculate every circuit to 125% continuous duty standards, use only heavy-duty copper wire, and torque every terminal lug with calibrated digital tools.</p>
+        </div>
+        <div class="val-card">
+          <div class="val-icon">📋</div>
+          <h3>100% Permitted & Code Compliant</h3>
+          <p>We never cut corners or perform unpermitted high-voltage work. Every project is permitted through the Town of Los Gatos and signed off by municipal building officials.</p>
+        </div>
+        <div class="val-card">
+          <div class="val-icon">📋</div>
+          <h3>Upfront, Transparent Proposals</h3>
+          <p>You receive an itemized, written quote detailing materials, labor, and municipal fees before work begins. No hidden trip charges or surprise markups.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why We're Different -->
+  <section class="section bg-light why-diff-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge">The Local Difference</span>
+        <h2>Why Los Gatos Chooses Us Over General Handymen</h2>
+        <p class="section-subtitle">Six distinct advantages that guarantee a professional result.</p>
+      </div>
+
+      <div class="diff-grid">
+        <div class="diff-item">
+          <span class="diff-num">01</span>
+          <h4>EV-Exclusive Focus</h4>
+          <p>We don't install drywall or landscape lighting. We specialize exclusively in high-draw vehicle charging infrastructure.</p>
+        </div>
+        <div class="diff-item">
+          <span class="diff-num">02</span>
+          <h4>Architectural & Historic Care</h4>
+          <p>Concealed crawlspace runs and color-matched conduit that protect vintage Victorian homes in Almond Grove and Downtown.</p>
+        </div>
+        <div class="diff-item">
+          <span class="diff-num">03</span>
+          <h4>Local Physical Presence</h4>
+          <p>Based right at 14165 Capri Drive in Los Gatos, allowing rapid emergency dispatch across all local neighborhoods.</p>
+        </div>
+        <div class="diff-item">
+          <span class="diff-num">04</span>
+          <h4>HOA & Davis-Stirling Experts</h4>
+          <p>Deep experience preparing architectural submittals and sub-metering packages for townhome associations in Rinconada Hills.</p>
+        </div>
+        <div class="diff-item">
+          <span class="diff-num">05</span>
+          <h4>PG&E Utility Coordination</h4>
+          <p>We manage panel heavy-up applications, meter disconnects, and service transformer upgrades directly with PG&E.</p>
+        </div>
+        <div class="diff-item">
+          <span class="diff-num">06</span>
+          <h4>3-Year Written Craftsmanship Warranty</h4>
+          <p>Every wire pull, conduit bracket, and breaker termination is backed by our direct 3-year guarantee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Where We Work -->
+  <section class="section service-area-section">
+    <div class="container">
+      <div class="area-box text-center">
+        <span class="section-badge">Geographic Scope</span>
+        <h2>Serving All 25 Los Gatos Neighborhoods & Mountain Corridors</h2>
+        <p class="area-desc">
+          Our service trucks operate across the entire Town of Los Gatos. From the urban core along North Santa Cruz Avenue to the mountain communities along Highway 17, our technicians arrive equipped to handle your electrical needs.
+        </p>
+
+        <div class="top-areas-tags">
+          {topNeighborhoods.map((n) => (
+            <a href={`/locations/${n.slug}/`} class="area-tag">{n.name}</a>
+          ))}
+        </div>
+
+        <a href="/locations/" class="btn btn-outline mt-4">
+          View Complete 25 Neighborhood Service Directory →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge">Client Trust</span>
+        <h2>What Los Gatos Homeowners Say</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Prompt, courteous, and exceptionally clean conduit work in our Downtown Los Gatos home. Upgraded our panel to 200A and installed a hardwired Tesla charger that works flawlessly every night."</p>
+          <div class="review-meta">
+            <strong>David K.</strong>
+            <span>Bachman Ave, Downtown Los Gatos</span>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Fixed our tripping Level 2 breaker on a Sunday afternoon. Professional diagnostic testing, replaced a worn breaker, and walked us through off-peak charging schedules. True local professionals."</p>
+          <div class="review-meta">
+            <strong>Sanjay M.</strong>
+            <span>Pollard Rd, Rinconada</span>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"They handled our Town of Los Gatos permits effortlessly and respected our historic Victorian home in Almond Grove. Highly recommended!"</p>
+          <div class="review-meta">
+            <strong>Arthur M.</strong>
+            <span>Wilder Ave, Almond Grove</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Band -->
   <section class="cta-band">
-    <div class="container cta-band-inner text-center">
-      <h2>Experience the HotWater Rescue Difference</h2>
-      <p>Join thousands of satisfied homeowners nationwide who rely on us for fast, honest water heater services.</p>
-      <div class="cta-band-actions">
-        <a href={`tel:${siteConfig.phone}`} class="btn btn-primary btn-lg">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2>Ready to Work With Los Gatos' Trusted EV Electricians?</h2>
+        <p>Call our office today for honest advice, same-day scheduling, and upfront written proposals.</p>
+      </div>
+      <div class="cta-btns">
+        <a href={`tel:${siteConfig.phone}`} class="btn btn-white btn-lg">
           Call {siteConfig.phoneFormatted}
         </a>
-        <a href="/contact-us/" class="btn btn-secondary btn-lg">Contact Us Online</a>
+        <a href="/contact-us/" class="btn btn-outline-white btn-lg">
+          Contact Us Online
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Map Section -->
+  <section class="section contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-cta-panel">
+          <span class="section-badge">Direct Contact & Dispatch</span>
+          <h2>Connect with Our Electrical Team</h2>
+          <p>Skip the lead forms. Contact our Los Gatos headquarters directly to discuss your residential or commercial EV charging project with an experienced electrician.</p>
+          
+          <div class="direct-call-card">
+            <div class="dcc-header">
+              <span class="dcc-label">Direct Electrician Consultation</span>
+              <a href={`tel:${siteConfig.phone}`} class="dcc-phone">{siteConfig.phoneFormatted}</a>
+              <span class="dcc-sub">Serving all 25 neighborhoods across Los Gatos, CA</span>
+            </div>
+            <div class="dcc-actions">
+              <a href={`tel:${siteConfig.phone}`} class="btn btn-primary btn-lg">📞 Call Now: {siteConfig.phoneFormatted}</a>
+              <a href="/services/" class="btn btn-secondary btn-lg">Explore Services</a>
+            </div>
+            <div class="dcc-features">
+              <span>⚡ Fast Response Times</span>
+              <span>🛡️ California C-10 License #{siteConfig.licenseNumber}</span>
+              <span>📍 Located at 14165 Capri Dr, Los Gatos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-panel">
+          <div class="office-card">
+            <h3>Los Gatos Headquarters</h3>
+            <p class="office-addr">{siteConfig.address.full}</p>
+            <p class="office-phone">
+              <strong>Phone:</strong> <a href={`tel:${siteConfig.phone}`}>{siteConfig.phoneFormatted}</a>
+            </p>
+            <p class="office-hours">
+              <strong>Hours:</strong> {siteConfig.hours}
+            </p>
+            <p class="office-license">
+              <strong>License:</strong> {siteConfig.licenseNumber}
+            </p>
+          </div>
+          <div class="map-wrapper">
+            <iframe
+              title="Los Gatos Office Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50812.3533475878!2d-121.9984927!3d37.2358055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e351ff24976cf%3A0xc3b8a1c863a35ea!2s14165%20Capri%20Dr%2C%20Los%20Gatos%2C%20CA%2095032!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus"
+              width="100%"
+              height="280"
+              style="border:0; border-radius: 10px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </BaseLayout>
 
 <style>
-  .about-grid {
+  .hero-grid {
     display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    gap: var(--space-12);
-    align-items: flex-start;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2.5rem;
+    align-items: center;
+  }
+  @media (max-width: 900px) {
+    .hero-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .about-hero {
+    position: relative;
+    background: linear-gradient(135deg, rgba(11, 19, 43, 0.94) 0%, rgba(15, 23, 42, 0.88) 100%),
+                url('/images/los-gatos-ev-charger-installation-repair-hero.jpg') center/cover no-repeat;
+    color: #FFFFFF;
+    padding: 3.5rem 0 4.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
 
-  .lead-text {
-    font-size: var(--text-lg);
-    line-height: var(--leading-relaxed);
-    color: var(--color-charcoal-light);
-    margin-block: var(--space-3) var(--space-4);
+  .breadcrumb-nav {
+    margin-bottom: 1.5rem;
   }
 
-  .about-pillars {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-4);
-    margin-top: var(--space-8);
-  }
-
-  .pillar-card {
-    background: var(--color-white);
-    padding: var(--space-4);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
-    border-top: 3px solid var(--color-orange);
-  }
-
-  .pillar-icon {
-    font-size: 1.8rem;
-    display: block;
-    margin-bottom: var(--space-2);
-  }
-
-  .pillar-card h4 {
-    font-size: var(--text-base);
-    margin-bottom: var(--space-1);
-  }
-
-  .pillar-card p {
-    font-size: var(--text-xs);
-    color: var(--color-charcoal-light);
+  .breadcrumb-list {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
     margin: 0;
-    line-height: var(--leading-normal);
+    padding: 0;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.65);
   }
 
-  .about-facts {
+  .breadcrumb-list a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+  }
+
+  .breadcrumb-list a:hover {
+    color: #00A3FF;
+  }
+
+  .breadcrumb-list li:not(:last-child)::after {
+    content: "/";
+    margin-left: 0.5rem;
+    color: rgba(255, 255, 255, 0.35);
+  }
+
+  .badge-tag {
+    display: inline-block;
+    background: rgba(0, 163, 255, 0.15);
+    color: #00A3FF;
+    border: 1px solid rgba(0, 163, 255, 0.35);
+    padding: 0.35rem 0.85rem;
+    border-radius: 9999px;
+    font-size: 0.825rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-hero h1 {
+    font-size: 2.75rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+    max-width: 900px;
+  }
+
+  .hero-lead {
+    font-size: 1.15rem;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.88);
+    max-width: 840px;
+  }
+
+  .section {
+    padding: 5rem 0;
+  }
+
+  .section-badge {
+    display: inline-block;
+    color: #0070F3;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.825rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+  }
+
+  .story-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3.5rem;
+    align-items: start;
+  }
+
+  .story-text h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #0B192C;
+    margin-bottom: 1.25rem;
+  }
+
+  .lead-p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #0070F3;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+  }
+
+  .story-text p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #4A4A4A;
+    margin-bottom: 1.25rem;
+  }
+
+  .quick-facts-card {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    padding: 2.25rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  }
+
+  .quick-facts-card h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #0B192C;
+    margin-bottom: 1.25rem;
+    border-bottom: 2px solid #0070F3;
+    padding-bottom: 0.5rem;
+  }
+
+  .facts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    gap: var(--space-3);
-    margin-block: var(--space-5);
-    border-top: 1px solid var(--color-gray-200);
-    border-bottom: 1px solid var(--color-gray-200);
-    padding-block: var(--space-4);
+    gap: 1rem;
   }
 
-  .about-facts li {
+  .facts-list li {
+    font-size: 0.95rem;
+    color: #4A4A4A;
     display: flex;
-    justify-content: space-between;
-    font-size: var(--text-sm);
+    flex-direction: column;
+    gap: 0.2rem;
   }
 
-  .about-facts strong {
-    color: var(--color-navy);
+  .facts-list strong {
+    color: #0B192C;
   }
 
-  .about-facts span {
-    color: var(--color-charcoal-light);
+  .team-card {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 3rem;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 16px;
+    padding: 3rem;
+    align-items: center;
+    max-width: 960px;
+    margin: 3rem auto 0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
   }
 
-  .about-card-callout {
-    background: var(--color-navy);
-    color: var(--color-white);
-    padding: var(--space-4);
-    border-radius: var(--radius-md);
+  .team-photo-placeholder {
+    background: #F0F7FF;
+    border: 2px dashed #0070F3;
+    border-radius: 12px;
+    padding: 2.5rem 1.5rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
   }
 
-  .about-card-callout strong {
-    color: var(--color-orange);
-    display: block;
-    margin-bottom: var(--space-1);
+  .photo-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0070F3;
+    background: #FFFFFF;
+    padding: 0.25rem 0.65rem;
+    border-radius: 9999px;
   }
 
-  .about-card-callout p {
-    font-size: var(--text-xs);
-    opacity: 0.85;
+  .photo-icon {
+    font-size: 4rem;
+  }
+
+  .photo-caption {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #0B192C;
+  }
+
+  .team-bio h3 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #0B192C;
+    margin-bottom: 0.25rem;
+  }
+
+  .team-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #0070F3;
+    margin-bottom: 1.25rem;
+  }
+
+  .team-bio p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #4A4A4A;
+    margin-bottom: 1rem;
+  }
+
+  .team-credentials {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+
+  .cred-pill {
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: #EFF6FF;
+    color: #0070F3;
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 112, 243, 0.2);
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .val-card {
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 12px;
+    padding: 2.25rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  }
+
+  .val-icon {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .val-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0B192C;
+    margin-bottom: 0.75rem;
+  }
+
+  .val-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555555;
     margin: 0;
+  }
+
+  .diff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .diff-item {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid #EEEEEE;
+    position: relative;
+  }
+
+  .diff-num {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #0070F3;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  .diff-item h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0B192C;
+    margin-bottom: 0.5rem;
+  }
+
+  .diff-item p {
+    font-size: 0.925rem;
+    line-height: 1.6;
+    color: #555555;
+    margin: 0;
+  }
+
+  .area-box {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 3.5rem 2rem;
+    border: 1px solid #EAEAEA;
+    max-width: 880px;
+    margin: 0 auto;
+  }
+
+  .area-desc {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #4A4A4A;
+    max-width: 720px;
+    margin: 1rem auto 2rem;
+  }
+
+  .top-areas-tags {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .area-tag {
+    background: #F0F7FF;
+    color: #0070F3;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid rgba(0, 112, 243, 0.15);
+    transition: all 0.2s ease;
+  }
+
+  .area-tag:hover {
+    background: #0070F3;
+    color: #FFFFFF;
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.75rem;
+    margin-top: 3rem;
+  }
+
+  .review-card {
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-stars {
+    color: #F59E0B;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .review-text {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: #333333;
+    margin-bottom: 1.25rem;
+    flex: 1;
+    font-style: italic;
+  }
+
+  .review-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    font-size: 0.85rem;
+  }
+
+  .review-meta strong {
+    color: #0B192C;
+    font-size: 0.95rem;
+  }
+
+  .review-meta span {
+    color: #666666;
   }
 
   .cta-band {
-    background: var(--color-navy);
-    color: var(--color-white);
-    padding-block: var(--space-16);
+    background: linear-gradient(135deg, #0070F3 0%, #0050B3 100%);
+    color: #FFFFFF;
+    padding: 4.5rem 0;
   }
 
-  .cta-band h2 {
-    color: var(--color-white);
-    font-size: var(--text-3xl);
-    margin-bottom: var(--space-2);
-  }
-
-  .cta-band p {
-    color: rgba(255, 255, 255, 0.85);
-    font-size: var(--text-base);
-    max-width: 600px;
-    margin-inline: auto;
-    margin-bottom: var(--space-6);
-  }
-
-  .cta-band-actions {
+  .cta-inner {
     display: flex;
-    justify-content: center;
-    gap: var(--space-4);
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
     flex-wrap: wrap;
   }
 
+  .cta-text h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+  }
+
+  .cta-text p {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.92);
+    margin: 0;
+  }
+
+  .cta-btns {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-white {
+    background: #FFFFFF;
+    color: #0070F3;
+    font-weight: 700;
+    padding: 0.85rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  .btn-white:hover {
+    background: #F0F7FF;
+  }
+
+  .btn-outline-white {
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    font-weight: 700;
+    padding: 0.85rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  .contact-section {
+    background: #FAFBFC;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+  }
+
+  .contact-form-panel {
+    background: #FFFFFF;
+    padding: 2.75rem;
+    border-radius: 16px;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  }
+
+  .contact-form-panel h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0B192C;
+    margin-bottom: 0.5rem;
+  }
+
+  .lead-form {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .lead-form label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #2D2D2D;
+  }
+
+  .lead-form input,
+  .lead-form textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: inherit;
+  }
+
+  .lead-form input:focus,
+  .lead-form textarea:focus {
+    outline: none;
+    border-color: #0070F3;
+    box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.15);
+  }
+
+  .btn-block {
+    width: 100%;
+  }
+
+  .contact-info-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .office-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 2.25rem;
+    border: 1px solid #EAEAEA;
+  }
+
+  .office-card h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #0B192C;
+    margin-bottom: 0.75rem;
+  }
+
+  .office-addr, .office-phone, .office-hours, .office-license {
+    font-size: 0.95rem;
+    color: #4A4A4A;
+    margin-bottom: 0.5rem;
+  }
+
+  .office-phone a {
+    color: #0070F3;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .mt-4 {
+    margin-top: 2rem;
+  }
+
   @media (max-width: 900px) {
-    .about-grid {
+    .story-grid, .team-card, .contact-grid {
       grid-template-columns: 1fr;
     }
-    .about-pillars {
+    .form-row {
       grid-template-columns: 1fr;
+    }
+    .about-hero h1 {
+      font-size: 2.15rem;
+    }
+    .cta-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+    .cta-btns {
+      justify-content: center;
     }
   }
 </style>
