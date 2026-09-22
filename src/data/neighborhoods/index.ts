@@ -160,12 +160,12 @@ function buildNeighborhoodData(n: typeof neighborhoodsList[0]): NeighborhoodData
 
     featuredServices: [
       {
-        slug: "tesla-wall-connector-installation-repair",
+        slug: "tesla-wall-connector-repair",
         name: "Tesla Wall Connector Repair & Diagnostics",
         desc: `Diagnostic testing, red error light resolution, thermal sensor repair, and internal board fixes for Tesla owners in ${n.name}.`
       },
       {
-        slug: "level-2-charger-installation",
+        slug: "level-2-charger-repair",
         name: "Level 2 (240V) Home Charger Repair",
         desc: `Rapid diagnostic and component repair for ChargePoint, Rivian, JuiceBox, Autel, and universal J1772/NACS charging stations.`
       },

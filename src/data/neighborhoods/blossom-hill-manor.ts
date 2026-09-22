@@ -48,7 +48,7 @@ export const blossomHillManorData = {
       desc: "Testing circuit impedance, replacing scorched receptacles, repairing broken conduit feeds, and resolving smart charger fault codes."
     },
     {
-      slug: "tesla-wall-connector-installation-repair",
+      slug: "tesla-wall-connector-repair",
       name: "Tesla Wall Connector Repair & Diagnostics",
       desc: "48A high-speed diagnostics, red blinking error fixes, Wi-Fi pairing restoration, and OEM replacement parts for Tesla vehicles."
     },
@@ -58,7 +58,7 @@ export const blossomHillManorData = {
       desc: "Resolving tripping breakers on 100A garage subpanels, repairing burnt busbars, and continuous load rebalancing."
     },
     {
-      slug: "level-2-charger-installation",
+      slug: "level-2-charger-repair",
       name: "Level 2 EV Charger Diagnostic & Repair",
       desc: "Fast diagnostic service and component replacement for ChargePoint, Rivian, JuiceBox, and universal Level 2 stations."
     }

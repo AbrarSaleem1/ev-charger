@@ -48,12 +48,12 @@ export const rinconadaData = {
       desc: "Diagnostics and repair for shared carport charging stations, sub-meters, disconnect switches, and communal distribution panels in Rinconada Hills."
     },
     {
-      slug: "tesla-wall-connector-installation-repair",
+      slug: "tesla-wall-connector-repair",
       name: "Tesla Wall Connector Repair & Diagnostics",
       desc: "Wi-Fi connectivity troubleshooting, red error light fixes, 48A load verification, and firmware diagnostics for Tesla owners in Rinconada."
     },
     {
-      slug: "level-2-charger-installation",
+      slug: "level-2-charger-repair",
       name: "Level 2 EV Charger Diagnostic & Repair",
       desc: "Diagnostic service and component replacement for ChargePoint, Rivian, and universal 240V stations in custom residences along Granada Way."
     },

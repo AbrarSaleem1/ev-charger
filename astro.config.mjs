@@ -10,6 +10,12 @@ export default defineConfig({
       lastmod: new Date(),
     }),
   ],
+  redirects: {
+    '/services/tesla-wall-connector-installation-repair': '/services/tesla-wall-connector-repair',
+    '/services/level-2-charger-installation': '/services/level-2-charger-repair',
+    '/blog/ev-charger-installation-guide-los-gatos-homeowners': '/blog/ev-charger-repair-guide-los-gatos-homeowners',
+    '/blog/outdoor-ev-charger-installation-weatherproofing-pedestals': '/blog/outdoor-ev-charger-repair-weatherproofing-pedestals',
+  },
   build: {
     format: 'file',
   },

@@ -32,7 +32,7 @@ const serviceDetails: Record<string, {
   pricingNotes: string;
   faqs: { q: string; a: string }[];
 }> = {
-  'tesla-wall-connector-installation-repair': {
+  'tesla-wall-connector-repair': {
     tagline: 'Certified Tesla diagnostic troubleshooting and component repair for Gen 2, Gen 3, and Universal Wall Connectors throughout Los Gatos.',
     scope: [
       'Diagnostic testing and fault clearing for red blinking error codes (1, 2, 3, 4, 5, 6 blinks)',
@@ -78,7 +78,7 @@ const serviceDetails: Record<string, {
       { q: 'Do you provide warranties on Tesla charger repairs?', a: 'Yes. All of our repair work and replacement parts are backed by a comprehensive 1-year parts and craftsmanship warranty.' }
     ]
   },
-  'level-2-charger-installation': {
+  'level-2-charger-repair': {
     tagline: 'Expert 240-volt Level 2 home charging station diagnostics, component repairs, and circuit troubleshooting across Los Gatos.',
     scope: [
       'Comprehensive diagnostic fault testing for ChargePoint, JuiceBox, Rivian, Autel, Emporia, Wallbox, and Ford Pro stations',
@@ -345,14 +345,14 @@ const faqSchema = {
 };
 
 const serviceImages: Record<string, { src: string; alt: string; title: string; caption: string; badge: string }> = {
-  'tesla-wall-connector-installation-repair': {
+  'tesla-wall-connector-repair': {
     src: '/images/tesla-wall-connector-repair-diagnostics.jpg',
     alt: 'Certified Electrician Testing Tesla Wall Connector with Fluke Multimeter in Los Gatos',
     title: 'Tesla Wall Connector Diagnostics & Repair in Los Gatos, CA',
     caption: 'Our licensed electricians verify line voltage, high-temperature copper terminal torque, and communication handshakes on Tesla Wall Connectors.',
     badge: 'Tesla Diagnostic Service • Los Gatos, CA'
   },
-  'level-2-charger-installation': {
+  'level-2-charger-repair': {
     src: '/images/level-2-home-ev-charger-installation.jpg',
     alt: 'Certified Electrician Diagnosing and Repairing Level 2 Home EV Charger in Los Gatos Garage',
     title: 'Level 2 EV Charger Repair & Diagnostics in Los Gatos, CA',
@@ -382,7 +382,7 @@ const serviceImages: Record<string, { src: string; alt: string; title: string; c
   }
 };
 
-const serviceImage = serviceImages[service.slug] || serviceImages['level-2-charger-installation'];
+const serviceImage = serviceImages[service.slug] || serviceImages['level-2-charger-repair'];
 
 const serviceDetailImageSchema = {
   "@context": "https://schema.org",

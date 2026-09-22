@@ -48,12 +48,12 @@ export const almondGroveHistoricDistrictData = {
       desc: "Troubleshooting overloaded vintage panels, replacing worn double-pole breakers, and resolving voltage drop across historic properties."
     },
     {
-      slug: "tesla-wall-connector-installation-repair",
+      slug: "tesla-wall-connector-repair",
       name: "Tesla Wall Connector Repair & Diagnostics",
       desc: "Diagnostic testing, red error light clearing, grounding impedance fixes, and board repair for Tesla Gen 3 and Universal Wall Connectors."
     },
     {
-      slug: "level-2-charger-installation",
+      slug: "level-2-charger-repair",
       name: "Level 2 EV Charger Diagnostic & Repair",
       desc: "Rapid diagnostic service for ChargePoint, JuiceBox, Rivian, and universal J1772 chargers in historic residences."
     },

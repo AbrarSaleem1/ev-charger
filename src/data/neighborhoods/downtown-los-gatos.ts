@@ -43,7 +43,7 @@ export const downtownLosGatosData = {
 
   featuredServices: [
     {
-      slug: "tesla-wall-connector-installation-repair",
+      slug: "tesla-wall-connector-repair",
       name: "Tesla Wall Connector Repair & Diagnostics",
       desc: "Comprehensive diagnostic testing, red error light clearing, Wi-Fi pairing restoration, and OEM board repair for Tesla Gen 3 and Universal Wall Connectors."
     },
@@ -58,7 +58,7 @@ export const downtownLosGatosData = {
       desc: "Troubleshooting tripping 50A/60A breakers, panel busbar thermal damage, loose terminal connections, and continuous load balancing."
     },
     {
-      slug: "level-2-charger-installation",
+      slug: "level-2-charger-repair",
       name: "Level 2 EV Charger Diagnostic & Repair",
       desc: "Rapid component replacement, pilot signal troubleshooting, and 240V circuit diagnostics for ChargePoint, Rivian, JuiceBox, and Wallbox stations."
     }

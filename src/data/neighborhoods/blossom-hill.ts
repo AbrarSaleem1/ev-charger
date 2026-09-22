@@ -43,7 +43,7 @@ export const blossomHillData = {
 
   featuredServices: [
     {
-      slug: "level-2-charger-installation",
+      slug: "level-2-charger-repair",
       name: "Level 2 EV Charger Diagnostic & Repair",
       desc: "Fast diagnostic service and component replacement for ChargePoint, Autel, Rivian, and JuiceBox chargers in Blossom Hill attached garages."
     },
@@ -53,7 +53,7 @@ export const blossomHillData = {
       desc: "Replacing tripping 50A/60A breakers, repairing damaged Zinsco/FPE busbars, and balancing panel phase loads for continuous EV charging."
     },
     {
-      slug: "tesla-wall-connector-installation-repair",
+      slug: "tesla-wall-connector-repair",
       name: "Tesla Wall Connector Repair & Diagnostics",
       desc: "Dedicated 60A circuit diagnostics, Wi-Fi pairing restoration, red blinking fault fixes, and thermal sensor repairs."
     },

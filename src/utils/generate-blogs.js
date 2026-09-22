@@ -20,25 +20,25 @@ const topics = [
       '6 red blinks indicate thermal sensor throttling at internal terminal blocks caused by loose screw torque.',
       'Never ignore continuous red flashing; loose lugs can ignite internal plastics within weeks.'
     ],
-    serviceLink: '/services/tesla-wall-connector-installation-repair/',
+    serviceLink: '/services/tesla-wall-connector-repair/',
     neighborhoodLink: '/locations/downtown-los-gatos/',
     relatedSlugs: ['why-does-my-ev-charger-keep-tripping-the-breaker', 'how-to-fix-melted-240v-ev-outlet-in-garage', 'ev-charger-not-charging-complete-diagnostic-checklist']
   },
   {
     id: 2,
-    slug: 'ev-charger-installation-guide-los-gatos-homeowners',
-    title: 'EV Charger Installation Guide for Los Gatos Homeowners (2026 Requirements)',
-    category: 'Installation Guides',
+    slug: 'ev-charger-repair-guide-los-gatos-homeowners',
+    title: 'EV Charger Repair & Diagnostic Guide for Los Gatos Homeowners',
+    category: 'Repair Guides',
     date: 'September 10, 2026',
     author: 'David Miller, C-10 Master Electrician',
-    snippet: 'A complete technical breakdown of Level 2 EV charging installations in Los Gatos, including dedicated 240V branch circuits, panel capacity, and town permit steps.',
+    snippet: 'A complete technical breakdown of Level 2 EV charger repairs in Los Gatos, including dedicated 240V circuits, panel capacity, and breaker diagnostics.',
     keyTakeaways: [
-      'Standard attached garage Level 2 installations require dedicated 50A or 60A continuous-duty branch circuits.',
-      'Underground trenching to detached garages requires 18-inch burial depth and rigid conduit protection.',
-      'A 200-amp main electrical service panel heavy-up provides essential headroom for high-draw appliances.',
-      'Town of Los Gatos electrical permits ensure safety compliance and insurance protection for your property.'
+      'Standard attached garage Level 2 charger repairs resolve 50A or 60A continuous-duty circuit faults.',
+      'Underground wiring issues to detached garages require diagnostic ground-fault testing and conduit repair.',
+      'Panel upgrades and breaker replacements resolve persistent thermal throttling on high-draw chargers.',
+      'Town of Los Gatos certified electricians ensure safety compliance and full warranty protection.'
     ],
-    serviceLink: '/services/level-2-charger-installation/',
+    serviceLink: '/services/level-2-charger-repair/',
     neighborhoodLink: '/locations/blossom-hill-manor/',
     relatedSlugs: ['do-i-need-a-200-amp-panel-upgrade-for-an-ev-charger', 'town-of-los-gatos-ev-charger-permits-guide', 'charging-an-ev-in-detached-garage-trenching-subpanels']
   },
@@ -46,7 +46,7 @@ const topics = [
     id: 3,
     slug: 'hardwired-vs-nema-14-50-ev-charger-comparison',
     title: 'Hardwired vs. NEMA 14-50 Plug-In EV Charger: Which is Best for Your Home?',
-    category: 'Installation Guides',
+    category: 'Repair & Wiring Guides',
     date: 'September 02, 2026',
     author: 'David Miller, C-10 Master Electrician',
     snippet: 'Compare safety, charging speed, code requirements, and long-term reliability between direct hardwired stations and 240V plug-in receptacles in Los Gatos.',
@@ -56,7 +56,7 @@ const topics = [
       'California electrical code requires GFCI breakers on garage outlets, often causing nuisance tripping with smart EV chargers.',
       'Hardwiring eliminates the mechanical plug interface, eliminating thermal meltdown hazards.'
     ],
-    serviceLink: '/services/level-2-charger-installation/',
+    serviceLink: '/services/level-2-charger-repair/',
     neighborhoodLink: '/locations/blossom-hill/',
     relatedSlugs: ['how-to-fix-melted-240v-ev-outlet-in-garage', 'why-does-my-ev-charger-keep-tripping-the-breaker', 'what-size-wire-for-60-amp-ev-charger-circuit']
   },
@@ -76,7 +76,7 @@ const topics = [
     ],
     serviceLink: '/services/ev-charger-circuit-panel-upgrade/',
     neighborhoodLink: '/locations/almond-grove-historic-district/',
-    relatedSlugs: ['is-your-zinsco-or-fpe-panel-safe-for-an-ev-charger', 'how-much-does-ev-charger-installation-cost-los-gatos', 'dual-ev-charging-at-home-smart-power-sharing-guide']
+    relatedSlugs: ['is-your-zinsco-or-fpe-panel-safe-for-an-ev-charger', 'ev-charger-repair-guide-los-gatos-homeowners', 'dual-ev-charging-at-home-smart-power-sharing-guide']
   },
   {
     id: 5,
@@ -110,9 +110,9 @@ const topics = [
       'Applications require single-line schematics, equipment spec sheets, and load calculations.',
       'Los Gatos EV Charger Pros manages all municipal permit filings and attends on-site inspections.'
     ],
-    serviceLink: '/services/level-2-charger-installation/',
+    serviceLink: '/services/level-2-charger-repair/',
     neighborhoodLink: '/locations/downtown-los-gatos/',
-    relatedSlugs: ['how-much-does-ev-charger-installation-cost-los-gatos', 'can-i-install-an-ev-charger-in-a-historic-home-almond-grove', 'outdoor-ev-charger-installation-weatherproofing-pedestals']
+    relatedSlugs: ['ev-charger-repair-guide-los-gatos-homeowners', 'can-i-install-an-ev-charger-in-a-historic-home-almond-grove', 'outdoor-ev-charger-repair-weatherproofing-pedestals']
   },
   {
     id: 7,
@@ -128,9 +128,9 @@ const topics = [
       'Smart chargers can be programmed to automatically draw power only during designated off-peak windows.',
       'Pairing off-peak charging with solar production delivers the lowest overall operating energy footprint.'
     ],
-    serviceLink: '/services/level-2-charger-installation/',
+    serviceLink: '/services/level-2-charger-repair/',
     neighborhoodLink: '/locations/east-los-gatos/',
-    relatedSlugs: ['solar-ev-charging-los-gatos-powerwall-integration', 'level-1-vs-level-2-ev-charging-speed-cost-comparison', 'ev-charger-installation-guide-los-gatos-homeowners']
+    relatedSlugs: ['solar-ev-charging-los-gatos-powerwall-integration', 'level-1-vs-level-2-ev-charging-speed-cost-comparison', 'ev-charger-repair-guide-los-gatos-homeowners']
   },
   {
     id: 8,
@@ -200,9 +200,9 @@ const topics = [
       'When one vehicle completes charging, the second station automatically ramps up to full 48A speed.',
       'Saves thousands of dollars by avoiding costly 400A utility service upgrades.'
     ],
-    serviceLink: '/services/tesla-wall-connector-installation-repair/',
+    serviceLink: '/services/tesla-wall-connector-repair/',
     neighborhoodLink: '/locations/belwood/',
-    relatedSlugs: ['do-i-need-a-200-amp-panel-upgrade-for-an-ev-charger', 'how-much-does-ev-charger-installation-cost-los-gatos', 'tesla-universal-wall-connector-vs-chargepoint-home-flex']
+    relatedSlugs: ['do-i-need-a-200-amp-panel-upgrade-for-an-ev-charger', 'ev-charger-repair-guide-los-gatos-homeowners', 'tesla-universal-wall-connector-vs-chargepoint-home-flex']
   },
   {
     id: 12,
@@ -218,14 +218,14 @@ const topics = [
       'THHN copper inside metal conduit allows full ampacity and superior thermal dissipation.',
       'Runs over 75 feet should be upsized to #4 AWG copper to prevent line voltage drop.'
     ],
-    serviceLink: '/services/level-2-charger-installation/',
+    serviceLink: '/services/level-2-charger-repair/',
     neighborhoodLink: '/locations/blossom-hill-manor/',
     relatedSlugs: ['hardwired-vs-nema-14-50-ev-charger-comparison', 'why-does-my-ev-charger-keep-tripping-the-breaker', 'charging-an-ev-in-detached-garage-trenching-subpanels']
   },
   {
     id: 13,
     slug: 'level-1-vs-level-2-ev-charging-speed-cost-comparison',
-    title: 'Level 1 vs. Level 2 EV Charging: Speed, Daily Range & Installation Comparison',
+    title: 'Level 1 vs. Level 2 EV Charging: Speed, Daily Range & Diagnostic Comparison',
     category: 'Buyer Guide',
     date: 'June 20, 2026',
     author: 'David Miller, C-10 Master Electrician',
@@ -236,15 +236,15 @@ const topics = [
       'Level 2 charging is 10% to 15% more electrically efficient due to lower onboard computer idle draw.',
       'An essential upgrade for daily Silicon Valley commuters traveling over 30 miles daily.'
     ],
-    serviceLink: '/services/level-2-charger-installation/',
+    serviceLink: '/services/level-2-charger-repair/',
     neighborhoodLink: '/locations/cambrian-pioneer/',
-    relatedSlugs: ['how-much-does-ev-charger-installation-cost-los-gatos', 'hardwired-vs-nema-14-50-ev-charger-comparison', 'pge-ev2-a-rate-plan-los-gatos-charging-schedule']
+    relatedSlugs: ['ev-charger-repair-guide-los-gatos-homeowners', 'hardwired-vs-nema-14-50-ev-charger-comparison', 'pge-ev2-a-rate-plan-los-gatos-charging-schedule']
   },
   {
     id: 14,
     slug: 'charging-an-ev-in-detached-garage-trenching-subpanels',
     title: 'Charging an EV in a Detached Garage: Underground Trenching & Subpanel Guide',
-    category: 'Installation Guides',
+    category: 'Garage Wiring & Subpanels',
     date: 'June 11, 2026',
     author: 'David Miller, C-10 Master Electrician',
     snippet: 'How to route 240V power across your yard to a detached garage or carriage house with code-compliant 18-inch trenching and 100A subpanels.',
@@ -256,7 +256,7 @@ const topics = [
     ],
     serviceLink: '/services/ev-charger-circuit-panel-upgrade/',
     neighborhoodLink: '/locations/blossom-hill-manor/',
-    relatedSlugs: ['how-much-does-ev-charger-installation-cost-los-gatos', 'what-size-wire-for-60-amp-ev-charger-circuit', 'outdoor-ev-charger-installation-weatherproofing-pedestals']
+    relatedSlugs: ['ev-charger-repair-guide-los-gatos-homeowners', 'what-size-wire-for-60-amp-ev-charger-circuit', 'outdoor-ev-charger-repair-weatherproofing-pedestals']
   },
   {
     id: 15,
@@ -272,9 +272,9 @@ const topics = [
       'Both units support full 48-amp hardwired speeds on a 60-amp dedicated circuit.',
       'Tesla Universal is typically preferred for households planning to own both a Tesla and non-Tesla EV.'
     ],
-    serviceLink: '/services/tesla-wall-connector-installation-repair/',
+    serviceLink: '/services/tesla-wall-connector-repair/',
     neighborhoodLink: '/locations/north-forty/',
-    relatedSlugs: ['hardwired-vs-nema-14-50-ev-charger-comparison', 'dual-ev-charging-at-home-smart-power-sharing-guide', 'how-much-does-ev-charger-installation-cost-los-gatos']
+    relatedSlugs: ['hardwired-vs-nema-14-50-ev-charger-comparison', 'dual-ev-charging-at-home-smart-power-sharing-guide', 'ev-charger-repair-guide-los-gatos-homeowners']
   },
   {
     id: 16,
@@ -290,7 +290,7 @@ const topics = [
       'Bidirectional monitoring devices dynamically balance household power needs with vehicle charging.',
       'Reduces dependence on expensive peak grid power and delivers true zero-emission driving.'
     ],
-    serviceLink: '/services/level-2-charger-installation/',
+    serviceLink: '/services/level-2-charger-repair/',
     neighborhoodLink: '/locations/austin/',
     relatedSlugs: ['pge-ev2-a-rate-plan-los-gatos-charging-schedule', 'dual-ev-charging-at-home-smart-power-sharing-guide', 'do-i-need-a-200-amp-panel-upgrade-for-an-ev-charger']
   },
@@ -310,7 +310,7 @@ const topics = [
     ],
     serviceLink: '/services/commercial-multi-unit-ev-charging/',
     neighborhoodLink: '/locations/winchester-blvd-corridor/',
-    relatedSlugs: ['california-civil-code-4781-hoa-ev-charger-rights-los-gatos', 'outdoor-ev-charger-installation-weatherproofing-pedestals', 'town-of-los-gatos-ev-charger-permits-guide']
+    relatedSlugs: ['california-civil-code-4781-hoa-ev-charger-rights-los-gatos', 'outdoor-ev-charger-repair-weatherproofing-pedestals', 'town-of-los-gatos-ev-charger-permits-guide']
   },
   {
     id: 18,
@@ -328,23 +328,23 @@ const topics = [
     ],
     serviceLink: '/services/ev-charger-circuit-panel-upgrade/',
     neighborhoodLink: '/locations/blossom-hill/',
-    relatedSlugs: ['do-i-need-a-200-amp-panel-upgrade-for-an-ev-charger', 'why-does-my-ev-charger-keep-tripping-the-breaker', 'how-much-does-ev-charger-installation-cost-los-gatos']
+    relatedSlugs: ['do-i-need-a-200-amp-panel-upgrade-for-an-ev-charger', 'why-does-my-ev-charger-keep-tripping-the-breaker', 'ev-charger-repair-guide-los-gatos-homeowners']
   },
   {
     id: 19,
-    slug: 'outdoor-ev-charger-installation-weatherproofing-pedestals',
-    title: 'Outdoor EV Charger Installation in Los Gatos: Weatherproofing & Pedestal Options',
-    category: 'Installation Guides',
+    slug: 'outdoor-ev-charger-repair-weatherproofing-pedestals',
+    title: 'Outdoor EV Charger Repair in Los Gatos: Weatherproofing & Pedestal Diagnostics',
+    category: 'Repair Guides',
     date: 'April 29, 2026',
     author: 'David Miller, C-10 Master Electrician',
-    snippet: 'How to install durable, weather-resistant charging stations on uncovered driveways, carports, and parking pads exposed to California rain and sun.',
+    snippet: 'How to diagnose and repair outdoor charging stations on uncovered driveways, carports, and parking pads exposed to California rain and sun.',
     keyTakeaways: [
-      'Outdoor stations require NEMA 4 or NEMA 4X weather ratings to prevent moisture intrusion.',
+      'Outdoor stations require NEMA 4 or NEMA 4X weather ratings to prevent moisture intrusion and short circuits.',
       'Commercial stainless steel pedestals provide secure mounting for driveway motor courts.',
       'In-use weatherproof covers and spring-loaded cable retractors protect connectors from damage.',
       'Proper silicone sealing and bottom-entry conduit routing prevent internal water condensation.'
     ],
-    serviceLink: '/services/level-2-charger-installation/',
+    serviceLink: '/services/level-2-charger-repair/',
     neighborhoodLink: '/locations/lexington-hills/',
     relatedSlugs: ['charging-an-ev-in-detached-garage-trenching-subpanels', 'commercial-ev-charging-stations-for-los-gatos-businesses', 'hardwired-vs-nema-14-50-ev-charger-comparison']
   },
@@ -376,7 +376,7 @@ Under National Electrical Code (NEC Article 625), electric vehicle charging is c
 
 This designation imposes strict electrical safety mandates. A circuit breaker, branch conductors, and electrical terminal lugs must be sized at 125% of the vehicle continuous draw. For instance, a vehicle charging at 48 amps requires a dedicated 60-amp double-pole circuit breaker and heavy-duty copper wire rated for 90°C thermal conditions. When older wiring or undersized components are used, sustained heat accumulates inside electrical enclosures, accelerating component fatigue and triggering safety shutoffs.
 
-For homeowners in Los Gatos, where properties range from century-old Victorians in [Almond Grove Historic District](${topic.neighborhoodLink}) to sprawling mid-century ranches in Blossom Hill, understanding these continuous load dynamics is essential to preventing electrical fires and maintaining equipment longevity.
+For homeowners in Los Gatos, where properties range from century-old Victorians in [Almond Grove Historic District](/locations/downtown-los-gatos/) to sprawling mid-century ranches in Blossom Hill, understanding these continuous load dynamics is essential to preventing electrical fires and maintaining equipment longevity.
 
 ### Identifying Root Causes and Common Symptoms
 Electrical faults rarely occur without warning. Homeowners frequently notice subtle operational changes days or weeks before a catastrophic failure occurs. Key indicators include:
@@ -402,12 +402,12 @@ Loose terminal connections are the single most common cause of EV charger failur
 #### 4. Hardware Replacement & Code-Compliant Upgrades
 If diagnostic testing reveals an obsolete breaker, scorched receptacle, or degraded charging cable, we replace the component with commercial-grade hardware. We install industrial Hubbell receptacles, commercial high-interrupting-capacity circuit breakers, or convert problematic plug-in units to permanent hardwired connections for superior safety.
 
-To learn more about professional installations and diagnostic testing, explore our dedicated [${topic.category}](${topic.serviceLink}) services.
+To learn more about professional diagnostics and repair, explore our dedicated [${topic.category}](${topic.serviceLink}) services.
 
 ### Local Permitting & Town of Los Gatos Building Regulations
-In the Town of Los Gatos, all new high-voltage EV charging installations and electrical panel heavy-ups require building permits issued by the Town Community Development Department, located at 110 E. Main Street. Unpermitted work can jeopardize your homeowner insurance policy, violate local building codes, and create complications when selling your home.
+In the Town of Los Gatos, all high-voltage EV charging repairs, subpanel fixes, and electrical panel upgrades require adherence to local municipal building codes and safety standards. Unpermitted work can jeopardize your homeowner insurance policy, violate local building codes, and create complications when selling your home.
 
-Our electrical contractors manage the entire permitting workflow: drafting single-line electrical blueprints, calculating total household service demand under NEC Article 220, submitting documentation, and scheduling the required on-site municipal inspection. Because our work strictly adheres to California Title 24 energy standards and local fire codes, our projects consistently achieve immediate permit sign-off.
+Our electrical contractors manage the entire compliance workflow: drafting single-line electrical blueprints, calculating total household service demand under NEC Article 220, submitting documentation, and scheduling the required on-site municipal inspection. Because our work strictly adheres to California Title 24 energy standards and local fire codes, our projects consistently achieve immediate code sign-off.
 
 ### Long-Term Maintenance and Prevention Guidelines
 To maintain uninterrupted charging performance and protect your vehicle battery investment, implement these professional maintenance practices:
@@ -417,7 +417,7 @@ To maintain uninterrupted charging performance and protect your vehicle battery 
 - **Annual Electrical Panel Tune-Up:** Have a licensed electrician inspect your main service panel annually to check for busbar oxidation, verify surge protector operation, and check terminal torque.
 
 ### Professional Assistance in Los Gatos
-If you are experiencing persistent charging faults, planning a new Level 2 installation, or need an electrical panel heavy-up, trust the local specialists. Los Gatos EV Charger Pros operates directly from 14165 Capri Drive in Los Gatos, California (Phone: ${topic.title.includes('Tesla') ? '(408) 539-3786' : '+1 (408) 539-3786'}). We provide same-day priority dispatch, detailed written proposals, and guaranteed municipal code compliance across all 25 Los Gatos neighborhoods.`;
+If you are experiencing persistent charging faults, need fast charger diagnostics, or require electrical circuit and panel repair, trust the local specialists. Los Gatos EV Charger Pros operates directly from 14165 Capri Drive in Los Gatos, California (Phone: ${topic.title.includes('Tesla') ? '(408) 539-3786' : '+1 (408) 539-3786'}). We provide same-day priority dispatch, detailed written proposals, and guaranteed municipal code compliance across all 25 Los Gatos neighborhoods.`;
 }
 
 const blogs = topics.map((t) => {

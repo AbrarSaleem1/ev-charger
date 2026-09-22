@@ -1,8 +1,8 @@
 [
   {
-    "id": "tesla-wall-connector-installation-repair",
+    "id": "tesla-wall-connector-repair",
     "name": "Tesla Wall Connector Repair",
-    "slug": "tesla-wall-connector-installation-repair",
+    "slug": "tesla-wall-connector-repair",
     "shortName": "Tesla Wall Connector Repair",
     "icon": "zap",
     "shortDescription": "Specialized repair and troubleshooting services for Tesla Wall Connectors (Gen 2, Gen 3, and Universal). Fast resolution of red blinking error codes, loose terminal screws, and thermal throttling.",
@@ -10,9 +10,9 @@
     "metaDescription": "Certified Tesla Wall Connector repair in Los Gatos, CA. We fix flashing red lights, thermal power throttling, tripping 60A breakers, and damaged charging cables."
   },
   {
-    "id": "level-2-charger-installation",
+    "id": "level-2-charger-repair",
     "name": "Level 2 EV Charger Repair",
-    "slug": "level-2-charger-installation",
+    "slug": "level-2-charger-repair",
     "shortName": "Level 2 Charger Repair",
     "icon": "battery-charging",
     "shortDescription": "Comprehensive repair and troubleshooting services for all 240V Level 2 charging stations: ChargePoint, JuiceBox, Rivian, Autel, Emporia, Wallbox, and Ford Pro.",

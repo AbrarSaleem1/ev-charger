@@ -104,7 +104,7 @@ function getBlogContentImage(post: (typeof blogs)[0]) {
   if (slug.includes('panel') || slug.includes('zinsco') || slug.includes('wire-size') || cat.includes('electrical panel')) {
     return {
       src: '/images/ev-electrical-panel-upgrade-200-amp.jpg',
-      alt: `200 Amp electrical panel service upgrade and breaker installation for ${post.title}`,
+      alt: `200 Amp electrical panel service upgrade and breaker replacement for ${post.title}`,
       title: `${post.title} - Dedicated Panel Capacity`,
       caption: `Dedicated high-amperage breakers and 200A service heavy-ups ensure safe continuous charging without tripping main breakers.`,
       badge: 'Panel Heavy-Up • NEC Continuous Load'
@@ -124,7 +124,7 @@ function getBlogContentImage(post: (typeof blogs)[0]) {
       src: '/images/commercial-multi-unit-ev-charging-stations.jpg',
       alt: `Commercial and multi-unit EV charging station infrastructure for ${post.title}`,
       title: `${post.title} - Multi-Unit & Commercial Charging`,
-      caption: `Multi-family and commercial Level 2 charging stations with smart power sharing and code-compliant installation across Los Gatos.`,
+      caption: `Multi-family and commercial Level 2 charging stations with smart power sharing and code-compliant repair across Los Gatos.`,
       badge: 'Commercial & Multi-Unit • Bay Area'
     };
   }
@@ -139,10 +139,10 @@ function getBlogContentImage(post: (typeof blogs)[0]) {
   }
   return {
     src: '/images/level-2-home-ev-charger-installation.jpg',
-    alt: `Professional Level 2 EV charging station installation for ${post.title}`,
+    alt: `Professional Level 2 EV charging station diagnostic and repair for ${post.title}`,
     title: `${post.title} - Level 2 Home Charger`,
-    caption: `Proper conduit installation, dedicated continuous load wiring, and clean garage mounting for long-term reliability.`,
-    badge: 'Level 2 Installation • Los Gatos, CA'
+    caption: `Proper conduit wiring, dedicated continuous load diagnostics, and clean garage mounting for long-term reliability.`,
+    badge: 'Level 2 Repair • Los Gatos, CA'
   };
 }
 
@@ -260,7 +260,7 @@ const blogContentImage = getBlogContentImage(post);
             <span class="section-badge">Same-Day Local Dispatch</span>
             <h3>Need Hands-On Electrical Troubleshooting in Los Gatos?</h3>
             <p>
-              Don't risk electrical fires or component damage. Our licensed C-10 master electricians are available 7 days a week for on-site diagnostic testing, Tesla Wall Connector repairs, and Level 2 installations.
+              Don't risk electrical fires or component damage. Our licensed C-10 master electricians are available 7 days a week for on-site diagnostic testing, Tesla Wall Connector repairs, and Level 2 charger repairs.
             </p>
             <div class="cta-btn-group">
               <a href={`tel:${siteConfig.phone}`} class="btn btn-primary btn-lg">
