@@ -8,15 +8,15 @@ import blogs from '../../data/blogs.json';
 
 const categories = Array.from(new Set(blogs.map((b) => b.category)));
 
-const pageTitle = "EV Charging Guides & Electrical Knowledge Base | Los Gatos EV Pros";
-const pageDescription = "Explore 20 comprehensive technical guides on EV charger installation, Tesla Wall Connector diagnostics, 200A panel upgrades, and local Los Gatos code compliance.";
+const pageTitle = "EV Charger Repair & Diagnostic Guides | Los Gatos EV Charger Repair";
+const pageDescription = "Explore 20 comprehensive technical guides on EV charger repair, Tesla Wall Connector diagnostics, circuit breaker troubleshooting, and code compliance in Los Gatos.";
 const canonicalUrl = `${siteConfig.domain}/blog/`;
 
 const blogSchema = {
   "@context": "https://schema.org",
   "@type": "Blog",
-  "name": `${siteConfig.businessName} EV Charging Knowledge Base`,
-  "description": "20 in-depth homeowner and commercial advice guides covering EV charging speed, cost, troubleshooting, and code compliance in Los Gatos.",
+  "name": `${siteConfig.businessName} EV Charger Repair Knowledge Base`,
+  "description": "20 in-depth homeowner and commercial guides covering EV charger repair, diagnostic codes, troubleshooting, and code compliance in Los Gatos.",
   "url": canonicalUrl,
   "publisher": {
     "@type": "Organization",
@@ -63,10 +63,10 @@ const breadcrumbSchema = {
 
       <div class="hero-grid">
         <div class="hero-content">
-          <span class="badge-tag">Electrical Knowledge Hub</span>
-          <h1>Los Gatos EV Charging Guides & Technical Library</h1>
+          <span class="badge-tag">Diagnostic Knowledge Hub</span>
+          <h1>Los Gatos EV Charger Repair Guides & Diagnostic Library</h1>
           <p class="hero-lead">
-            Explore 20 comprehensive, electrician-authored guides covering Level 2 home charging, Tesla Wall Connector error code diagnostics, electrical panel heavy-ups, and Town of Los Gatos permitting.
+            Explore 20 comprehensive, electrician-authored guides covering Level 2 EV charger repairs, Tesla Wall Connector error codes, circuit breaker troubleshooting, and Town of Los Gatos safety standards.
           </p>
         </div>
 

@@ -33,24 +33,24 @@ const serviceDetails: Record<string, {
   faqs: { q: string; a: string }[];
 }> = {
   'tesla-wall-connector-installation-repair': {
-    tagline: 'Certified Tesla installation and diagnostic repair for Gen 2, Gen 3, and Universal Wall Connectors throughout Los Gatos.',
+    tagline: 'Certified Tesla diagnostic troubleshooting and component repair for Gen 2, Gen 3, and Universal Wall Connectors throughout Los Gatos.',
     scope: [
-      'Dedicated 60-amp double-pole circuit installation for maximum 48A (11.5 kW) charging velocity',
-      'Heavy-duty #6 AWG or #4 AWG THHN copper wiring run through rigid steel or EMT conduit',
-      'Wi-Fi commissioning, commissioning wizard setup, and firmware synchronization',
-      'Dual-unit power sharing setup for multi-Tesla households on a single electrical feed',
-      'Diagnostic testing and component repair for red flashing error codes (3, 4, 6 blinks)'
+      'Diagnostic testing and fault clearing for red blinking error codes (1, 2, 3, 4, 5, 6 blinks)',
+      'Thermal power-throttling investigation and high-resistance wire terminal re-torqueing',
+      'Wi-Fi commissioning troubleshooting, commissioning wizard recovery, and firmware synchronization',
+      'Diagnostic repair and replacement of loose, overheated, or scorched terminal lug blocks',
+      'Dual-unit power sharing diagnostic re-balancing and wireless handshake verification'
     ],
     causesAndEducation: [
-      'Tesla Wall Connectors draw continuous maximum current for hours. If terminal lugs are torqued by hand rather than calibrated torque screwdrivers, microscopic thermal expansion causes terminal looseness and heat buildup.',
-      'A flashing red light indicates an active safety interlock. Gen 3 units perform real-time resistance checks between ground, neutral, and line legs. High ground impedance or line voltage dips below 208V trigger protective shutoffs.',
-      'Our certified electricians use factory diagnostic tools to communicate directly with the Wall Connector internal web server, inspect fault logs, and restore full-speed charging safely.'
+      'Tesla Wall Connectors draw continuous maximum current for hours. If terminal lugs are torqued by hand rather than calibrated digital torque screwdrivers, microscopic thermal expansion causes terminal looseness, electrical resistance, and severe heat buildup.',
+      'A flashing red light indicates an active safety interlock. Gen 3 units perform real-time resistance checks between ground, neutral, and line legs. High ground impedance, loose neutral bonds, or line voltage dips below 208V trigger protective shutoffs.',
+      'Our certified electricians use factory diagnostic tools to communicate directly with the Wall Connector internal web server, inspect fault logs, and restore full-speed 48A charging safely.'
     ],
     executionProcess: [
-      { title: 'Load Calculation & Breaker Selection', desc: 'We inspect your main panel and verify capacity for a dedicated 60A breaker under NEC continuous load standards.' },
-      { title: 'Conduit & Wire Pull', desc: 'We install commercial EMT or rigid conduit and pull high-temp 90°C copper conductors directly to the mounting location.' },
-      { title: 'Digital Precision Torqueing', desc: 'We torque all terminal screws to exactly 4.5 N-m (40 in-lbs) to prevent thermal degradation.' },
-      { title: 'Wi-Fi Pairing & Commissioning', desc: 'We connect to the unit broadcast Wi-Fi, set breaker ratings, configure power sharing if needed, and conduct test charges.' }
+      { title: 'Thermal Safety Scan & Internal Log Inspection', desc: 'We inspect the charging unit for scorch marks and access the internal diagnostic web server to read precise fault codes.' },
+      { title: 'True-RMS Voltage & Ground Impedance Metering', desc: 'We measure line-to-line voltage under active load, verify grounding electrode resistance, and inspect breaker connections.' },
+      { title: 'Digital Precision Re-Torqueing & Lug Restoration', desc: 'We clean terminal blocks, replace damaged lugs, and torque all screws to exactly 4.5 N-m (40 in-lbs) with digital tools.' },
+      { title: 'Full 48A Continuous Load Test', desc: 'We run an active test charge at maximum amperage while monitoring thermal levels with infrared imaging to verify permanent repair.' }
     ],
     toolsAndMethods: [
       'Digital calibrated torque screwdrivers to ensure factory-spec terminal seating',
@@ -62,41 +62,41 @@ const serviceDetails: Record<string, {
       'Tesla Wall Connector indicator light is blinking red or solid red',
       'Your Tesla vehicle displays "Charging Speed Reduced" or "Check Power Source"',
       'The Wall Connector handle or wall cable feels uncomfortably hot to the touch',
-      'You are purchasing a new Tesla Model 3, Model Y, Model S, Model X, or Cybertruck'
+      'The dedicated 60A circuit breaker trips repeatedly during charging'
     ],
     commonProblemsSolved: [
       { problem: '4 Red Blinks (High Resistance)', solution: 'Re-terminated wire lugs, eliminated line voltage drop, and verified main panel lug torque.' },
       { problem: 'Breaker Tripping After 20 Minutes', solution: 'Replaced standard 50A breaker with continuous-rated 60A commercial breaker and upsized conductors.' },
       { problem: 'Unable to Pair with Home Wi-Fi', solution: 'Configured a dedicated 2.4 GHz IoT Wi-Fi channel and updated internal Tesla firmware.' }
     ],
-    pricingNotes: 'Every Tesla Wall Connector installation or diagnostic project receives an itemized technical proposal based on conduit pathway distance, panel capacity, and mounting specifications.',
+    pricingNotes: 'Every Tesla Wall Connector diagnostic and repair project receives an itemized technical proposal detailing testing procedures, replacement parts, and warranty coverage.',
     faqs: [
-      { q: 'Can a Tesla Wall Connector charge non-Tesla electric vehicles?', a: 'Yes! The Tesla Universal Wall Connector features an integrated J1772 magic dock adapter, allowing it to charge any electric car (Rivian, Ford, Porsche, Hyundai) as well as Tesla vehicles.' },
-      { q: 'What size breaker is required for full-speed 48-amp charging?', a: 'Under the 80% continuous load rule of the NEC, a 48-amp charger strictly requires a 60-amp circuit breaker and minimum #6 AWG copper wire.' },
-      { q: 'Why is my Tesla charging at only 16 or 24 amps instead of 48 amps?', a: 'This occurs when line voltage drops, when the internal temperature sensor throttles current, or when the Wall Connector was commissioned on a lower breaker setting during initial setup.' },
-      { q: 'Does Los Gatos require an electrical permit to install a Tesla charger?', a: 'Yes. The Town of Los Gatos requires an electrical building permit. We manage all permit filings and schedule the town inspection for you.' },
-      { q: 'Can two Tesla Wall Connectors share a single electrical circuit?', a: 'Yes! Gen 3 Wall Connectors communicate wirelessly to dynamically balance available power between two vehicles without overloading your panel.' }
+      { q: 'Why is my Tesla Wall Connector flashing red?', a: 'A flashing red light indicates an error code. 3 blinks indicate ground fault errors, 4 blinks signal high electrical resistance or terminal overheating, and 6 blinks indicate thermal sensor protection. Our technicians diagnose and clear these errors promptly.' },
+      { q: 'Why is my Tesla charging at only 16 or 24 amps instead of 48 amps?', a: 'This occurs when line voltage drops below 208V, when internal thermal sensors throttle current to protect the unit from melting, or when configuration settings were lost. We measure impedance and restore full 48A speed.' },
+      { q: 'Can you replace a damaged Tesla charging cable or handle?', a: 'Yes! We carry replacement cables, handles with charge port release buttons, and internal contactor boards to repair damaged Wall Connectors without requiring full unit replacement.' },
+      { q: 'How fast can an electrician arrive in Los Gatos for a Tesla charger repair?', a: 'Our dispatch center is located at 14165 Capri Drive in Los Gatos. We offer same-day priority service with typical arrival times of 30 to 60 minutes.' },
+      { q: 'Do you provide warranties on Tesla charger repairs?', a: 'Yes. All of our repair work and replacement parts are backed by a comprehensive 1-year parts and craftsmanship warranty.' }
     ]
   },
   'level-2-charger-installation': {
-    tagline: 'Professional 240-volt Level 2 home charging station installations for all electric vehicle makes and models across Los Gatos.',
+    tagline: 'Expert 240-volt Level 2 home charging station diagnostics, component repairs, and circuit troubleshooting across Los Gatos.',
     scope: [
-      'Dedicated 240V circuit design (40A, 50A, or 60A) customized to your vehicle onboard charger',
-      'Installation of hardwired stations or commercial-grade NEMA 14-50 receptacles',
-      'Compatibility with ChargePoint, Rivian, JuiceBox, Autel, Emporia, Wallbox, and Ford Pro',
-      'Interior crawlspace routing, attic runs, or exterior conduit trenching to detached garages',
-      'Complete Town of Los Gatos permitting and municipal building inspection coordination'
+      'Comprehensive diagnostic fault testing for ChargePoint, JuiceBox, Rivian, Autel, Emporia, Wallbox, and Ford Pro stations',
+      'Repair and replacement of damaged J1772 and NACS charging handles, latch mechanisms, and pins',
+      'Troubleshooting nuisance GFCI breaker trips, false ground faults, and vehicle handshake failures',
+      'Replacement of overheated, melted, or loose 240V NEMA 14-50 wall receptacles with industrial Hubbell outlets',
+      'Conduit, wiring, and ground bonding repairs for attached garages, detached structures, and outdoor pedestals'
     ],
     causesAndEducation: [
-      'Standard 120V Level 1 trickle chargers take 24 to 40 hours to charge a modern electric SUV. Upgrading to a 240V Level 2 station reduces charging times to 4 to 8 hours.',
-      'Hardwiring a Level 2 charger provides the safest connection, delivers up to 48 amps (11.5 kW), and prevents nuisance GFCI breaker trips associated with plug-in receptacles.',
-      'Our electricians evaluate your home daily mileage and onboard vehicle charger capacity to specify the perfect amperage and conduit configuration.'
+      'Level 2 EV chargers pull sustained high continuous power for 6 to 10 hours. Ordinary wear, loose terminal screws, or cheap builder-grade receptacles suffer rapid contact oxidation, causing localized melting and electrical short circuits.',
+      'Many plug-in Level 2 stations experience nuisance breaker tripping due to a dual-GFCI conflict: both the breaker in the main panel and the charging station contain ground-fault monitors that interfere with each other. Converting to a dedicated hardwired connection permanently eliminates this issue.',
+      'Our licensed electricians carry factory test simulators to verify pilot wire wave frequencies, measure continuous resistance, and restore reliable overnight charging.'
     ],
     executionProcess: [
-      { title: 'Electrical Capacity Evaluation', desc: 'We calculate panel capacity and select the optimal circuit rating (40A, 50A, or 60A).' },
-      { title: 'Conduit Routing & Wire Pull', desc: 'We install protective steel EMT or schedule 80 PVC conduit and pull continuous copper conductors.' },
-      { title: 'Station Mounting & Termination', desc: 'We securely mount the charger to wall framing and torque all electrical terminations.' },
-      { title: 'Commissioning & Test Charge', desc: 'We verify line voltage under load, pair mobile apps, and test charging with an EV.' }
+      { title: 'Visual & Thermal Safety Scan', desc: 'We inspect the charging unit, cable, plug, and breaker panel with infrared cameras to locate hot spots.' },
+      { title: 'Electrical & Pilot Signal Metering', desc: 'We test phase voltage, neutral stability, ground loop resistance, and pilot communication handshakes.' },
+      { title: 'Component Replacement & Terminal Re-Torque', desc: 'We replace damaged breakers, melted outlets, or frayed cables, torquing all terminals with calibrated digital tools.' },
+      { title: 'Full-Amperage Verification Test', desc: 'We simulate an EV charge cycle under maximum amperage to verify temperature stability and permanent fault clearance.' }
     ],
     toolsAndMethods: [
       'Heavy-wall EMT conduit and steel set-screw couplings for physical protection against vehicle bumper impact',
@@ -105,44 +105,44 @@ const serviceDetails: Record<string, {
       'UL-listed commercial double-pole circuit breakers'
     ],
     whenToCall: [
-      'You are bringing home a new electric vehicle or plug-in hybrid',
-      'Your existing charger takes too long to replenish your daily commuter range',
-      'You need an outdoor weatherproof charging pedestal for an uncovered driveway',
-      'You want to convert a plug-in charger to a faster hardwired installation'
+      'Your Level 2 charging station refuses to power on or displays an orange/red fault light',
+      'The circuit breaker trips repeatedly after 15 to 45 minutes of vehicle charging',
+      'The charging plug or wall outlet feels uncomfortably hot or shows scorched plastic',
+      'Your vehicle displays "Charging Interrupted" or fails to lock onto the connector'
     ],
     commonProblemsSolved: [
       { problem: 'Nuisance GFCI Breaker Tripping', solution: 'Converted plug-in station to a hardwired setup, eliminating dual-GFCI monitoring conflicts.' },
       { problem: 'Overheating Garage Wall Outlet', solution: 'Replaced cheap builders-grade outlet with industrial Hubbell 14-50 receptacle and #6 copper.' },
-      { problem: 'Detached Garage Lacking 240V', solution: 'Trenched 18 inches deep to detached garage, buried schedule 80 PVC, and installed a 100A subpanel.' }
+      { problem: 'Detached Garage Voltage Drop', solution: 'Repaired underground conduit connections, upsized wire conductors, and restored voltage stability.' }
     ],
-    pricingNotes: 'Each Level 2 charging station project is custom engineered based on vehicle onboard charging rate, garage conduit routing, and dedicated breaker requirements.',
+    pricingNotes: 'Every Level 2 repair is quoted upfront with clear line-item pricing for diagnostic testing, labor, and replacement electrical components.',
     faqs: [
-      { q: 'Which is better: hardwired or plug-in Level 2 charger?', a: 'Hardwired is superior for home use: it allows faster 48A charging, eliminates loose plug hazards, and avoids nuisance GFCI breaker trips.' },
-      { q: 'Will a Level 2 charger work with all electric cars?', a: 'Yes! Universal Level 2 chargers use the industry-standard J1772 or NACS connector, making them compatible with every EV on the road.' },
-      { q: 'How long does the installation take?', a: 'Most standard attached garage installations are completed in 3 to 5 hours by our certified electrical crew.' },
-      { q: 'Do you handle the Town of Los Gatos permits?', a: 'Yes. We manage the entire permit process from blueprint submission to the final building inspector walkthrough.' },
-      { q: 'Can I install a Level 2 charger outdoors?', a: 'Yes. We install NEMA 4 or 4X weatherproof charging stations and pedestals designed for outdoor rain, sun, and fog.' }
+      { q: 'Why does my Level 2 charger trip the breaker after 30 minutes?', a: 'This is usually caused by thermal fatigue in the breaker, an undersized wire gauge, or a dual-GFCI conflict. Standard breakers derate when they get hot, causing them to trip under continuous 32A to 48A loads. We diagnose and replace faulty breakers with continuous-duty units.' },
+      { q: 'Why did my 240V NEMA 14-50 garage outlet melt?', a: 'Most homes have cheap $15 builder-grade outlets made of plastic and thin contacts meant for clothes dryers that run for only 40 minutes. An EV pulls heavy continuous current for 8 hours. We replace melted outlets with commercial-grade Hubbell industrial receptacles designed for heavy continuous duty.' },
+      { q: 'Can you repair a broken J1772 or NACS charging plug?', a: 'Yes. If the plastic latch is snapped or the connector pins are pitted and burned, we can replace the connector head and cable assembly without replacing the entire charging station.' },
+      { q: 'Do you service all brands of Level 2 chargers?', a: 'Yes! We repair ChargePoint Home Flex, JuiceBox, Rivian Wall Chargers, Autel MaxiCharger, Wallbox Pulsar Plus, Emporia, and Ford Charge Station Pro.' },
+      { q: 'How long does a typical EV charger repair take?', a: 'Most on-site diagnostic and component repairs are completed within 1 to 2 hours on our initial visit.' }
     ]
   },
   'ev-charger-circuit-panel-upgrade': {
-    tagline: '200A and 400A electrical service heavy-ups, subpanel additions, and smart load management to power high-speed EV charging safely.',
+    tagline: 'Comprehensive troubleshooting and repair for tripping EV charging breakers, overheated electrical panels, and overloaded circuits in Los Gatos.',
     scope: [
-      'Upgrading older 100A or 125A main panels to modern 200A or 225A copper-bus panels',
-      'Replacement of hazardous Zinsco, Federal Pacific Electric, and Pushmatic panels',
-      'Secondary 100A subpanel installations for detached garages, workshops, and multi-EV setups',
-      'Smart energy management load-shedding switches (DCC-9, NeoCharge, Lumin)',
-      'Coordination with PG&E for overhead service drop upgrades and underground meter approvals'
+      'Rapid diagnostic testing and replacement of tripping 40A, 50A, and 60A double-pole breakers',
+      'Thermal inspection and repair of scorched, pitted, or melted panel busbars',
+      'Repair and replacement of hazardous Zinsco, Federal Pacific Electric, and Pushmatic equipment',
+      'Troubleshooting and repair of smart energy management load-shedders (DCC-9, NeoCharge) to stop panel overloads',
+      'Re-torqueing loose service lugs and replacing overheated wiring to eliminate high-resistance heat'
     ],
     causesAndEducation: [
-      'Homes built in Los Gatos before 1980 often have 100A or 125A electrical panels. Adding a continuous 60A EV charging circuit exceeds panel headroom and triggers main breaker overloads.',
-      'Zinsco and Federal Pacific panels have documented design defects where breakers fail to trip and busbars melt under sustained 40A+ continuous loads.',
-      'Upgrading to a 200A service modernizes your entire electrical system, providing headroom for EV charging, heat pumps, air conditioning, and solar storage.'
+      'Adding a continuous 40A to 60A EV charging load pushes older 100A or 125A panels past safe continuous capacity. When high household loads (like air conditioning or heat pumps) cycle on, the main breaker or EV branch breaker trips.',
+      'Legacy panels like Zinsco and Federal Pacific have documented mechanical flaws where breaker clips fail to grip busbars tightly. Under continuous EV charging, this creates micro-arcing that melts the busbar and creates an extreme fire hazard.',
+      'Our licensed electricians use FLIR infrared cameras to pinpoint high-resistance thermal hot spots, repair damaged panel components, and balance branch circuits across electrical phases.'
     ],
     executionProcess: [
-      { title: 'Load Calculation & PG&E Planning', desc: 'We calculate total household loads and submit service planning documents to PG&E.' },
-      { title: 'Town Permitting & Scheduling', desc: 'We obtain municipal electrical permits and schedule the morning meter disconnect with PG&E.' },
-      { title: 'Panel Removal & Installation', desc: 'We replace the old panel with a 200A copper bus panel, install dual copper ground rods, and rewire all branch circuits.' },
-      { title: 'PG&E Reconnect & Inspection', desc: 'PG&E re-energizes the new service, and we accompany the Town inspector for final permit sign-off.' }
+      { title: 'Thermal Panel Scan & Continuous Load Evaluation', desc: 'We inspect your main panel and subpanels using infrared cameras to detect dangerous thermal hotspots and load imbalances.' },
+      { title: 'Overcurrent Device & Busbar Diagnostic', desc: 'We test individual breaker trip thresholds, measure contact resistance, and inspect busbar plating for pitting or corrosion.' },
+      { title: 'Breaker Replacement & Terminal Re-Torque', desc: 'We install commercial continuous-duty double-pole breakers and torque all lugs to exact manufacturer inch-pound specifications.' },
+      { title: 'Full-Load Verification & Phase Balancing', desc: 'We energize the EV charger alongside major household appliances to verify that operating temperatures and phase currents remain well within safe limits.' }
     ],
     toolsAndMethods: [
       'Commercial-grade copper bus panels (Square D QO or Eaton CH) with high interrupting capacity',
@@ -151,23 +151,23 @@ const serviceDetails: Record<string, {
       'Industrial torque wrenches to ensure exact torque on main service entrance lugs'
     ],
     whenToCall: [
-      'Your main breaker trips when the EV charger runs at the same time as your air conditioner or dryer',
-      'Your home has an older 100A or 125A panel with no empty breaker slots',
-      'Your panel is a known fire hazard brand (Zinsco, Sylvania, Federal Pacific, Pushmatic)',
-      'You are planning to add a second electric vehicle, an ADU, or a heat pump'
+      'Your EV charger circuit breaker trips repeatedly during charging cycles',
+      'Your main whole-house breaker trips when the EV charger and air conditioner run simultaneously',
+      'You notice a buzzing sound, humming noise, or burning smell coming from your electrical panel',
+      'Your electrical panel is an older Zinsco, Federal Pacific, or Pushmatic brand with scorch marks'
     ],
     commonProblemsSolved: [
-      { problem: 'Zinsco Panel Melting Under EV Load', solution: 'Replaced hazardous panel with 200A Square D QO panel, new meter-main, and whole-home surge protection.' },
-      { problem: 'Insufficient Breaker Space for EV Circuit', solution: 'Installed a 100A garage subpanel to house the new EV charging breaker and future workshop circuits.' },
-      { problem: 'Utility Service Upgrade Too Costly', solution: 'Installed a code-approved DCC-9 smart load-shedder that pauses EV charging during peak household draw.' }
+      { problem: 'Zinsco Panel Melting Under EV Load', solution: 'Replaced scorched panel busbar sections with modern commercial copper equipment and whole-home surge suppression.' },
+      { problem: 'Main Breaker Tripping During Peak Hours', solution: 'Diagnosed panel overload and installed a smart load-shedding switch that automatically pauses EV charging during peak household draw.' },
+      { problem: 'Breaker Buzzing and Overheating', solution: 'Replaced fatigued double-pole breaker with a commercial-grade unit and re-terminated conductors with anti-oxidant compound.' }
     ],
-    pricingNotes: 'All panel upgrades and subpanel installations include comprehensive NEC Article 220 load calculations, PG&E service coordination, and Town of Los Gatos permits.',
+    pricingNotes: 'All breaker repairs, busbar restorations, and panel modernizations include clear written estimates, NEC load calculations, and written craftsmanship warranties.',
     faqs: [
-      { q: 'How long will my power be off during a panel upgrade?', a: 'Power is typically off for only 4 to 6 hours while our electricians swap the panel equipment. We coordinate with PG&E so power is restored before the end of the day.' },
-      { q: 'What is a smart energy management switch (DCC-9)?', a: 'A DCC-9 monitors your main panel in real time. If total household power approaches panel limits, it automatically pauses your EV charger, restoring power once other appliances shut off.' },
-      { q: 'Why are Zinsco panels dangerous for EV charging?', a: 'Zinsco breakers often fail to trip during overcurrent, and their aluminum busbars oxidize and melt under sustained 40A+ continuous charging loads.' },
-      { q: 'Does a panel upgrade include whole-home surge protection?', a: 'Yes! All of our panel upgrades include a heavy-duty Type 2 surge protective device to protect your EV onboard computer and home electronics.' },
-      { q: 'Do you handle the PG&E paperwork?', a: 'Yes. We manage all service applications, engineering clearances, and meter disconnect/reconnect scheduling directly with PG&E.' }
+      { q: 'Why does my EV charger breaker buzz or feel hot to the touch?', a: 'Circuit breakers naturally generate a small amount of warmth, but if a breaker is buzzing, hot to the touch, or discolored, it indicates high electrical contact resistance, loose terminal lugs, or impending breaker failure. You should turn off the breaker and have it inspected immediately.' },
+      { q: 'Can I reset a tripped EV charger breaker myself?', a: 'You can safely reset it once. If it trips again within 15 to 30 minutes, stop resetting it. Continuous tripping signifies thermal overload, ground faults, or wire insulation breakdown that requires professional diagnostic testing.' },
+      { q: 'What is a smart load-shedding switch (DCC-9)?', a: 'A DCC-9 monitors your main panel in real time. If total household power approaches panel capacity, it automatically pauses your EV charger and resumes charging once other appliances turn off, preventing main breaker trips.' },
+      { q: 'Why are Zinsco and Federal Pacific panels dangerous for EV chargers?', a: 'Zinsco and Federal Pacific panels have defective breaker clips that loosen under heat. When an EV draws 40+ amps continuously, the connection arcs, melting the busbar and creating a severe fire hazard.' },
+      { q: 'Do you provide warranties on panel and breaker repairs?', a: 'Yes. All of our electrical repairs, breaker replacements, and panel components are backed by a 1-year warranty.' }
     ]
   },
   'ev-charger-troubleshooting-repair': {
@@ -217,60 +217,60 @@ const serviceDetails: Record<string, {
     ]
   },
   'commercial-multi-unit-ev-charging': {
-    tagline: 'Turnkey commercial, workplace, and multi-unit residential (MUD/HOA) EV charging stations across Los Gatos and Silicon Valley.',
+    tagline: 'Commercial, workplace, and multi-unit residential (HOA/apartment) EV charger diagnostics, hardware repairs, and maintenance across Los Gatos.',
     scope: [
-      'Dual-port commercial Level 2 pedestal charging stations with cable management retractors',
-      'Multi-family apartment and condominium carport electrical infrastructure',
-      'California Civil Code Section 4781 (Davis-Stirling) HOA compliance and approval engineering',
-      'Smart sub-metering, RFID badge access, and automated credit card payment processing',
-      'CalGreen Title 24 compliance and electrical load management for commercial properties'
+      'Diagnostic troubleshooting and hardware repairs for commercial dual-port pedestal stations',
+      'Repair and replacement of damaged charging cables, spring-loaded retractors, and worn J1772/NACS holsters',
+      'Troubleshooting RFID badge readers, cellular network communication, and payment gateway errors',
+      'Commercial circuit breaker, disconnect switch, and subpanel repairs for multi-vehicle parking structures',
+      'Sub-meter calibration and California Division of Measurement Standards (DMS) compliance repairs'
     ],
     causesAndEducation: [
-      'Bay Area employees and tenants actively demand EV charging at work and home. Adding commercial stations increases property value, attracts high-value tenants, and satisfies CalGreen building mandates.',
-      'Installing multi-vehicle charging without dynamic load management can trigger massive commercial utility demand charges. Smart networked stations balance electrical loads across vehicles automatically.',
-      'Our commercial electrical team handles utility transformer coordination, concrete pedestal trenching, ADA accessibility compliance, and municipal approvals from start to finish.'
+      'Commercial and HOA charging stations endure heavy daily usage, weather exposure, and physical handling. Cable wear, moisture intrusion in outdoor enclosures, and cellular communication dropouts frequently cause station downtime.',
+      'When multiple commercial pedestals share a commercial subpanel, load-balancing failures or breaker fatigue can take multiple stations offline simultaneously, leaving tenants and employees without charging access.',
+      'Our commercial electrical repair team provides rapid on-site troubleshooting, diagnostic testing of communication modems, and hardware replacements to keep commercial charging assets operating profitably.'
     ],
     executionProcess: [
-      { title: 'Commercial Facility Site Survey', desc: 'We evaluate electrical switchgear, available spare capacity, and optimal parking stall locations.' },
-      { title: 'Civil & Electrical Engineering', desc: 'We design single-line electrical diagrams, ADA access paths, and underground conduit trenching plans.' },
-      { title: 'Town Permitting & Trenching', desc: 'We secure commercial permits through Town of Los Gatos and execute precision asphalt cutting and trenching.' },
-      { title: 'Pedestal Installation & Networking', desc: 'We pour concrete footings, mount commercial pedestals, pull conductors, and configure cellular billing networks.' }
+      { title: 'Commercial Station Diagnostic Survey', desc: 'We inspect damaged pedestals, test input line voltage, and check cellular gateway connectivity.' },
+      { title: 'Electrical Switchgear & Breaker Diagnostic', desc: 'We test commercial subpanel breakers, disconnect switches, and sub-metering accuracy under load.' },
+      { title: 'Hardware Repair & Cable Replacement', desc: 'We replace damaged cables, retractors, RFID boards, or contactors using OEM-certified components.' },
+      { title: 'Network Re-Commissioning & Test Charge', desc: 'We test vehicle authorization, cloud network reporting, and conduct multi-port simultaneous charging tests.' }
     ],
     toolsAndMethods: [
-      'Commercial pavement cutting, directional boring, and schedule 80 PVC conduit infrastructure',
-      'Heavy-duty commercial pedestals with stainless steel hardware and spring-loaded cable management',
-      'Cellular gateway integration for cloud-based software management and payment remittance',
-      'Digital sub-metering compliant with California Division of Measurement Standards (DMS)'
+      'Commercial diagnostic test benches and EVSE simulators for testing pilot signal wave frequencies',
+      'Heavy-duty commercial replacement cables, holsters, and stainless steel hardware',
+      'Cellular network signal analyzers and firmware diagnostic tools',
+      'True-RMS clamp meters rated for commercial 480V/208V 3-phase electrical systems'
     ],
     whenToCall: [
-      'You are an HOA board member or property manager receiving resident requests for carport charging',
-      'Your commercial office building or retail center wants to offer destination charging to customers',
-      'You are remodeling a multi-family property subject to California CalGreen EV mandatory requirements',
-      'You need revenue-grade sub-metering to track electricity usage in shared parking structures'
+      'A commercial or HOA charging station displays an out-of-service error or red fault light',
+      'A charging cable is frayed, cut, or the spring retractor has snapped',
+      'Tenants or employees report payment gateway or RFID card reader failures',
+      'Commercial subpanel breakers trip when multiple vehicles plug in simultaneously'
     ],
     commonProblemsSolved: [
-      { problem: 'HOA Board Disagreements Over Power Costs', solution: 'Installed smart networked chargers with automated resident RFID billing and direct utility reimbursement.' },
-      { problem: 'Limited Commercial Electrical Capacity', solution: 'Deployed dynamic smart load-balancing that shares 80A of capacity across 4 charging stalls simultaneously.' },
-      { problem: 'Carports Separated by Concrete Lots', solution: 'Conducted directional underground boring to run electrical conduit beneath parking pavement without repaving.' }
+      { problem: 'Vandalized / Severed Charging Cable', solution: 'Replaced damaged cable assembly with commercial heavy-duty retractor-compatible cable and verified safety interlock.' },
+      { problem: 'Cellular Gateway Communication Dropout', solution: 'Repaired outdoor antenna connection, updated modem firmware, and restored cloud payment processing.' },
+      { problem: 'Shared HOA Carport Breaker Tripping', solution: 'Diagnosed load-sharing controller malfunction, reprogrammed dynamic power limits, and balanced phase loads.' }
     ],
-    pricingNotes: 'Commercial and multi-unit charging station projects are quoted with comprehensive turn-key engineering proposals based on stall count, trenching distances, and electrical switchgear capacity.',
+    pricingNotes: 'Commercial and multi-unit diagnostic service calls are quoted with transparent line-item pricing for labor, testing, and replacement commercial hardware.',
     faqs: [
-      { q: 'What are the CalGreen requirements for EV charging in Los Gatos commercial buildings?', a: 'California CalGreen code mandates that a designated percentage of commercial and multi-family parking spaces must be EV-Capable, EV-Ready, or have active EVSE charging stations installed.' },
-      { q: 'How do HOAs ensure non-EV owners do not pay for charging electricity?', a: 'We install California DMS-certified digital sub-meters or smart cellular chargers that bill the EV owner directly per kilowatt-hour, reimbursing the HOA monthly.' },
-      { q: 'Can commercial EV chargers generate revenue for property owners?', a: 'Yes! Networked stations allow property owners to set public charging rates by time or kilowatt-hour, generating revenue while providing an essential community amenity.' },
-      { q: 'Do you assist with commercial EV incentive programs in California?', a: 'Yes. We assist commercial clients in identifying and applying for regional air quality grants, PG&E EV fleet incentives, and federal commercial tax credits.' },
-      { q: 'Are commercial pedestal chargers ADA compliant?', a: 'Yes. Our engineering designs include accessible path-of-travel routes, compliant operable parts height (between 15 and 48 inches), and designated clear floor spaces.' }
+      { q: 'How quickly can your electricians repair a commercial EV charging station in Los Gatos?', a: 'We offer priority same-day dispatch for commercial properties, workplace parking lots, and HOA communities across Los Gatos to minimize station downtime.' },
+      { q: 'Can you replace damaged cables and connectors without buying a new pedestal?', a: 'Yes! We carry commercial replacement cables, J1772/NACS heads, cable retractors, and holster assemblies to repair stations cost-effectively.' },
+      { q: 'Do you service commercial chargers in HOA townhomes and condominium complexes?', a: 'Yes. We specialize in HOA carport charging systems, deeded spot sub-metering, and common-area electrical distribution repair under California Civil Code Section 4781.' },
+      { q: 'Can you fix payment processing and cellular connection errors on commercial stations?', a: 'Yes. Our technicians troubleshoot network modems, SIM card gateways, and RFID reader boards for ChargePoint, Autel, EVgo, and other commercial networks.' },
+      { q: 'Do you provide ongoing maintenance agreements for commercial charging stations?', a: 'Yes. We provide scheduled quarterly and annual maintenance plans that include thermal imaging, safety interlock testing, and cable inspections.' }
     ]
   }
 };
 
 const details = serviceDetails[service.slug] || {
   tagline: service.shortDescription,
-  scope: ['Comprehensive diagnostic testing', 'Code-compliant installation', 'Full town permitting'],
+  scope: ['Comprehensive diagnostic testing', 'Code-compliant component repair', 'Full safety verification'],
   causesAndEducation: ['Professional electrical engineering ensures long-term safety and performance.'],
-  executionProcess: [{ title: 'Site Inspection', desc: 'We evaluate electrical capacity and plan the installation.' }],
+  executionProcess: [{ title: 'Site Diagnostic', desc: 'We evaluate electrical faults and test components.' }],
   toolsAndMethods: ['Commercial-grade copper conductors and calibrated digital instruments.'],
-  whenToCall: ['You need professional electrical service in Los Gatos.'],
+  whenToCall: ['You need professional EV charger repair in Los Gatos.'],
   commonProblemsSolved: [{ problem: 'Electrical failure', solution: 'Diagnosed and restored to full code compliance.' }],
   pricingNotes: 'Detailed written proposals provided before work begins.',
   faqs: [
@@ -354,17 +354,17 @@ const serviceImages: Record<string, { src: string; alt: string; title: string; c
   },
   'level-2-charger-installation': {
     src: '/images/level-2-home-ev-charger-installation.jpg',
-    alt: 'Level 2 240V Home EV Charger Installation with Steel EMT Conduit in Los Gatos Garage',
-    title: 'Level 2 EV Charger Installation in Los Gatos, CA',
-    caption: 'Turnkey 240-volt Level 2 charging stations wired with heavy-duty EMT conduit and dedicated circuit protection.',
-    badge: '240V Level 2 Install • Los Gatos, CA'
+    alt: 'Certified Electrician Diagnosing and Repairing Level 2 Home EV Charger in Los Gatos Garage',
+    title: 'Level 2 EV Charger Repair & Diagnostics in Los Gatos, CA',
+    caption: 'Expert 240-volt Level 2 charging station diagnostic troubleshooting, J1772/NACS cable repair, and breaker testing.',
+    badge: '240V Level 2 Repair • Los Gatos, CA'
   },
   'ev-charger-circuit-panel-upgrade': {
     src: '/images/ev-electrical-panel-upgrade-200-amp.jpg',
-    alt: 'Licensed Electrician Installing 60A Breaker in 200A Service Electrical Panel in Los Gatos',
-    title: '200A Electrical Panel Upgrade for EV Charging in Los Gatos, CA',
-    caption: 'Full 200-amp service panel heavy-ups providing dedicated electrical headroom for high-draw EV charging stations.',
-    badge: '200A Panel Upgrade • Los Gatos, CA'
+    alt: 'Licensed Electrician Testing and Replacing EV Charger Circuit Breaker in Los Gatos Panel',
+    title: 'EV Charger Breaker & Dedicated Circuit Repair in Los Gatos, CA',
+    caption: 'Diagnostic inspection and replacement of tripping 50A/60A double-pole breakers, burnt busbars, and overloaded panels.',
+    badge: 'Breaker & Circuit Repair • Los Gatos, CA'
   },
   'ev-charger-troubleshooting-repair': {
     src: '/images/ev-troubleshooting-thermal-imaging.jpg',
@@ -375,10 +375,10 @@ const serviceImages: Record<string, { src: string; alt: string; title: string; c
   },
   'commercial-multi-unit-ev-charging': {
     src: '/images/commercial-multi-unit-ev-charging-stations.jpg',
-    alt: 'Commercial Level 2 Dual-Port EV Charging Pedestals in Los Gatos Office Parking Lot',
-    title: 'Commercial & Multi-Unit EV Charging Stations in Los Gatos, CA',
-    caption: 'Turnkey commercial charging pedestals with cable management, RFID access control, and dynamic electrical load management.',
-    badge: 'Commercial EV Systems • Los Gatos, CA'
+    alt: 'Commercial Level 2 Dual-Port EV Charging Pedestal Maintenance and Repair in Los Gatos',
+    title: 'Commercial & Multi-Unit EV Charger Repair in Los Gatos, CA',
+    caption: 'Diagnostic repairs for commercial charging pedestals, damaged cables, RFID payment issues, and parking lot electrical circuits.',
+    badge: 'Commercial Charger Repair • Los Gatos, CA'
   }
 };
 

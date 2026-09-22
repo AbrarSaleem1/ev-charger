@@ -5,15 +5,15 @@ import HeroShowcaseImage from '../components/HeroShowcaseImage.astro';
 import ContentImage from '../components/ContentImage.astro';
 import neighborhoodsList from '../data/neighborhoods-list.json';
 
-const pageTitle = "Contact Los Gatos EV Charger Pros | Fast Diagnostic Dispatch";
-const pageDescription = "Contact Los Gatos EV Charger Pros at 14165 Capri Dr, Los Gatos, CA 95032. Call (408) 539-3786 for same-day EV charger repair and Level 2 installations across all 25 Los Gatos neighborhoods.";
+const pageTitle = "Contact Los Gatos EV Charger Repair | Fast Diagnostic Dispatch";
+const pageDescription = "Contact Los Gatos EV Charger Repair at 14165 Capri Dr, Los Gatos, CA 95032. Call (408) 539-3786 for same-day EV charger repair, troubleshooting, and diagnostics across all 25 Los Gatos neighborhoods.";
 const canonicalUrl = `${siteConfig.domain}/contact-us/`;
 
 const contactSchema = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
   "name": `Contact ${siteConfig.businessName}`,
-  "description": "Get in touch with licensed electricians for EV charger installation and repair in Los Gatos, CA.",
+  "description": "Get in touch with licensed electricians for EV charger repair and diagnostics in Los Gatos, CA.",
   "mainEntity": {
     "@type": "Electrician",
     "name": siteConfig.businessName,
@@ -74,15 +74,15 @@ const breadcrumbSchema = {
       <div class="hero-grid">
         <div class="hero-content">
           <span class="badge-tag">Local Dispatch Office</span>
-          <h1>Contact Los Gatos EV Charger Pros</h1>
+          <h1>Contact Los Gatos EV Charger Repair</h1>
           <p class="hero-lead">
-            Connect with our licensed electrical contractors for immediate EV charger diagnostics, Tesla Wall Connector repairs, and detailed installation proposals.
+            Connect with our licensed electrical contractors for immediate EV charger diagnostics, Tesla Wall Connector repairs, and electrical fault resolution.
           </p>
         </div>
 
         <HeroShowcaseImage
-          alt="Contact Los Gatos EV Charger Pros Office and Dispatch Center"
-          title="Contact Los Gatos EV Charger Electricians"
+          alt="Contact Los Gatos EV Charger Repair Office and Dispatch Center"
+          title="Contact Los Gatos EV Charger Repair Electricians"
           badgeText="14165 Capri Dr, Los Gatos, CA • Fast Dispatch"
         />
       </div>
@@ -98,7 +98,7 @@ const breadcrumbSchema = {
           <span class="section-badge">Direct Electrician Dispatch</span>
           <h2 style="margin-top: 0.5rem; margin-bottom: 1rem;">Direct Contact & Scheduling</h2>
           <p class="form-subtext" style="color: #64748B; font-size: 1.05rem; line-height: 1.6; margin-bottom: 2rem;">
-            We operate a direct dispatch line for homeowners and commercial property managers across Los Gatos. No waiting for email responses or contact forms — speak immediately with our certified electrical specialists.
+            We operate a direct dispatch line for homeowners and commercial property managers across Los Gatos. No waiting for third-party call centers — speak immediately with our certified electrical repair specialists.
           </p>
 
           <div class="direct-call-card" style="margin-bottom: 2rem;">
@@ -112,7 +112,7 @@ const breadcrumbSchema = {
                 📞 Call {siteConfig.phoneFormatted} Now
               </a>
               <a href={`mailto:${siteConfig.email}`} class="btn btn-secondary btn-lg">
-                ✉️ Email Project Details
+                ✉️ Email Fault Details
               </a>
             </div>
             <div class="dcc-features">
@@ -125,9 +125,9 @@ const breadcrumbSchema = {
           <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.25rem;">
             <h4 style="margin: 0 0 0.5rem 0; font-size: 1rem; color: #0B132B;">What to Have Ready When You Call:</h4>
             <ul style="margin: 0; padding-left: 1.25rem; color: #475569; font-size: 0.95rem; line-height: 1.6;">
-              <li>Your vehicle make and model (e.g. Tesla Model Y/3/X/S, Rivian, Ford Lightning)</li>
-              <li>Type of charger (Tesla Wall Connector, Level 2 NEMA 14-50, or hardwired station)</li>
-              <li>Your main electrical panel amperage (e.g. 100A, 125A, or 200A)</li>
+              <li>The specific symptom (e.g. flashing red light, breaker tripping, melted 240V outlet)</li>
+              <li>Your charger brand and model (Tesla Wall Connector Gen 2/3/Universal, ChargePoint, etc.)</li>
+              <li>Your vehicle make and model (e.g. Tesla Model Y/3, Rivian, Ford Lightning)</li>
               <li>Your neighborhood in Los Gatos for immediate dispatch routing</li>
             </ul>
           </div>
@@ -227,16 +227,16 @@ const breadcrumbSchema = {
 
       <div class="faq-mini-grid">
         <div class="mini-faq-card">
-          <h4>How do you evaluate our property before starting installation?</h4>
-          <p>We review your electrical service panel specifications, garage layout, and EV requirements to provide a detailed written proposal. For complex runs requiring crawlspace access or main service panel upgrades, our licensed journeyman electrician performs a comprehensive on-site load evaluation before any work begins.</p>
+          <h4>How quickly can an electrician diagnose my EV charger issue?</h4>
+          <p>Dispatched locally from 14165 Capri Drive in Los Gatos, our licensed electricians provide same-day priority diagnostic visits across all 25 Los Gatos neighborhoods, typically arriving within 30 to 60 minutes for urgent service calls.</p>
         </div>
         <div class="mini-faq-card">
-          <h4>Can you service Tesla Wall Connectors under warranty?</h4>
-          <p>Yes. As certified Tesla Wall Connector installers, we troubleshoot warranty error codes, provide diagnostic reports directly to Tesla support, and install factory replacement units.</p>
+          <h4>Can you diagnose and repair Tesla Wall Connectors under warranty?</h4>
+          <p>Yes. As certified Tesla Wall Connector technicians, we troubleshoot warranty error codes, isolate circuit and internal component faults, provide technical diagnostic reports for Tesla support, and install factory replacement units.</p>
         </div>
         <div class="mini-faq-card">
-          <h4>How quickly can you pull permits with the Town of Los Gatos?</h4>
-          <p>We submit residential EV permits electronically to the Town of Los Gatos Community Development Department. Express permits are typically approved within 3 to 5 business days.</p>
+          <h4>Can you repair melted or burned 240V NEMA 14-50 receptacles?</h4>
+          <p>Yes. We frequently replace melted residential-grade outlets with industrial-duty Hubbell or Bryant receptacles, check wire gauge integrity, trim heat-damaged copper, and re-torque all terminals to strict manufacturer torque specs.</p>
         </div>
       </div>
     </div>

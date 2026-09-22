@@ -2,12 +2,12 @@ export const blossomHillManorData = {
   name: "Blossom Hill Manor",
   slug: "blossom-hill-manor",
   zip: "95032",
-  metaTitle: "EV Charger Installation Blossom Hill Manor Los Gatos | 240V Pros",
-  metaDescription: "Professional EV charger installation and electrical repairs in Blossom Hill Manor, Los Gatos. Subpanel additions, detached garage trenching, and Tesla Wall Connectors.",
-  h1: "Blossom Hill Manor EV Charger Installation & High-Speed Charging Solutions",
-  openingText: "Navigating the spacious residential parcels and detached garage configurations of Blossom Hill Manor demands seasoned electrical expertise. Our team of certified electricians designs and installs dedicated 240-volt Level 2 charging circuits, underground conduit feeds, and 200-amp service upgrades throughout Longwood Drive, Los Gatos-Almaden Road, and surrounding Manor properties.",
+  metaTitle: "EV Charger Repair Blossom Hill Manor Los Gatos | 24/7 Electricians",
+  metaDescription: "Professional EV charger repair and diagnostic troubleshooting in Blossom Hill Manor, Los Gatos. We fix subpanels, detached garage circuits, tripped breakers & Tesla chargers.",
+  h1: "Blossom Hill Manor EV Charger Repair, Diagnostics & Electrical Troubleshooting",
+  openingText: "Navigating the spacious residential parcels and detached garage configurations of Blossom Hill Manor demands seasoned electrical troubleshooting expertise. When your home electric vehicle charger stops delivering power, our team of certified C-10 electricians provides rapid diagnostics, 240-volt circuit repairs, subpanel fixes, and breaker replacements throughout Longwood Drive, Los Gatos-Almaden Road, and surrounding Manor properties.",
 
-  heroSubheadline: "Turnkey Level 2 home charging station installations, trenching to detached garages, and expert panel modernizations across Blossom Hill Manor.",
+  heroSubheadline: "Same-day EV charger troubleshooting, detached garage circuit repairs, and 240V breaker diagnostics across Blossom Hill Manor.",
 
   housingProfile: {
     title: "Blossom Hill Manor Housing Architecture & Large-Lot Infrastructure",
@@ -43,24 +43,24 @@ export const blossomHillManorData = {
 
   featuredServices: [
     {
-      slug: "level-2-charger-installation",
-      name: "Long-Distance 240V Conduit Runs",
-      desc: "Custom engineered high-amperage circuit installations through attics, crawlspaces, or underground trenches to detached Manor garages."
-    },
-    {
-      slug: "tesla-wall-connector-installation-repair",
-      name: "Tesla Wall Connector Installation",
-      desc: "48A high-speed hardwired charging, Wi-Fi network setup, dual-vehicle load management, and OEM replacement parts for Tesla vehicles."
-    },
-    {
-      slug: "ev-charger-circuit-panel-upgrade",
-      name: "Subpanel & 200A Service Upgrades",
-      desc: "Expanding electrical capacity with modern 100A garage subpanels and full 200A/225A main breaker upgrades coordinated with PG&E."
-    },
-    {
       slug: "ev-charger-troubleshooting-repair",
       name: "Voltage Drop & Circuit Diagnostics",
       desc: "Testing circuit impedance, replacing scorched receptacles, repairing broken conduit feeds, and resolving smart charger fault codes."
+    },
+    {
+      slug: "tesla-wall-connector-installation-repair",
+      name: "Tesla Wall Connector Repair & Diagnostics",
+      desc: "48A high-speed diagnostics, red blinking error fixes, Wi-Fi pairing restoration, and OEM replacement parts for Tesla vehicles."
+    },
+    {
+      slug: "ev-charger-circuit-panel-upgrade",
+      name: "Subpanel & Breaker Overload Repair",
+      desc: "Resolving tripping breakers on 100A garage subpanels, repairing burnt busbars, and continuous load rebalancing."
+    },
+    {
+      slug: "level-2-charger-installation",
+      name: "Level 2 EV Charger Diagnostic & Repair",
+      desc: "Fast diagnostic service and component replacement for ChargePoint, Rivian, JuiceBox, and universal Level 2 stations."
     }
   ],
 
@@ -128,24 +128,24 @@ export const blossomHillManorData = {
   ],
 
   pricingTransparency: {
-    title: "Tailored EV Charging Solutions for Blossom Hill Manor",
+    title: "Clear, Upfront Pricing for Blossom Hill Manor EV Charger Repairs",
     lead: "Fair, all-inclusive written proposals backed by written guarantees and California electrical licensing.",
     tiers: [
       {
-        name: "EV Charger Diagnostic & Repair",
+        name: "EV Charger Diagnostic & Safety Scan",
         description: "Troubleshooting voltage drop, diagnosing ground faults, repairing burnt receptacles, and clearing error codes in Blossom Hill Manor."
       },
       {
-        name: "Standard Garage Level 2 Installation",
-        description: "Surface conduit runs up to 30 feet from an existing 200A panel, 50A/60A breaker, heavy-duty copper conductors, and charger mounting."
+        name: "Breaker Replacement & Terminal Re-Torque",
+        description: "Replacement of worn or tripping 50A/60A double-pole breakers, cleaning oxidized busbars, and digital torque calibration."
       },
       {
-        name: "Long-Distance Crawlspace or Attic Run",
-        description: "Extended 60 to 90-foot concealed wire runs through crawlspaces or attics with upsized #4 AWG wire to prevent voltage drop."
+        name: "Voltage Drop Repair & Conduit Re-Pull",
+        description: "Diagnosing long run resistance, re-terminating wire lugs, replacing damaged conduit runs, and restoring full 48A charging speed."
       },
       {
-        name: "Underground Trenching to Detached Garage / ADU",
-        description: "Trenching at 18-inch depth, schedule 80 PVC burial, landscaping restoration, subpanel installation, and dual-EV capacity."
+        name: "Subpanel Overload & Service Restoration",
+        description: "Repairing overloaded detached garage subpanels, resolving main panel dropouts, and whole-home surge suppression."
       }
     ]
   },

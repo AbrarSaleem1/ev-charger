@@ -3,8 +3,8 @@ export const downtownLosGatosData = {
   slug: "downtown-los-gatos",
   zip: "95030, 95031",
   metaTitle: "EV Charger Repair Downtown Los Gatos (ZIP 95030, 95031) | Licensed Electricians",
-  metaDescription: "Fast, certified EV charger repair and Level 2 installation in Downtown Los Gatos, CA (ZIP 95030 & 95031). We fix Tesla Wall Connectors, tripped breakers, and 240V circuits near N Santa Cruz Ave.",
-  h1: "Downtown Los Gatos EV Charger Repair & High-Amperage 240V Installation",
+  metaDescription: "Fast, certified EV charger repair and diagnostics in Downtown Los Gatos, CA (ZIP 95030 & 95031). We fix Tesla Wall Connectors, tripped breakers, and 240V circuits near N Santa Cruz Ave.",
+  h1: "Downtown Los Gatos EV Charger Repair, Diagnostics & Circuit Troubleshooting",
   openingText: "When an electric vehicle charging station suddenly cuts out or refuses to deliver full amperage in Downtown Los Gatos (ZIP 95030 and 95031), daily schedules across Silicon Valley come to an abrupt halt. Our locally based, C-10 licensed electricians troubleshoot and restore high-voltage charging equipment across North Santa Cruz Avenue, Main Street, and surrounding historic avenues with same-day precision.",
   
   heroSubheadline: "Certified Tesla & universal Level 2 diagnostic technicians serving Downtown Los Gatos (ZIP 95030, 95031) residential estates, lofts, and commercial parking areas.",
@@ -44,8 +44,8 @@ export const downtownLosGatosData = {
   featuredServices: [
     {
       slug: "tesla-wall-connector-installation-repair",
-      name: "Tesla Wall Connector Repair & Installation",
-      desc: "Comprehensive diagnostic testing, 48A hardwired installation, Wi-Fi commissioning, and OEM board replacement for Tesla Gen 3 and Universal Wall Connectors."
+      name: "Tesla Wall Connector Repair & Diagnostics",
+      desc: "Comprehensive diagnostic testing, red error light clearing, Wi-Fi pairing restoration, and OEM board repair for Tesla Gen 3 and Universal Wall Connectors."
     },
     {
       slug: "ev-charger-troubleshooting-repair",
@@ -54,13 +54,13 @@ export const downtownLosGatosData = {
     },
     {
       slug: "ev-charger-circuit-panel-upgrade",
-      name: "200A Main Panel & Subpanel Upgrades",
-      desc: "Full service panel heavy-ups, Zinsco/Federal Pacific changeouts, and load management installations coordinated directly with PG&E and Town inspectors."
+      name: "EV Charger Breaker & Panel Repair",
+      desc: "Troubleshooting tripping 50A/60A breakers, panel busbar thermal damage, loose terminal connections, and continuous load balancing."
     },
     {
       slug: "level-2-charger-installation",
-      name: "Hardwired 240V Level 2 Home Stations",
-      desc: "Dedicated 50A and 60A circuit runs using THHN copper inside rigid conduit, configured for ChargePoint, Rivian, JuiceBox, and Enel X chargers."
+      name: "Level 2 EV Charger Diagnostic & Repair",
+      desc: "Rapid component replacement, pilot signal troubleshooting, and 240V circuit diagnostics for ChargePoint, Rivian, JuiceBox, and Wallbox stations."
     }
   ],
 
@@ -128,24 +128,24 @@ export const downtownLosGatosData = {
   ],
 
   pricingTransparency: {
-    title: "Tailored EV Charging Solutions for Downtown Los Gatos",
+    title: "Clear, Upfront Pricing for Downtown Los Gatos EV Charger Repairs",
     lead: "No surprise hourly rate creep or hidden materials markups. We provide clear, itemized written proposals before any work begins.",
     tiers: [
       {
-        name: "Diagnostic & Repair Service Call",
-        description: "Complete troubleshooting of failing EV chargers, circuit continuity tests, error code clearing, and breaker diagnostic in Downtown Los Gatos."
+        name: "Diagnostic & Safety Scan Service Call",
+        description: "Complete troubleshooting of failing EV chargers, circuit continuity tests, error code clearing, and breaker diagnostics in Downtown Los Gatos."
       },
       {
-        name: "Standard Level 2 Dedicated Circuit",
-        description: "Up to 30 feet of conduit run from an existing accessible 200A panel, commercial 50A/60A breaker, heavy-duty wire, and charging station mounting."
+        name: "Breaker Replacement & Terminal Re-Torque",
+        description: "Replacement of worn or tripping double-pole 50A/60A breakers, cleaning oxidation, and calibrated digital torqueing."
       },
       {
-        name: "Extended Run / Subpanel Installation",
-        description: "Long conduit runs across historic basements, crawlspaces, or detached garages, including secondary 100A subpanel additions and smart load shedding."
+        name: "Industrial 240V Receptacle & Wiring Repair",
+        description: "Replacement of melted or loose residential outlets with commercial-grade Hubbell 14-50 receptacles and heavy copper wire tails."
       },
       {
-        name: "Full 200A Main Service Panel Heavy-Up",
-        description: "Complete replacement of obsolete 100A panels, new meter main, whole-home grounding electrodes, PG&E coordination, and Town permit sign-off."
+        name: "Panel Overload & Service Restoration",
+        description: "Resolving main panel overload tripping, busbar restoration, subpanel repair, or smart load-shedding switch installation."
       }
     ]
   },

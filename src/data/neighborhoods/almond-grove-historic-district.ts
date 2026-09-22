@@ -3,11 +3,11 @@ export const almondGroveHistoricDistrictData = {
   slug: "almond-grove-historic-district",
   zip: "95030",
   metaTitle: "EV Charger Repair Almond Grove Los Gatos | Historic Home Electrical",
-  metaDescription: "Specialized EV charger repair & 200A panel upgrades in the Almond Grove Historic District, Los Gatos. Preserving Victorian architecture with code-compliant high-speed charging.",
-  h1: "Almond Grove Historic District EV Charger Installation & Electrical Restoration",
-  openingText: "Preserving the architectural heritage of the Almond Grove Historic District while integrating high-draw 48-amp EV charging equipment requires specialized electrical mastery. Our C-10 certified electricians provide discreet, non-invasive Level 2 EV charging solutions and complete 200-amp service modernization across Bean Avenue, Wilder Avenue, Tait Avenue, and historic surrounding lanes.",
+  metaDescription: "Specialized EV charger repair & diagnostics in the Almond Grove Historic District, Los Gatos. Fixing Tesla Wall Connectors, tripped breakers, and ground faults with historic care.",
+  h1: "Almond Grove Historic District EV Charger Repair, Diagnostics & Electrical Troubleshooting",
+  openingText: "When an EV charger malfunctions or trips the electrical service in the historic Almond Grove Historic District, delicate vintage wiring requires specialized diagnostic care. Our C-10 certified electricians provide discreet, expert Level 2 and Tesla charger repairs, breaker replacements, and ground fault resolution across Bean Avenue, Wilder Avenue, Tait Avenue, and surrounding historic lanes.",
 
-  heroSubheadline: "Preservation-grade EV charging installations, vintage panel heavy-ups, and Tesla Wall Connector repairs tailored for historic Victorian and Craftsman residences in Los Gatos.",
+  heroSubheadline: "Preservation-grade EV charger repair, diagnostic fault resolution, and circuit troubleshooting tailored for historic Victorian and Craftsman residences in Los Gatos.",
 
   housingProfile: {
     title: "Almond Grove (HD-80-1A) Architectural Fabric & Electrical Characteristics",
@@ -44,18 +44,18 @@ export const almondGroveHistoricDistrictData = {
   featuredServices: [
     {
       slug: "ev-charger-circuit-panel-upgrade",
-      name: "Historic 200A/400A Panel Modernization",
-      desc: "Complete electrical service heavy-ups designed for historic homes, coordinating PG&E overhead or underground connections with full town preservation compliance."
+      name: "EV Charger Breaker & Panel Repair",
+      desc: "Troubleshooting overloaded vintage panels, replacing worn double-pole breakers, and resolving voltage drop across historic properties."
     },
     {
       slug: "tesla-wall-connector-installation-repair",
-      name: "Tesla Wall Connector Installation",
-      desc: "High-speed 48A hardwired installations and troubleshooting for Tesla Gen 3 and Universal Wall Connectors with custom aesthetic integration."
+      name: "Tesla Wall Connector Repair & Diagnostics",
+      desc: "Diagnostic testing, red error light clearing, grounding impedance fixes, and board repair for Tesla Gen 3 and Universal Wall Connectors."
     },
     {
       slug: "level-2-charger-installation",
-      name: "Custom Level 2 Dedicated Circuits",
-      desc: "Concealed 240V circuits for Porsche, Audi, Rivian, Lucid, and BMW electric vehicles, engineered to preserve historic architectural surfaces."
+      name: "Level 2 EV Charger Diagnostic & Repair",
+      desc: "Rapid diagnostic service for ChargePoint, JuiceBox, Rivian, and universal J1772 chargers in historic residences."
     },
     {
       slug: "ev-charger-troubleshooting-repair",
@@ -128,24 +128,24 @@ export const almondGroveHistoricDistrictData = {
   ],
 
   pricingTransparency: {
-    title: "Tailored EV Charging Solutions for Almond Grove",
+    title: "Transparent Pricing for Almond Grove EV Charger Repairs",
     lead: "Transparent line-item proposals reflecting the precision craftsmanship and historic care your home deserves.",
     tiers: [
       {
-        name: "EV Charger Diagnostic & Repair",
+        name: "EV Charger Diagnostic & Safety Scan",
         description: "Comprehensive testing of error codes, ground fault isolation, replacement of failing breakers, and re-torqueing connections in historic homes."
       },
       {
-        name: "Preservation-Grade Level 2 Circuit Run",
-        description: "Concealed crawlspace wiring, commercial 50A/60A breaker, paint-matched exterior raceway, and mounting of your Level 2 or Tesla Wall Connector."
+        name: "Breaker Replacement & Thermal Repair",
+        description: "Replacing failing 50A/60A double-pole breakers, cleaning oxidized busbar contacts, and calibrated torqueing."
       },
       {
-        name: "Carriage House Subpanel & Trenching",
-        description: "Hand-trenching beneath historic lawns or walkways, schedule 80 conduit burial, 100A secondary subpanel, and dual EV circuit capacity."
+        name: "Carriage House Circuit & Voltage Fix",
+        description: "Trenching repair, fixing voltage drop issues to detached garages, subpanel restoration, and conduit inspection."
       },
       {
-        name: "Historic 200A Service Heavy-Up",
-        description: "Complete replacement of vintage 60A/100A panels, new structural riser mast, dual copper ground rods, PG&E coordination, and Town permits."
+        name: "Panel Overload & Service Restoration",
+        description: "Restoring overloaded vintage panels, fixing busbar burning, whole-home surge suppression, and PG&E coordination."
       }
     ]
   },

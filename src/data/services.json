@@ -1,52 +1,52 @@
 [
   {
     "id": "tesla-wall-connector-installation-repair",
-    "name": "Tesla Wall Connector Installation & Repair",
+    "name": "Tesla Wall Connector Repair & Diagnostics",
     "slug": "tesla-wall-connector-installation-repair",
-    "shortName": "Tesla Wall Connector",
+    "shortName": "Tesla Wall Connector Repair",
     "icon": "zap",
-    "shortDescription": "Certified installation and troubleshooting for Tesla Wall Connectors (Gen 2, Gen 3, and Universal). 48A high-speed charging, Wi-Fi commissioning, and error code diagnostics.",
-    "metaTitle": "Tesla Wall Connector Installation & Repair Los Gatos | Certified Pros",
-    "metaDescription": "Certified Tesla Wall Connector installation and repair in Los Gatos, CA. Dedicated 60A breaker setup, Wi-Fi pairing, flashing red light fixes, and full town permitting."
+    "shortDescription": "Specialized diagnostic and repair services for Tesla Wall Connectors (Gen 2, Gen 3, and Universal). Fast resolution of red blinking error codes, Wi-Fi pairing faults, and thermal shutoffs.",
+    "metaTitle": "Tesla Wall Connector Repair & Diagnostics Los Gatos | Certified Electricians",
+    "metaDescription": "Certified Tesla Wall Connector repair in Los Gatos, CA. We fix flashing red lights, thermal power throttling, tripping 60A breakers, and damaged charging cables."
   },
   {
     "id": "level-2-charger-installation",
-    "name": "Level 2 Home EV Charger Installation (240V)",
+    "name": "Level 2 EV Charger Diagnostic, Repair & Maintenance",
     "slug": "level-2-charger-installation",
-    "shortName": "Level 2 EV Charger Install",
+    "shortName": "Level 2 Charger Repair",
     "icon": "battery-charging",
-    "shortDescription": "Hardwired and NEMA 14-50 240-volt Level 2 charging station installations for ChargePoint, JuiceBox, Rivian, Ford Pro, and all J1772 & NACS electric vehicles.",
-    "metaTitle": "Level 2 EV Charger Installation Los Gatos | 240V Home Stations",
-    "metaDescription": "Professional Level 2 EV charger installation across Los Gatos. 240V dedicated circuits, hardwired & plug-in setups, load calculations, and same-week completion."
+    "shortDescription": "Comprehensive diagnostic and repair services for all 240V Level 2 charging stations: ChargePoint, JuiceBox, Rivian, Autel, Emporia, Wallbox, and Ford Pro.",
+    "metaTitle": "Level 2 EV Charger Repair Los Gatos | 240V Station Diagnostics",
+    "metaDescription": "Expert Level 2 EV charger repair in Los Gatos, CA. We repair damaged J1772/NACS connectors, loose terminal connections, power failure, and error codes."
   },
   {
     "id": "ev-charger-circuit-panel-upgrade",
-    "name": "EV Charger Circuit & Electrical Panel Upgrades",
+    "name": "EV Charger Breaker & Dedicated Circuit Repair",
     "slug": "ev-charger-circuit-panel-upgrade",
-    "shortName": "Electrical Panel Upgrades",
+    "shortName": "Circuit & Breaker Repair",
     "icon": "sliders",
-    "shortDescription": "100A to 200A/400A service upgrades, subpanel additions, and energy management load-shedding switches (DCC/NeoCharge) to safely support high-amperage home EV charging.",
-    "metaTitle": "EV Charger Panel Upgrades Los Gatos | 200 Amp Service Heavy-Ups",
-    "metaDescription": "Upgrade your electrical panel for EV charging in Los Gatos. 100A to 200A upgrades, subpanels, Zinsco replacement, and PG&E service coordination."
+    "shortDescription": "Rapid troubleshooting and repair for tripping 50A/60A EV charging breakers, overheated electrical panel busbars, burnt wiring, and melted 240V NEMA 14-50 receptacles.",
+    "metaTitle": "EV Charger Breaker & Electrical Circuit Repair Los Gatos",
+    "metaDescription": "Fix tripping EV charger breakers and panel overloads in Los Gatos. We replace worn double-pole breakers, fix melted 240V outlets, and repair overloaded electrical panels."
   },
   {
     "id": "ev-charger-troubleshooting-repair",
-    "name": "EV Charger Diagnostic, Troubleshooting & Repair",
+    "name": "Emergency EV Charger Diagnostic, Troubleshooting & Repair",
     "slug": "ev-charger-troubleshooting-repair",
-    "shortName": "EV Charger Repair & Diagnostic",
+    "shortName": "Emergency EV Charger Repair",
     "icon": "tool",
-    "shortDescription": "Fast diagnostic and repair for failing chargers: tripping circuit breakers, red indicator lights, ground faults, damaged J1772/NACS cables, and thermal overheating.",
-    "metaTitle": "EV Charger Repair & Troubleshooting Los Gatos | Fast Local Electricians",
-    "metaDescription": "Expert EV charger repair in Los Gatos. We fix tripped breakers, red error lights, no-power faults, damaged charging cables, and overheating 240V outlets."
+    "shortDescription": "Fast 24/7 diagnostic dispatch for failing chargers: tripping circuit breakers, red indicator lights, ground faults, damaged cables, and burning smells.",
+    "metaTitle": "Emergency EV Charger Repair & Troubleshooting Los Gatos | 24/7 Dispatch",
+    "metaDescription": "24/7 emergency EV charger repair in Los Gatos. Same-day diagnostic dispatch for tripped breakers, red error lights, no-power faults, and overheating charging stations."
   },
   {
     "id": "commercial-multi-unit-ev-charging",
-    "name": "Commercial & Multi-Unit (MUD) EV Charging Stations",
+    "name": "Commercial & Multi-Unit (MUD) EV Charger Repair",
     "slug": "commercial-multi-unit-ev-charging",
-    "shortName": "Commercial & MUD Charging",
+    "shortName": "Commercial EV Charger Repair",
     "icon": "building",
-    "shortDescription": "Turnkey EV charging solutions for Los Gatos commercial properties, offices, HOA condominiums, and apartment complexes. Dynamic load management, RFID, and billing.",
-    "metaTitle": "Commercial & Multi-Unit EV Charging Los Gatos | HOA & Office Stations",
-    "metaDescription": "Commercial and multi-unit residential EV charging station installation in Los Gatos, CA. CalGreen compliance, HOA approvals, smart metering, and dual-port pedestal units."
+    "shortDescription": "Expert diagnostic and repair services for commercial EV charging stations, workplace parking lots, HOA condominiums, and apartment complexes in Los Gatos.",
+    "metaTitle": "Commercial & Multi-Unit EV Charger Repair Los Gatos | HOA Stations",
+    "metaDescription": "Commercial and multi-unit EV charger repair in Los Gatos, CA. Fast fixes for pedestal stations, RFID payment errors, severed cables, and commercial breaker trips."
   }
 ]

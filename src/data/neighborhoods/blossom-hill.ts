@@ -2,12 +2,12 @@ export const blossomHillData = {
   name: "Blossom Hill",
   slug: "blossom-hill",
   zip: "95032",
-  metaTitle: "EV Charger Repair Blossom Hill Los Gatos | 240V Installation",
-  metaDescription: "Licensed EV charger repair and Level 2 installations in Blossom Hill, Los Gatos. We replace Zinsco panels, fix tripping breakers, and install Tesla Wall Connectors.",
-  h1: "Blossom Hill Los Gatos EV Charger Repair & Dedicated 240V Installation",
+  metaTitle: "EV Charger Repair Blossom Hill Los Gatos | 24/7 Electricians",
+  metaDescription: "Licensed EV charger repair and diagnostics in Blossom Hill, Los Gatos. We fix tripping breakers, replace melted 240V outlets, and repair Tesla Wall Connectors.",
+  h1: "Blossom Hill Los Gatos EV Charger Repair, Diagnostics & Electrical Troubleshooting",
   openingText: "Reliable home electric vehicle charging is an everyday necessity for families and commuters living across the Blossom Hill neighborhood of Los Gatos. When your home charging station fails to energize, throws thermal error codes, or continually trips your main breaker, our licensed local electricians deliver swift diagnostics and permanent repairs.",
 
-  heroSubheadline: "Fast-response electrical repairs, Zinsco panel replacements, and high-speed Level 2 charging installations near Blossom Hill Park and Los Gatos Boulevard.",
+  heroSubheadline: "Fast-response electrical repairs, breaker replacements, and high-speed Level 2 charger diagnostics near Blossom Hill Park and Los Gatos Boulevard.",
 
   housingProfile: {
     title: "Blossom Hill Suburban Architecture & Electrical Panel Realities",
@@ -44,18 +44,18 @@ export const blossomHillData = {
   featuredServices: [
     {
       slug: "level-2-charger-installation",
-      name: "Hardwired 240V Level 2 Installation",
-      desc: "Robust 48A and 50A installations for ChargePoint, Autel, Rivian, and JuiceBox chargers mounted in Blossom Hill attached garages."
+      name: "Level 2 EV Charger Diagnostic & Repair",
+      desc: "Fast diagnostic service and component replacement for ChargePoint, Autel, Rivian, and JuiceBox chargers in Blossom Hill attached garages."
     },
     {
       slug: "ev-charger-circuit-panel-upgrade",
-      name: "Zinsco & FPE Panel Replacements",
-      desc: "Upgrading obsolete 125A panels to modern 200A or 225A Square D or Eaton copper-bus panels with dedicated whole-home surge suppression."
+      name: "EV Charger Breaker & Panel Repair",
+      desc: "Replacing tripping 50A/60A breakers, repairing damaged Zinsco/FPE busbars, and balancing panel phase loads for continuous EV charging."
     },
     {
       slug: "tesla-wall-connector-installation-repair",
-      name: "Tesla Wall Connector Setup & Repair",
-      desc: "Dedicated 60A circuit runs, Wi-Fi pairing, power-sharing configurations for dual-Tesla households, and warranty repairs."
+      name: "Tesla Wall Connector Repair & Diagnostics",
+      desc: "Dedicated 60A circuit diagnostics, Wi-Fi pairing restoration, red blinking fault fixes, and thermal sensor repairs."
     },
     {
       slug: "ev-charger-troubleshooting-repair",
@@ -128,24 +128,24 @@ export const blossomHillData = {
   ],
 
   pricingTransparency: {
-    title: "Tailored EV Charging Solutions for Blossom Hill",
+    title: "Clear, Upfront Pricing for Blossom Hill EV Charger Repairs",
     lead: "Clear, all-inclusive written proposals backed by California C-10 licensing and written warranties.",
     tiers: [
       {
-        name: "EV Charger Diagnostic & Repair",
+        name: "EV Charger Diagnostic & Safety Scan",
         description: "Troubleshooting tripping breakers, error codes, replacing burnt receptacles, and diagnosing communication faults."
       },
       {
-        name: "Standard Attached Garage Level 2 Install",
-        description: "Up to 25 feet of surface EMT conduit from an existing 200A panel, 50A/60A breaker, heavy-duty wiring, and charger mounting."
+        name: "Breaker Replacement & Terminal Re-Torque",
+        description: "Replacing worn or tripping 50A/60A double-pole breakers, cleaning terminal busbars, and digital torque calibration."
       },
       {
-        name: "Dual-EV Power-Sharing Setup",
-        description: "Installation of two interconnected Wall Connectors with dynamic load-balancing communication and dedicated dual branch feeds."
+        name: "Industrial 240V Outlet Overhaul",
+        description: "Replacing melted residential wall outlets with industrial-grade Hubbell 14-50 receptacles and heavy copper wire tails."
       },
       {
-        name: "Complete 200A Panel Replacement (Zinsco Upgrade)",
-        description: "Removal of hazardous Zinsco/FPE panel, installation of new 200A copper bus panel, surge suppression, PG&E coordination, and Town permits."
+        name: "Zinsco Panel & Overload Restoration",
+        description: "Removing hazardous Zinsco/FPE panel sections, fixing busbar burning, whole-home surge suppression, and restoring continuous charging."
       }
     ]
   },

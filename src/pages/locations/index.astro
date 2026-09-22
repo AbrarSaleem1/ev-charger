@@ -7,8 +7,8 @@ import siteConfig from '../../data/site-config.json';
 import neighborhoodsList from '../../data/neighborhoods-list.json';
 import services from '../../data/services.json';
 
-const pageTitle = "EV Charger Installation & Repair Locations in Los Gatos, CA";
-const pageDescription = "Explore the complete neighborhood service areas covered by Los Gatos EV Charger Pros. Licensed electricians providing residential Level 2 & Tesla charger repairs across all 25 Los Gatos communities.";
+const pageTitle = "EV Charger Repair Locations in Los Gatos, CA | All 25 Neighborhoods";
+const pageDescription = "Explore the complete neighborhood service areas covered by Los Gatos EV Charger Repair. Licensed electricians providing same-day diagnostics across all 25 Los Gatos communities.";
 const canonicalUrl = `${siteConfig.domain}/locations/`;
 
 const breadcrumbSchema = {
@@ -32,24 +32,24 @@ const breadcrumbSchema = {
 
 const faqList = [
   {
-    q: "What areas of Los Gatos do your certified EV electricians cover?",
-    a: "We provide dedicated electrical services throughout the entire Town of Los Gatos across ZIP codes 95030, 95031, 95032, and 95033, including surrounding Santa Clara County pockets. From the Downtown historic core (95030, 95031) and Almond Grove to Blossom Hill Manor (95032), Rinconada, Belwood, and up into the Santa Cruz mountain corridors (95033) like Redwood Estates and Chemeketa Park, our licensed electricians handle permitted home and commercial EV installations."
-  },
-  {
-    q: "Do you handle Town of Los Gatos electrical permits for EV chargers?",
-    a: "Yes. Every Level 2 EV charging station or panel heavy-up requires a building and electrical permit issued by the Town of Los Gatos Community Development Department (or Santa Clara County for unincorporated parcels). We submit single-line electrical diagrams, perform load calculations, schedule inspections, and ensure final sign-off."
+    q: "What areas of Los Gatos do your certified EV repair electricians cover?",
+    a: "We provide dedicated electrical diagnostic and repair services throughout the entire Town of Los Gatos across ZIP codes 95030, 95031, 95032, and 95033, including surrounding Santa Clara County pockets. From the Downtown historic core (95030, 95031) and Almond Grove to Blossom Hill Manor (95032), Rinconada, Belwood, and mountain communities (95033) like Redwood Estates and Chemeketa Park, our licensed electricians handle emergency home and commercial EV charger repairs."
   },
   {
     q: "How fast can you repair a broken Tesla Wall Connector or Level 2 charger?",
-    a: "We offer priority same-day and 24-hour diagnostic dispatch across Los Gatos. If your charger displays error codes, trips the main breaker, fails to handshake with your vehicle, or suffered thermal damage at the outlet, our mobile service trucks carry diagnostic tools and OEM replacement parts to restore your power quickly."
+    a: "We offer priority same-day diagnostic dispatch across Los Gatos. If your charger displays error codes, trips the breaker, fails to handshake with your vehicle, or suffered thermal damage at the outlet, our mobile service trucks carry diagnostic tools and OEM replacement parts to restore your power quickly."
+  },
+  {
+    q: "Why does my EV charger keep tripping the circuit breaker?",
+    a: "Continuous 32A to 48A charging places intense thermal strain on double-pole breakers. If the breaker is worn, loose, or under-rated, it trips to prevent fire. We diagnose the circuit, replace fatigued breakers, and re-torque all connections to manufacturer specifications."
   },
   {
     q: "Can older homes in Los Gatos support a fast 48-amp EV charger?",
-    a: "Many historic and mid-century homes in Los Gatos originally have 100-amp or 125-amp electrical services. A 48-amp charger requires a dedicated 60-amp circuit breaker under the continuous load rule of the National Electrical Code. If your panel lacks capacity, we perform seamless 200-amp main service upgrades or install smart energy monitors that dynamically throttle charging when household appliances run."
+    a: "Many historic and mid-century homes in Los Gatos originally have 100-amp or 125-amp electrical services. If high loads cause repeated breaker trips, we repair overloaded panel connections, rebalance phases, or install smart load-shedding switches that dynamically prevent overloads."
   },
   {
     q: "Are you licensed and insured for high-voltage residential electrical work in California?",
-    a: "Absolutely. Los Gatos EV Charger Pros operates under California C-10 Electrical Contractor License #1048291. We carry comprehensive commercial general liability and workers' compensation coverage, ensuring total protection for your estate or business."
+    a: "Absolutely. Los Gatos EV Charger Repair operates under California C-10 Electrical Contractor License #1048291. We carry comprehensive commercial general liability and workers' compensation coverage, ensuring total protection for your estate or business."
   }
 ];
 
@@ -71,9 +71,9 @@ const locationsHubImageSchema = {
   "@type": "ImageObject",
   "contentUrl": `${siteConfig.domain}/images/los-gatos-residential-ev-charger-installation-electrician.jpg`,
   "url": `${siteConfig.domain}/images/los-gatos-residential-ev-charger-installation-electrician.jpg`,
-  "name": "Los Gatos EV Charger Installation & Repair Certified Electricians",
-  "description": "Licensed C-10 electrician calibrating and installing Level 2 EV charging stations across all 25 Los Gatos neighborhoods and mountain corridors.",
-  "caption": "Professional EV Charger Installation Across Los Gatos",
+  "name": "Los Gatos EV Charger Repair Certified Electricians",
+  "description": "Licensed C-10 electrician diagnosing and repairing Level 2 EV charging stations across all 25 Los Gatos neighborhoods.",
+  "caption": "Professional EV Charger Repair Across Los Gatos",
   "width": 1280,
   "height": 720
 };
@@ -97,13 +97,13 @@ const locationsHubImageSchema = {
       <div class="hero-grid">
         <div class="hero-content">
           <span class="badge-tag">Service Coverage Hub</span>
-          <h1>Los Gatos Neighborhood EV Charger Service Areas</h1>
+          <h1>Los Gatos Neighborhood EV Charger Repair Service Areas</h1>
           <p class="hero-lead">
-            We bring licensed electrical expertise, rapid diagnostic dispatch, and code-compliant installations to all 25 distinct neighborhoods and mountain corridors throughout Los Gatos, California.
+            We bring licensed electrical expertise, rapid diagnostic dispatch, and permanent repair solutions to all 25 distinct neighborhoods and mountain corridors throughout Los Gatos, California.
           </p>
           <div class="hero-actions">
             <a href="/contact-us/" class="btn btn-lime-teal btn-lg">
-              Get a Quote
+              Request Repair
             </a>
             <a href={`tel:${siteConfig.phone}`} class="btn btn-outline-white btn-lg">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -113,8 +113,8 @@ const locationsHubImageSchema = {
         </div>
 
         <HeroShowcaseImage
-          alt="Los Gatos Neighborhood EV Charger Service Areas Map and Locations"
-          title="Los Gatos EV Charger Service Coverage across All 25 Neighborhoods"
+          alt="Los Gatos Neighborhood EV Charger Repair Service Areas Map and Locations"
+          title="Los Gatos EV Charger Repair Coverage across All 25 Neighborhoods"
           badgeText="All 25 Los Gatos Neighborhoods Covered"
         />
       </div>

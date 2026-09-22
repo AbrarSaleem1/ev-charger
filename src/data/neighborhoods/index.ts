@@ -95,18 +95,18 @@ function buildNeighborhoodData(n: typeof neighborhoodsList[0]): NeighborhoodData
     name: n.name,
     slug: n.slug,
     zip: n.zip,
-    metaTitle: `${n.primaryKeyword} | Licensed Electricians Los Gatos`,
-    metaDescription: `Professional ${n.primaryKeyword.toLowerCase()} and 240V Level 2 installations in ${n.name}, Los Gatos (ZIP ${n.zip}). Fast local electricians, Tesla repairs, and panel upgrades.`,
-    h1: `${n.name} EV Charger Installation, Repair & High-Amperage 240V Upgrades`,
-    openingText: `Maintaining rapid, reliable electric vehicle charging in ${n.name} requires electrical systems engineered for modern high-draw commuter demands. Our licensed C-10 electricians deliver comprehensive Level 2 charging installations, 200-amp service upgrades, and urgent diagnostic repairs throughout ${n.landmarks[0] || n.name} and surrounding Los Gatos streets.`,
-    heroSubheadline: `Certified Tesla Wall Connector & universal Level 2 diagnostic electricians serving residential estates, townhomes, and private garages across ${n.name}, Los Gatos.`,
+    metaTitle: `${n.primaryKeyword} | 24/7 Licensed Electricians Los Gatos`,
+    metaDescription: `Fast, certified ${n.primaryKeyword.toLowerCase()} and 240V diagnostic repairs in ${n.name}, Los Gatos (ZIP ${n.zip}). We fix tripping breakers, flashing red lights, melted outlets & dead stations.`,
+    h1: `${n.name} EV Charger Repair, Diagnostics & Emergency Circuit Troubleshooting`,
+    openingText: `When an electric vehicle charging station malfunctions or trips the breaker in ${n.name}, you need rapid, certified electrical diagnostic repair. Our licensed C-10 electricians deliver comprehensive EV charger repairs, 240V circuit troubleshooting, breaker replacements, and emergency diagnostics throughout ${n.landmarks[0] || n.name} and surrounding Los Gatos streets.`,
+    heroSubheadline: `Certified Tesla Wall Connector & universal Level 2 diagnostic electricians providing same-day repair dispatch across ${n.name}, Los Gatos.`,
     
     housingProfile: {
       title: `${n.name} Residential Housing Characteristics & Electrical Load Analysis`,
       paragraphs: [
-        `The residential landscape of ${n.name} (ZIP ${n.zip}) reflects the rich architectural progression of Los Gatos, encompassing ${n.housingStyle.toLowerCase()}. Whether homes in this sector date to mid-century suburban expansion or represent newer custom estate construction, powering a modern electric vehicle introduces distinct electrical infrastructure requirements.`,
-        `Under National Electrical Code (NEC Article 625), electric vehicle charging is classified as a continuous duty load, demanding that conductors and overcurrent protection devices operate at no more than 80% of their rated capacity. In ${n.name}, where daily Silicon Valley commuters travel along nearby arterials and highways, charging an EV at 48 amps draws 11.5 kW of continuous power for 6 to 9 hours nightly. This sustained current places immense thermal strain on existing 100A or 125A main service panels, frequently necessitating dedicated subpanel additions or full 200-amp service heavy-ups.`,
-        `Furthermore, properties in this section of Los Gatos often feature detached garage buildings, steep driveway grades, or long exterior setbacks from the electrical meter. Safely routing high-voltage conductors across these properties requires rigid schedule 80 PVC underground trenching, heavy-wall EMT conduit runs, and precision calculations to eliminate voltage drop and ensure peak vehicle charging efficiency.`
+        `The residential landscape of ${n.name} (ZIP ${n.zip}) reflects the rich architectural progression of Los Gatos, encompassing ${n.housingStyle.toLowerCase()}. Whether homes in this sector date to mid-century suburban expansion or represent newer custom estate construction, powering a modern electric vehicle introduces distinct electrical infrastructure stresses.`,
+        `Under National Electrical Code (NEC Article 625), electric vehicle charging is classified as a continuous duty load, demanding that conductors and overcurrent protection devices operate at no more than 80% of their rated capacity. In ${n.name}, where daily Silicon Valley commuters travel along nearby arterials and highways, charging an EV at 48 amps draws 11.5 kW of continuous power for 6 to 9 hours nightly. This sustained current places immense thermal strain on existing 100A or 125A main service panels, frequently causing breakers to trip, terminals to loosen, and faceplates to scorch.`,
+        `Furthermore, properties in this section of Los Gatos often feature detached garage buildings, steep driveway grades, or long exterior setbacks from the electrical meter. Diagnosing power loss or voltage drop across these properties requires precision instrumentation, thermal imaging, and expert ground-fault tracing to restore safe, high-speed charging.`
       ]
     },
 
@@ -125,7 +125,7 @@ function buildNeighborhoodData(n: typeof neighborhoodsList[0]): NeighborhoodData
       },
       {
         title: `Main Electrical Service Panel Overload`,
-        description: `In homes with existing central air conditioning and electric water heaters, charging an EV can push total service demand past main panel thresholds. We install smart energy management load shedders or coordinate complete 200-amp panel heavy-ups.`
+        description: `In homes with existing central air conditioning and electric water heaters, charging an EV can push total service demand past main panel thresholds. We install smart energy management load shedders or repair overloaded panel busbars.`
       },
       {
         title: `Nuisance GFCI Interrupter Trips on Plug-In Chargers`,
@@ -136,18 +136,18 @@ function buildNeighborhoodData(n: typeof neighborhoodsList[0]): NeighborhoodData
     featuredServices: [
       {
         slug: "tesla-wall-connector-installation-repair",
-        name: "Tesla Wall Connector Installation & Repair",
-        desc: `High-speed 48A hardwired setup, Wi-Fi pairing, power sharing, and troubleshooting for Tesla owners in ${n.name}.`
+        name: "Tesla Wall Connector Repair & Diagnostics",
+        desc: `Diagnostic testing, red error light resolution, thermal sensor repair, and internal board fixes for Tesla owners in ${n.name}.`
       },
       {
         slug: "level-2-charger-installation",
-        name: "Level 2 (240V) Home Charger Installation",
-        desc: `Dedicated 50A/60A circuit installations for Rivian, Porsche, Ford, Audi, and universal J1772/NACS electric vehicles.`
+        name: "Level 2 (240V) Home Charger Repair",
+        desc: `Rapid diagnostic and component repair for ChargePoint, Rivian, JuiceBox, Autel, and universal J1772/NACS charging stations.`
       },
       {
         slug: "ev-charger-circuit-panel-upgrade",
-        name: "200A Electrical Panel Modernization",
-        desc: `Upgrading outdated 100A/125A panels to modern copper-bus 200A services with whole-home surge suppression in ${n.name}.`
+        name: "EV Charger Breaker & Panel Repair",
+        desc: `Fixing tripping 50A/60A breakers, scorched panel busbars, loose terminations, and panel overload issues in ${n.name}.`
       },
       {
         slug: "ev-charger-troubleshooting-repair",
@@ -158,35 +158,35 @@ function buildNeighborhoodData(n: typeof neighborhoodsList[0]): NeighborhoodData
 
     deepDiveContent: [
       {
-        heading: `Technical Engineering Standards for EV Installations in ${n.name}`,
+        heading: `Technical Diagnostic Standards for EV Charger Repairs in ${n.name}`,
         paragraphs: [
-          `Installing an EV charger in ${n.name} is not merely a matter of mounting a box to the wall; it is a major electrical infrastructure addition that must comply with California Electrical Code (Title 24, Part 3) and Town of Los Gatos building safety regulations. The continuous draw of 11.5 kW requires meticulous engineering to prevent fire hazards and equipment degradation.`,
-          `Our electricians perform thorough point-of-entry load evaluations under NEC Article 220. We account for existing large loads—including HVAC compressors, pool pumps, ovens, and subpanel distribution—to verify that your service panel has sufficient capacity. Where capacity is constrained, we implement smart dynamic load-shedding systems (such as DCC or NeoCharge units) that safely modulate charging speed without requiring disruptive utility trenching.`,
-          `We use only premium commercial-grade materials: heavy-gauge THHN copper conductors, solid steel strut mounting channels, and industrial dual-pole breakers torqued to exact manufacturer pound-inch specifications with calibrated digital instruments. This uncompromising standard ensures that your home charging system operates safely and efficiently for decades.`
+          `Repairing an EV charger in ${n.name} requires advanced diagnostic testing and full compliance with California Electrical Code (Title 24, Part 3). Because EV charging stations pull continuous high current for hours, a simple reset switch does not address underlying electrical resistance or wiring degradation.`,
+          `Our licensed electricians perform systematic point-of-entry load evaluations under NEC Article 220. Using True-RMS clamp meters and digital multimeters, we measure phase-to-phase and phase-to-ground voltage drops under active vehicle load. We test grounding electrode resistance to verify that protective shutoffs are functioning correctly.`,
+          `We use only commercial-grade replacement components: industrial Hubbell receptacles, commercial-grade double-pole breakers, and heavy-duty lugs torqued to exact manufacturer pound-inch specifications with calibrated digital tools. This uncompromising repair standard ensures your charging system operates safely and reliably for years to come.`
         ]
       },
       {
-        heading: `Permitting and Municipal Approvals Through the Town of Los Gatos`,
+        heading: `Resolving Code Violations & Unsafe Previous Installations in ${n.name}`,
         paragraphs: [
-          `Every residential EV charging circuit installed in ${n.name} requires a building and electrical permit issued by the Town of Los Gatos Community Development Department (or Santa Clara County Planning for unincorporated parcels). Unpermitted installations create significant financial risks, including voided manufacturer warranties and complications during future home sales.`,
-          `Our project management team handles the entire civic approval workflow. We draft professional single-line electrical schematics, submit permit applications online or in person at town hall, pay municipal fees, and schedule on-site inspections upon project completion.`,
-          `Because our installations strictly observe code mandates regarding conduit strapping intervals, conductor fill percentages, and grounding electrode resistance, our projects consistently pass town inspections on the initial walkthrough. We provide you with all final signed inspection certificates for your property records.`
+          `A substantial portion of repair calls in ${n.name} stem from unpermitted or improper original installations. Common issues include undersized aluminum wiring, residential-grade dryer outlets pressed into continuous 40-amp EV duty, and missing expansion fittings on outdoor conduit runs.`,
+          `These defects create severe fire hazards, void electric vehicle battery warranties, and cause nuisance breaker tripping. Our electricians identify and rectify all code violations on site, bringing circuits up to modern Town of Los Gatos Community Development Department and NEC standards.`,
+          `If your charging station requires permit documentation or municipal sign-off following a major circuit repair, our project management team coordinates all inspections directly with Town building officials.`
         ]
       },
       {
-        heading: `Maximizing Savings with PG&E Time-of-Use EV2-A Rate Schedules`,
+        heading: `Emergency 24/7 Diagnostic Dispatch & Stocked Service Vans in ${n.name}`,
         paragraphs: [
-          `Residents of ${n.name} have access to Pacific Gas and Electric's EV2-A Time-of-Use rate schedule, designed specifically to reward EV owners who shift electrical consumption away from high-demand peak grid hours.`,
-          `Under this structure, charging between 4:00 PM and 9:00 PM incurs peak utility rates that can be up to three times higher than off-peak overnight rates. As part of our comprehensive commissioning service, our electricians assist in programming your smart charger's internal scheduling clock to ensure that charging automatically commences during off-peak hours (midnight to 3:00 PM).`,
-          `For homes in ${n.name} equipped with rooftop solar panels or home battery storage, we can configure dynamic charging parameters that absorb excess daytime solar generation, transforming clean Silicon Valley sunshine directly into vehicle range at practically zero operating cost.`
+          `When your EV charger fails overnight, having an inoperable vehicle in the morning can derail your Silicon Valley commute. Our mobile dispatch facility at 14165 Capri Drive in Los Gatos provides rapid, same-day diagnostic response across ${n.name}.`,
+          `Our service vans are fully stocked with factory-certified diagnostic equipment, commercial replacement breakers (Square D, Eaton, Siemens), heavy-gauge copper wiring, and industrial-grade receptacles so that most repairs are completed on the initial visit.`,
+          `Every repair includes a comprehensive thermal imaging inspection with FLIR infrared cameras to verify that all terminal blocks, breaker jaws, and conduit junction boxes operate within safe manufacturer temperature thresholds.`
         ]
       },
       {
-        heading: `Concealed Conduit Aesthetics and Outdoor Pedestal Options`,
+        heading: `Protecting Sensitive EV Electronics from Power Surges in ${n.name}`,
         paragraphs: [
-          `Maintaining the curb appeal and architectural beauty of properties in ${n.name} is a guiding principle for our electricians. We avoid running unsightly exposed conduit across exterior siding or conspicuous garage facades whenever possible.`,
-          `Our team utilizes crawlspaces, unfinished basements, and attic raceways to route heavy copper conductors invisibly. When surface conduit is required, we use sleek EMT conduit painted to match your home's exterior trim, or install architectural wireways that blend seamlessly into existing building contours.`,
-          `For residences with detached garages, carports, or outdoor motor courts, we provide freestanding, weather-tight NEMA 4X charging pedestals with integrated cable management retractors. These durable stations withstand heavy winter rain and summer sun while providing easy charging access right at your parking stall.`
+          `Modern electric vehicles contain delicate onboard charging computers and high-voltage battery management systems. During Silicon Valley winter storms and grid switching events, transient voltage spikes can severely damage both your charging station and your vehicle's onboard converter.`,
+          `As part of our diagnostic repair service, our technicians inspect your electrical panel's surge suppression system. We can integrate heavy-duty Type 2 Surge Protective Devices (SPD) directly into your main service panel to clamp voltage spikes before they reach your car.`,
+          `We also verify ground bonding impedance at your home's water main and grounding rods, ensuring that lightning surges and utility transients dissipate safely into the earth rather than through your charger.`
         ]
       }
     ],
@@ -194,50 +194,50 @@ function buildNeighborhoodData(n: typeof neighborhoodsList[0]): NeighborhoodData
     serviceProcess: [
       {
         step: "01",
-        title: "Site Diagnostic & Load Calculation",
-        description: `We evaluate your electrical panel in ${n.name}, measure conduit distance to your parking area, and calculate continuous household electrical loads.`
+        title: "Same-Day Dispatch & Visual Safety Scan",
+        description: `We dispatch a licensed C-10 electrician to your home in ${n.name} to inspect the charging station, wiring, and breaker panel for scorch marks, thermal damage, or loose connections.`
       },
       {
         step: "02",
-        title: "Blueprint Drafting & Permit Acquisition",
-        description: "We prepare single-line electrical schematics and submit permit applications directly to Town of Los Gatos building officials."
+        title: "Thermal Imaging & Voltage Metering",
+        description: "Using FLIR infrared cameras and True-RMS meters, we measure line voltage under load, test ground resistance, and analyze pilot wire signal frequencies."
       },
       {
         step: "03",
-        title: "Heavy-Gauge Conduit & Wiring Installation",
-        description: "Our licensed electricians run heavy-duty EMT or rigid PVC conduit, pull THHN copper conductors, and install dedicated commercial breakers."
+        title: "Component Replacement & Digital Torqueing",
+        description: "We replace faulty breakers, burnt receptacles, or damaged cables, and re-torque all electrical terminals to exact factory pound-inch specifications."
       },
       {
         step: "04",
-        title: "Charging Hardware Mounting & Torque Specs",
-        description: "We mount your Level 2 or Tesla Wall Connector, torque all connections with digital tools, and complete Wi-Fi commissioning."
+        title: "Continuous Full-Amperage Load Test",
+        description: "We connect test equipment and run your EV at maximum rated charging amperage (32A to 48A) while monitoring thermal levels to verify permanent repair."
       },
       {
         step: "05",
-        title: "Full-Load Testing & Final Inspection",
-        description: "We test voltage stability under continuous 48A draw and coordinate with Town of Los Gatos inspectors for final sign-off."
+        title: "Warranty Sign-Off & Diagnostic Report",
+        description: "We provide an itemized diagnostic report detailing our findings and back all replacement parts and craftsmanship with our comprehensive 1-year warranty."
       }
     ],
 
     pricingTransparency: {
-      title: `Tailored EV Charging Solutions for ${n.name}`,
-      lead: "Itemized written proposals with zero hidden markups or surprise fees, backed by full California C-10 licensing.",
+      title: `Clear, Upfront Pricing for EV Charger Repairs in ${n.name}`,
+      lead: "Itemized written proposals with zero hidden dispatch markups or surprise fees, backed by full California C-10 licensing.",
       tiers: [
         {
-          name: "Diagnostic & Repair Service Call",
-          description: `Troubleshooting tripped breakers, error codes, replacing damaged receptacles, and testing voltage stability in ${n.name}.`
+          name: "Diagnostic & Safety Scan Call",
+          description: `Complete diagnostic evaluation, thermal infrared scan, ground resistance testing, and error code troubleshooting in ${n.name}.`
         },
         {
-          name: "Standard Attached Garage Level 2 Install",
-          description: "Conduit run up to 25 feet from an accessible 200A panel, 50A/60A breaker, heavy copper wire, and charging station mounting."
+          name: "Breaker Replacement & Terminal Re-Torque",
+          description: "Replacement of worn or tripping 50A/60A double-pole breakers, terminal cleaning, and calibrated digital torqueing."
         },
         {
-          name: "Long Conduit Run / Subpanel Addition",
-          description: "Extended crawlspace or attic conduit routing (60+ feet), secondary 100A subpanel additions, and smart load management."
+          name: "Industrial 240V Receptacle & Wiring Overhaul",
+          description: "Replacement of melted or loose residential outlets with commercial-grade Hubbell 14-50 receptacles and new copper tails."
         },
         {
-          name: "Full 200A Main Service Panel Heavy-Up",
-          description: "Complete removal of obsolete panels, new 200A copper bus equipment, dual ground rods, PG&E coordination, and Town permits."
+          name: "Panel Overload Repair & Load Shedder Integration",
+          description: "Resolving main panel overload tripping through circuit rebalancing, subpanel repair, or smart load-shedding switch installation."
         }
       ]
     },

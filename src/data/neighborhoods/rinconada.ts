@@ -2,12 +2,12 @@ export const rinconadaData = {
   name: "Rinconada",
   slug: "rinconada",
   zip: "95032",
-  metaTitle: "EV Charger Repair Rinconada Los Gatos | HOA & Home Electricians",
-  metaDescription: "Licensed EV charger repair and Level 2 installations in Rinconada & Rinconada Hills, Los Gatos. HOA approval assistance, carport wiring, and Tesla charger diagnostics.",
-  h1: "Rinconada Los Gatos EV Charger Repair, HOA Approvals & 240V Installation",
-  openingText: "Securing dependable electric vehicle charging in the Rinconada and Rinconada Hills communities of Los Gatos requires an electrician skilled in both private residential estates and complex common-interest HOA developments. From Granada Way and Pollard Road to private gated carports, our licensed C-10 contractors troubleshoot charging faults, install certified Level 2 hardware, and streamline HOA compliance.",
+  metaTitle: "EV Charger Repair Rinconada Los Gatos | 24/7 Electricians",
+  metaDescription: "Licensed EV charger repair and diagnostics in Rinconada & Rinconada Hills, Los Gatos. HOA carport wiring repairs, tripped breaker fixes & Tesla diagnostics.",
+  h1: "Rinconada Los Gatos EV Charger Repair, Diagnostics & Electrical Troubleshooting",
+  openingText: "Securing dependable electric vehicle charging in the Rinconada and Rinconada Hills communities of Los Gatos requires an electrician skilled in both private residential estates and complex common-interest HOA developments. From Granada Way and Pollard Road to private gated carports, our licensed C-10 contractors troubleshoot charging faults, repair failing Level 2 stations, and restore tripping breakers.",
 
-  heroSubheadline: "Specialized EV charger repair, HOA carport installations, and residential 240V circuits serving Rinconada, Rinconada Hills, and West Los Gatos.",
+  heroSubheadline: "Specialized EV charger repair, HOA carport diagnostic troubleshooting, and 240V circuit repairs serving Rinconada, Rinconada Hills, and West Los Gatos.",
 
   housingProfile: {
     title: "Rinconada Housing Diversity: Custom Hillside Estates & HOA Townhome Enclaves",
@@ -44,18 +44,18 @@ export const rinconadaData = {
   featuredServices: [
     {
       slug: "commercial-multi-unit-ev-charging",
-      name: "HOA & Multi-Family Carport Charging",
-      desc: "Turnkey EV charging solutions for Rinconada Hills townhomes and HOAs, including sub-metering, Davis-Stirling compliance, and long conduit runs."
+      name: "HOA & Multi-Family Carport Repair",
+      desc: "Diagnostics and repair for shared carport charging stations, sub-meters, disconnect switches, and communal distribution panels in Rinconada Hills."
     },
     {
       slug: "tesla-wall-connector-installation-repair",
-      name: "Tesla Wall Connector Repair & Install",
-      desc: "High-speed 48A hardwired installations, Wi-Fi extender configuration, and firmware troubleshooting for Tesla owners in Rinconada."
+      name: "Tesla Wall Connector Repair & Diagnostics",
+      desc: "Wi-Fi connectivity troubleshooting, red error light fixes, 48A load verification, and firmware diagnostics for Tesla owners in Rinconada."
     },
     {
       slug: "level-2-charger-installation",
-      name: "Single-Family 240V Level 2 Stations",
-      desc: "Dedicated 50A and 60A circuits for custom residences along Granada Way, Pollard Road, and surrounding hillside avenues."
+      name: "Level 2 EV Charger Diagnostic & Repair",
+      desc: "Diagnostic service and component replacement for ChargePoint, Rivian, and universal 240V stations in custom residences along Granada Way."
     },
     {
       slug: "ev-charger-troubleshooting-repair",
@@ -128,24 +128,24 @@ export const rinconadaData = {
   ],
 
   pricingTransparency: {
-    title: "Tailored EV Charging Solutions for Rinconada",
-    lead: "Clear itemized proposals covering engineering, permitting, HOA documentation, and installation.",
+    title: "Clear, Upfront Pricing for Rinconada EV Charger Repairs",
+    lead: "Clear itemized proposals covering diagnostic testing, repair parts, and written warranties.",
     tiers: [
       {
-        name: "EV Charger Diagnostic & Repair Call",
+        name: "EV Charger Diagnostic & Safety Scan Call",
         description: "Troubleshooting communication faults, resetting tripped breakers, repairing loose lugs, and testing sub-metering accuracy."
       },
       {
-        name: "Single-Family Attached Garage Level 2 Install",
-        description: "Surface conduit runs up to 30 feet from an existing 200A panel, 50A/60A breaker, heavy copper wiring, and charger mounting."
+        name: "Breaker Replacement & Terminal Re-Torque",
+        description: "Replacing worn or tripping 50A/60A double-pole breakers, cleaning terminal busbars, and digital torque calibration."
       },
       {
-        name: "HOA Carport / Townhome Conduit Run",
-        description: "Extended conduit routing through shared utility spaces, core drilling, firestop sealing, disconnect switch, and subpanel connection."
+        name: "HOA Carport Circuit & Disconnect Repair",
+        description: "Troubleshooting conduit feeds, fixing disconnect switches, moisture-proofing outdoor receptacles, and wiring restoration."
       },
       {
-        name: "Turnkey HOA Sub-Metered Station Package",
-        description: "Revenue-grade digital sub-meter, commercial-grade Level 2 charger with RFID access, complete HOA submittal engineering, and Town permits."
+        name: "Subpanel Overload & Distribution Repair",
+        description: "Repairing communal subpanels, fixing shared breaker overloads, whole-building surge protection, and load balancing."
       }
     ]
   },

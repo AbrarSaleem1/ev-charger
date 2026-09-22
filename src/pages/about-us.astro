@@ -6,15 +6,15 @@ import ContentImage from '../components/ContentImage.astro';
 import siteConfig from '../data/site-config.json';
 import neighborhoodsList from '../data/neighborhoods-list.json';
 
-const pageTitle = "About Los Gatos EV Charger Pros | Licensed C-10 Electricians";
-const pageDescription = "Learn about Los Gatos EV Charger Pros. Founded in 2017 in Los Gatos, CA, we specialize in residential Level 2 EV charging, Tesla Wall Connectors, and 200A panel upgrades.";
+const pageTitle = "About Los Gatos EV Charger Repair | Licensed C-10 Electricians";
+const pageDescription = "Learn about Los Gatos EV Charger Repair. Founded in 2017 in Los Gatos, CA, we specialize in EV charger diagnostics, troubleshooting, Tesla Wall Connector repairs, and electrical panel circuit fixes.";
 const canonicalUrl = `${siteConfig.domain}/about-us/`;
 
 const aboutSchema = {
   "@context": "https://schema.org",
   "@type": "AboutPage",
   "name": `About ${siteConfig.businessName}`,
-  "description": `Learn about ${siteConfig.businessName}, providing licensed EV charger installation and repair services across Los Gatos, California.`,
+  "description": `Learn about ${siteConfig.businessName}, providing licensed EV charger repair, diagnostic, and troubleshooting services across Los Gatos, California.`,
   "publisher": {
     "@type": "Organization",
     "name": siteConfig.businessName,
@@ -72,13 +72,13 @@ const topNeighborhoods = neighborhoodsList.slice(0, 8);
       <div class="hero-grid">
         <div class="hero-content">
           <span class="badge-tag">Our Story & Heritage</span>
-          <h1>Dedicated Exclusively to High-Voltage EV Infrastructure in Los Gatos</h1>
+          <h1>Dedicated Exclusively to High-Voltage EV Charger Repair & Diagnostics in Los Gatos</h1>
           <p class="hero-lead">
-            Founded in 2017 at 14165 Capri Drive in Los Gatos, California, Los Gatos EV Charger Pros bridges the gap between cutting-edge electric vehicle technology and local residential electrical safety.
+            Founded in 2017 at 14165 Capri Drive in Los Gatos, California, Los Gatos EV Charger Repair bridges the gap between cutting-edge electric vehicle charging technology and residential electrical safety.
           </p>
           <div class="hero-actions" style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
             <a href="/contact-us/" class="btn btn-lime-teal btn-lg">
-              Get a Quote
+              Request Repair Service
             </a>
             <a href={`tel:${siteConfig.phone}`} class="btn btn-outline-white btn-lg">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -88,8 +88,8 @@ const topNeighborhoods = neighborhoodsList.slice(0, 8);
         </div>
 
         <HeroShowcaseImage
-          alt="About Los Gatos EV Charger Pros - Licensed Electrical Specialists"
-          title="Los Gatos EV Charger Installation & Repair Team"
+          alt="About Los Gatos EV Charger Repair - Licensed Electrical Specialists"
+          title="Los Gatos EV Charger Repair & Diagnostics Team"
           badgeText="Established 2017 • Los Gatos Headquarters"
         />
       </div>
@@ -104,15 +104,15 @@ const topNeighborhoods = neighborhoodsList.slice(0, 8);
       <div class="story-grid">
         <div class="story-text">
           <span class="section-badge">How We Started</span>
-          <h2>A Focused Passion for Safe Home EV Power</h2>
+          <h2>A Focused Passion for Safe Home EV Power & Reliable Charging</h2>
           <p class="lead-p">
-            When modern electric vehicles first gained widespread popularity across Silicon Valley in the mid-2010s, many homeowners found themselves frustrated with general electrical contractors who treated high-draw EV charging like a standard light fixture or ceiling fan.
+            When modern electric vehicles first gained widespread popularity across Silicon Valley in the mid-2010s, many homeowners found themselves frustrated with general electrical contractors who could not diagnose complex high-draw EV charging faults or persistent breaker trips.
           </p>
           <p>
-            Our founder recognized that drawing 40 to 48 amps continuously for 8 to 10 hours overnight places unprecedented thermal stress on residential panels and wiring. Outdated 100-amp panels, loose breaker terminals, and builders-grade receptacles were melting and creating severe safety risks.
+            Our founder recognized that drawing 40 to 48 amps continuously for 8 to 10 hours overnight places unprecedented thermal stress on residential panels and wiring. Outdated 100-amp panels, loose breaker terminals, and builders-grade receptacles were melting, throttling down, and creating severe safety hazards.
           </p>
           <p>
-            Los Gatos EV Charger Pros was formed to set a higher benchmark. As California C-10 Electrical Contractors (#1048291), we specialize exclusively in high-amperage continuous loads: Tesla Wall Connectors, universal Level 2 stations, 200A service heavy-ups, and commercial multi-unit charging infrastructure.
+            Los Gatos EV Charger Repair was formed to set a higher benchmark. As California C-10 Electrical Contractors (#1048291), we specialize exclusively in diagnosing and repairing high-amperage continuous electrical systems: Tesla Wall Connectors, universal Level 2 stations, breaker tripping, melted 240V outlets, and commercial multi-unit charging infrastructure.
           </p>
         </div>
 
@@ -120,8 +120,8 @@ const topNeighborhoods = neighborhoodsList.slice(0, 8);
       <div style="margin: 2.5rem 0;">
         <ContentImage
           src="/images/los-gatos-electrician-service-van.jpg"
-          alt="Los Gatos EV Charger Pros service van and certified electrician dispatched in Los Gatos"
-          title="Los Gatos Mobile Electrical Service Unit"
+          alt="Los Gatos EV Charger Repair service van and certified electrician dispatched in Los Gatos"
+          title="Los Gatos Mobile Electrical Diagnostic Unit"
           caption="Our fully equipped service vans are dispatched daily from 14165 Capri Dr throughout all 25 Los Gatos neighborhoods."
         />
       </div>
@@ -145,7 +145,7 @@ const topNeighborhoods = neighborhoodsList.slice(0, 8);
                 <strong>Insurance:</strong> Fully Insured Commercial General Liability
               </li>
               <li>
-                <strong>Specialization:</strong> Tesla, Level 2, 200A Panels, HOA Carports
+                <strong>Specialization:</strong> Tesla Wall Connector Repair, Level 2 Diagnostics, Breakers, Melted Outlets
               </li>
             </ul>
           </div>
@@ -173,7 +173,7 @@ const topNeighborhoods = neighborhoodsList.slice(0, 8);
           <h3>David Miller, C-10 Master Electrician</h3>
           <p class="team-title">Founder & Technical Director • 18+ Years in Electrical Engineering</p>
           <p>
-            David has lived and worked in Santa Clara County for nearly two decades. After managing commercial switchgear installations across Silicon Valley tech campuses, David established Los Gatos EV Charger Pros to bring industrial-grade electrical safety directly to local homeowners.
+            David has lived and worked in Santa Clara County for nearly two decades. After managing commercial switchgear installations across Silicon Valley tech campuses, David established Los Gatos EV Charger Repair to bring industrial-grade electrical safety directly to local homeowners.
           </p>
           <p>
             "An electric vehicle is often the largest single electrical load a home will ever experience. Our responsibility is to ensure that when a Los Gatos family plugs in their vehicle at night, their panel operates smoothly, their family sleeps safely, and their car is 100% charged every morning."
@@ -230,7 +230,7 @@ const topNeighborhoods = neighborhoodsList.slice(0, 8);
         <div class="diff-item">
           <span class="diff-num">01</span>
           <h4>EV-Exclusive Focus</h4>
-          <p>We don't install drywall or landscape lighting. We specialize exclusively in high-draw vehicle charging infrastructure.</p>
+          <p>We don't do general handyman repairs. We specialize exclusively in high-draw electric vehicle charger diagnostics and repair.</p>
         </div>
         <div class="diff-item">
           <span class="diff-num">02</span>
@@ -295,7 +295,7 @@ const topNeighborhoods = neighborhoodsList.slice(0, 8);
       <div class="testimonials-grid">
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Prompt, courteous, and exceptionally clean conduit work in our Downtown Los Gatos home. Upgraded our panel to 200A and installed a hardwired Tesla charger that works flawlessly every night."</p>
+          <p class="review-text">"Prompt, courteous, and exceptionally knowledgeable. Diagnosed a continuous breaker trip on our Tesla Wall Connector and restored full charging within an hour. Works flawlessly every night."</p>
           <div class="review-meta">
             <strong>David K.</strong>
             <span>Bachman Ave, Downtown Los Gatos</span>
@@ -325,7 +325,7 @@ const topNeighborhoods = neighborhoodsList.slice(0, 8);
   <section class="cta-band">
     <div class="container cta-inner">
       <div class="cta-text">
-        <h2>Ready to Work With Los Gatos' Trusted EV Electricians?</h2>
+        <h2>Need Trusted EV Charger Diagnostics or Repair in Los Gatos?</h2>
         <p>Call our office today for honest advice, same-day scheduling, and upfront written proposals.</p>
       </div>
       <div class="cta-btns">

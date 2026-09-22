@@ -7,8 +7,8 @@ import siteConfig from '../../data/site-config.json';
 import services from '../../data/services.json';
 import neighborhoodsList from '../../data/neighborhoods-list.json';
 
-const pageTitle = "EV Charger Services Los Gatos | Installation, Repair & Panel Upgrades";
-const pageDescription = "Explore licensed EV charger services in Los Gatos, CA: Tesla Wall Connector installations, Level 2 (240V) setups, 200A panel upgrades, and commercial charging stations.";
+const pageTitle = "EV Charger Repair Services Los Gatos | Diagnostic, Breaker & Station Repair";
+const pageDescription = "Explore certified EV charger repair services in Los Gatos, CA: Tesla Wall Connector diagnostics, Level 2 station repair, tripping breaker fixes, and melted outlet replacements.";
 const canonicalUrl = `${siteConfig.domain}/services/`;
 
 const breadcrumbSchema = {
@@ -32,24 +32,24 @@ const breadcrumbSchema = {
 
 const serviceFaqs = [
   {
-    q: "What brands of electric vehicle chargers do your Los Gatos electricians install?",
-    a: "We install and repair all major Level 2 and commercial charging brands, including Tesla (Gen 2, Gen 3, Universal Wall Connector), ChargePoint Home Flex, Rivian Wall Charger, Emporia, Autel MaxiCharger, Wallbox Pulsar Plus, Enel X JuiceBox, and Bosch."
+    q: "What brands of electric vehicle chargers do your Los Gatos electricians repair?",
+    a: "We repair and troubleshoot all major Level 2 and commercial charging brands, including Tesla (Gen 2, Gen 3, Universal Wall Connector), ChargePoint Home Flex, Rivian Wall Charger, Emporia, Autel MaxiCharger, Wallbox Pulsar Plus, Enel X JuiceBox, and commercial pedestal units."
   },
   {
-    q: "How much faster is a Level 2 (240V) charger compared to standard 120V trickle charging?",
-    a: "Level 1 charging on a 120V household outlet typically adds 3 to 5 miles of range per hour of charging. A dedicated 240V Level 2 charger running at 40 to 48 amps adds 30 to 45 miles of range per hour, fully replenishing a depleted electric battery overnight."
+    q: "Why is my EV charger flashing a red light or showing an error code?",
+    a: "A red flashing error indicator typically signals an active safety interlock: high ground impedance, thermal throttling at terminal lugs, line voltage drops below 208V, or pilot signal communication errors. Our technicians diagnose and clear these errors on site."
   },
   {
-    q: "How do I know if my electrical service panel in Los Gatos needs an upgrade?",
-    a: "If your panel has a 100-amp or 125-amp main breaker, has no available physical slots, or was manufactured by Zinsco or Federal Pacific Electric, an upgrade is strongly advised. We perform an exact NEC Article 220 load calculation to determine whether a 200A heavy-up or a smart load-shedding switch is best."
+    q: "Why does my EV charger circuit breaker keep tripping?",
+    a: "Continuous 32A to 48A loads generate substantial heat inside the breaker panel. If a breaker is fatigued, undersized, or experiencing a dual-GFCI monitoring conflict, it trips to prevent fire. We diagnose breaker health and replace faulty units with commercial continuous-duty breakers."
   },
   {
-    q: "Can you install an EV charger in a detached garage or outdoor carport?",
-    a: "Yes. We frequently install EV charging circuits to detached garages and carports across Los Gatos. We run heavy-duty underground schedule 80 PVC conduit buried at code-compliant 18-inch depths, or use weather-rated NEMA 4X outdoor pedestals with integrated cable retractors."
+    q: "Can you fix a melted 240V NEMA 14-50 outlet?",
+    a: "Yes. Many homes have cheap residential-grade outlets meant for occasional clothes dryer use. Continuous EV charging melts the plastic faceplate and prongs. We replace damaged outlets with industrial-grade Hubbell receptacles with heavy-duty brass contacts."
   },
   {
-    q: "What warranties do you provide on EV charging installations?",
-    a: "We provide a comprehensive 3-year craftsmanship warranty on all wiring, conduit runs, and breaker terminations, alongside the manufacturer's warranty on the charging unit itself (typically 3 to 4 years for leading brands like Tesla and ChargePoint)."
+    q: "What warranties do you provide on EV charger repairs?",
+    a: "We provide a comprehensive 1-year parts and craftsmanship warranty on all electrical repairs, breaker replacements, and wiring restorations."
   }
 ];
 
@@ -69,11 +69,11 @@ const faqSchema = {
 const servicesHubImageSchema = {
   "@context": "https://schema.org",
   "@type": "ImageObject",
-  "contentUrl": `${siteConfig.domain}/images/level-2-home-ev-charger-installation.jpg`,
-  "url": `${siteConfig.domain}/images/level-2-home-ev-charger-installation.jpg`,
-  "name": "Level 2 EV Charging Station Installation in Los Gatos, California",
-  "description": "Professional 240V Level 2 charging station and dedicated circuit installation in Los Gatos home garage.",
-  "caption": "Turnkey Level 2 EV Charger Installation in Los Gatos",
+  "contentUrl": `${siteConfig.domain}/images/ev-troubleshooting-thermal-imaging.jpg`,
+  "url": `${siteConfig.domain}/images/ev-troubleshooting-thermal-imaging.jpg`,
+  "name": "EV Charger Repair and Thermal Diagnostic Scan in Los Gatos, California",
+  "description": "FLIR thermal diagnostic scanning and electrical testing of failing EV charging stations in Los Gatos.",
+  "caption": "Certified EV Charger Repair & Diagnostics in Los Gatos",
   "width": 1280,
   "height": 720
 };
@@ -97,14 +97,14 @@ const servicesHubImageSchema = {
 
       <div class="hero-grid">
         <div class="hero-content">
-          <span class="badge-tag">Licensed Electrical Services</span>
-          <h1>Comprehensive EV Charging Solutions in Los Gatos</h1>
+          <span class="badge-tag">Certified Diagnostic Electricians</span>
+          <h1>Certified EV Charger Repair & Diagnostics in Los Gatos</h1>
           <p class="hero-lead">
-            Certified high-amperage electrical installations, emergency diagnostic repairs, and service panel heavy-ups engineered for residential homes, condominiums, and commercial properties throughout Los Gatos, California.
+            Licensed high-amperage electrical troubleshooting, emergency diagnostic repairs, and circuit fixes engineered for residential homes, condominiums, and commercial properties throughout Los Gatos, California.
           </p>
           <div class="hero-actions">
             <a href="/contact-us/" class="btn btn-lime-teal btn-lg">
-              Get a Quote
+              Request Repair
             </a>
             <a href={`tel:${siteConfig.phone}`} class="btn btn-outline-white btn-lg">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -114,9 +114,9 @@ const servicesHubImageSchema = {
         </div>
 
         <HeroShowcaseImage
-          alt="EV Charger Services in Los Gatos CA - Residential and Commercial Charging Stations"
-          title="Licensed EV Charging Services in Los Gatos, CA"
-          badgeText="All EV Charging & Panel Upgrade Services • Los Gatos, CA"
+          alt="EV Charger Repair Services in Los Gatos CA - Residential and Commercial Charging Stations"
+          title="Licensed EV Charger Repair Services in Los Gatos, CA"
+          badgeText="EV Charger Repair & Diagnostics • Los Gatos, CA"
         />
       </div>
     </div>
@@ -177,30 +177,30 @@ const servicesHubImageSchema = {
     <div class="container">
       <div class="section-header text-center">
         <span class="section-badge">How We Deliver</span>
-        <h2>Our Standard 4-Step Installation Workflow</h2>
-        <p class="section-subtitle">A seamless process designed to minimize household disruption and guarantee long-term electrical safety.</p>
+        <h2>Our Standard 4-Step Repair & Diagnostic Workflow</h2>
+        <p class="section-subtitle">A rigorous diagnostic process engineered to isolate electrical faults, restore safe charging, and guarantee long-term reliability.</p>
       </div>
 
       <div class="process-grid">
         <div class="proc-card">
           <span class="proc-num">1</span>
-          <h3>Load Calculation & Site Survey</h3>
-          <p>We evaluate your electrical service, test busbar capacity, measure conduit distances, and verify grounding resistance.</p>
+          <h3>Same-Day Diagnostic Dispatch</h3>
+          <p>Our licensed electrician arrives with factory-certified diagnostic equipment to inspect fault codes, terminals, and breakers.</p>
         </div>
         <div class="proc-card">
           <span class="proc-num">2</span>
-          <h3>Engineering & Town Permitting</h3>
-          <p>We draft single-line electrical schematics and secure municipal permits through the Town of Los Gatos Community Development Department.</p>
+          <h3>Thermal Scan & Voltage Testing</h3>
+          <p>Using FLIR thermal cameras and True-RMS meters, we identify resistive hot spots, ground impedance issues, and voltage drops.</p>
         </div>
         <div class="proc-card">
           <span class="proc-num">3</span>
-          <h3>Precision Heavy-Gauge Installation</h3>
-          <p>Our electricians run steel conduit, pull high-grade THHN copper, torque terminals with calibrated instruments, and mount hardware.</p>
+          <h3>Component Repair & Digital Torqueing</h3>
+          <p>We replace damaged breakers, burnt receptacles, or faulty contactors, torqueing all terminals with calibrated instruments.</p>
         </div>
         <div class="proc-card">
           <span class="proc-num">4</span>
-          <h3>Full-Load Commissioning & Sign-Off</h3>
-          <p>We test voltage stability under continuous 48A draw, pair mobile apps for off-peak charging, and attend the town building inspection.</p>
+          <h3>Continuous Full-Load Verification</h3>
+          <p>We test continuous charging under full 48A load while monitoring thermal levels, backed by our 1-year repair warranty.</p>
         </div>
       </div>
     </div>
