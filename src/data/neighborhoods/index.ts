@@ -77,6 +77,29 @@ const coreProfiles: Record<string, NeighborhoodData> = {
   'rinconada': rinconadaData,
 };
 
+const neighborhoodH1Map: Record<string, string> = {
+  'blossom-crest': 'Blossom Crest EV Charger Repair & Breaker Replacement',
+  'rancho-carrillo': 'Rancho Carrillo EV Charger Repair & Circuit Troubleshooting',
+  'east-los-gatos': 'East Los Gatos EV Charger Repair & Electrical Restoration',
+  'austin': 'Austin Los Gatos EV Charger Repair & Circuit Troubleshooting',
+  'belwood': 'Belwood EV Charger Repair & 240V Circuit Troubleshooting',
+  'north-forty': 'North Forty EV Charger Repair & Station Troubleshooting',
+  'los-gatos-creek-trail-corridor': 'Los Gatos Creek Trail Corridor EV Charger Repair',
+  'blossom-manor': 'Blossom Manor EV Charger Repair & Breaker Replacement',
+  'cambrian-pioneer': 'Cambrian-Pioneer EV Charger Repair & Electrical Troubleshooting',
+  'quito': 'Quito Los Gatos EV Charger Repair & Circuit Restoration',
+  'noddin': 'Noddin EV Charger Repair & 240V Circuit Troubleshooting',
+  'vasona-area': 'Vasona Area EV Charger Repair & Breaker Troubleshooting',
+  'winchester-blvd-corridor': 'Winchester Blvd Corridor EV Charger Repair & Restoration',
+  'lexington-hills': 'Lexington Hills EV Charger Repair & Mountain Electrical Troubleshooting',
+  'redwood-estates': 'Redwood Estates EV Charger Repair & Circuit Restoration',
+  'holy-city': 'Holy City EV Charger Repair & High-Voltage Troubleshooting',
+  'chemeketa-park': 'Chemeketa Park EV Charger Repair & Circuit Troubleshooting',
+  'aldercroft-heights': 'Aldercroft Heights EV Charger Repair & Restoration',
+  'alma': 'Alma Los Gatos EV Charger Repair & Dedicated Circuit Troubleshooting',
+  'old-santa-cruz-highway-corridor': 'Old Santa Cruz Highway Corridor EV Charger Repair'
+};
+
 // Builder function for remaining neighborhoods to ensure 2200-3000 words of authentic, unique, locally relevant content
 function buildNeighborhoodData(n: typeof neighborhoodsList[0]): NeighborhoodData {
   if (coreProfiles[n.slug]) {
@@ -91,15 +114,17 @@ function buildNeighborhoodData(n: typeof neighborhoodsList[0]): NeighborhoodData
     note: `Adjacent residential pocket in Los Gatos (ZIP ${item.zip}) with high EV commuter density.`
   }));
 
+  const dynamicH1 = neighborhoodH1Map[n.slug] || `${n.name} EV Charger Repair & Circuit Troubleshooting`;
+
   return {
     name: n.name,
     slug: n.slug,
     zip: n.zip,
     metaTitle: `${n.primaryKeyword} | 24/7 Licensed Electricians Los Gatos`,
-    metaDescription: `Fast, certified ${n.primaryKeyword.toLowerCase()} and 240V diagnostic repairs in ${n.name}, Los Gatos (ZIP ${n.zip}). We fix tripping breakers, flashing red lights, melted outlets & dead stations.`,
-    h1: `${n.name} EV Charger Repair, Diagnostics & Emergency Circuit Troubleshooting`,
-    openingText: `When an electric vehicle charging station malfunctions or trips the breaker in ${n.name}, you need rapid, certified electrical diagnostic repair. Our licensed C-10 electricians deliver comprehensive EV charger repairs, 240V circuit troubleshooting, breaker replacements, and emergency diagnostics throughout ${n.landmarks[0] || n.name} and surrounding Los Gatos streets.`,
-    heroSubheadline: `Certified Tesla Wall Connector & universal Level 2 diagnostic electricians providing same-day repair dispatch across ${n.name}, Los Gatos.`,
+    metaDescription: `Fast, certified ${n.primaryKeyword.toLowerCase()} and 240V circuit repairs in ${n.name}, Los Gatos (ZIP ${n.zip}). We fix tripping breakers, flashing red lights, melted outlets & dead stations.`,
+    h1: dynamicH1,
+    openingText: `When an electric vehicle charging station malfunctions or trips the breaker in ${n.name}, you need rapid, certified electrical repair. Our licensed C-10 electricians deliver comprehensive EV charger repairs, 240V circuit troubleshooting, breaker replacements, and emergency restorations throughout ${n.landmarks[0] || n.name} and surrounding Los Gatos streets.`,
+    heroSubheadline: `Certified Tesla Wall Connector & universal Level 2 repair electricians providing same-day dispatch across ${n.name}, Los Gatos.`,
     
     housingProfile: {
       title: `${n.name} Residential Housing Characteristics & Electrical Load Analysis`,

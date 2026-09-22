@@ -4,7 +4,7 @@ export const blossomHillManorData = {
   zip: "95032",
   metaTitle: "EV Charger Repair Blossom Hill Manor Los Gatos | 24/7 Electricians",
   metaDescription: "Professional EV charger repair and diagnostic troubleshooting in Blossom Hill Manor, Los Gatos. We fix subpanels, detached garage circuits, tripped breakers & Tesla chargers.",
-  h1: "Blossom Hill Manor EV Charger Repair, Diagnostics & Electrical Troubleshooting",
+  h1: "Blossom Hill Manor EV Charger Repair & Circuit Troubleshooting",
   openingText: "Navigating the spacious residential parcels and detached garage configurations of Blossom Hill Manor demands seasoned electrical troubleshooting expertise. When your home electric vehicle charger stops delivering power, our team of certified C-10 electricians provides rapid diagnostics, 240-volt circuit repairs, subpanel fixes, and breaker replacements throughout Longwood Drive, Los Gatos-Almaden Road, and surrounding Manor properties.",
 
   heroSubheadline: "Same-day EV charger troubleshooting, detached garage circuit repairs, and 240V breaker diagnostics across Blossom Hill Manor.",

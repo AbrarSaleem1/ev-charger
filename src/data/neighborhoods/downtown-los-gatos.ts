@@ -4,7 +4,7 @@ export const downtownLosGatosData = {
   zip: "95030, 95031",
   metaTitle: "EV Charger Repair Downtown Los Gatos (ZIP 95030, 95031) | Licensed Electricians",
   metaDescription: "Fast, certified EV charger repair and diagnostics in Downtown Los Gatos, CA (ZIP 95030 & 95031). We fix Tesla Wall Connectors, tripped breakers, and 240V circuits near N Santa Cruz Ave.",
-  h1: "Downtown Los Gatos EV Charger Repair, Diagnostics & Circuit Troubleshooting",
+  h1: "Downtown Los Gatos EV Charger Repair & Circuit Troubleshooting",
   openingText: "When an electric vehicle charging station suddenly cuts out or refuses to deliver full amperage in Downtown Los Gatos (ZIP 95030 and 95031), daily schedules across Silicon Valley come to an abrupt halt. Our locally based, C-10 licensed electricians troubleshoot and restore high-voltage charging equipment across North Santa Cruz Avenue, Main Street, and surrounding historic avenues with same-day precision.",
   
   heroSubheadline: "Certified Tesla & universal Level 2 diagnostic technicians serving Downtown Los Gatos (ZIP 95030, 95031) residential estates, lofts, and commercial parking areas.",

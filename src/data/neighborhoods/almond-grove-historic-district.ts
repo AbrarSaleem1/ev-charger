@@ -4,7 +4,7 @@ export const almondGroveHistoricDistrictData = {
   zip: "95030",
   metaTitle: "EV Charger Repair Almond Grove Los Gatos | Historic Home Electrical",
   metaDescription: "Specialized EV charger repair & diagnostics in the Almond Grove Historic District, Los Gatos. Fixing Tesla Wall Connectors, tripped breakers, and ground faults with historic care.",
-  h1: "Almond Grove Historic District EV Charger Repair, Diagnostics & Electrical Troubleshooting",
+  h1: "Almond Grove Historic District EV Charger Repair & Circuit Restoration",
   openingText: "When an EV charger malfunctions or trips the electrical service in the historic Almond Grove Historic District, delicate vintage wiring requires specialized diagnostic care. Our C-10 certified electricians provide discreet, expert Level 2 and Tesla charger repairs, breaker replacements, and ground fault resolution across Bean Avenue, Wilder Avenue, Tait Avenue, and surrounding historic lanes.",
 
   heroSubheadline: "Preservation-grade EV charger repair, diagnostic fault resolution, and circuit troubleshooting tailored for historic Victorian and Craftsman residences in Los Gatos.",

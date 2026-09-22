@@ -4,7 +4,7 @@ export const rinconadaData = {
   zip: "95032",
   metaTitle: "EV Charger Repair Rinconada Los Gatos | 24/7 Electricians",
   metaDescription: "Licensed EV charger repair and diagnostics in Rinconada & Rinconada Hills, Los Gatos. HOA carport wiring repairs, tripped breaker fixes & Tesla diagnostics.",
-  h1: "Rinconada Los Gatos EV Charger Repair, Diagnostics & Electrical Troubleshooting",
+  h1: "Rinconada EV Charger Repair & 240V Circuit Troubleshooting",
   openingText: "Securing dependable electric vehicle charging in the Rinconada and Rinconada Hills communities of Los Gatos requires an electrician skilled in both private residential estates and complex common-interest HOA developments. From Granada Way and Pollard Road to private gated carports, our licensed C-10 contractors troubleshoot charging faults, repair failing Level 2 stations, and restore tripping breakers.",
 
   heroSubheadline: "Specialized EV charger repair, HOA carport diagnostic troubleshooting, and 240V circuit repairs serving Rinconada, Rinconada Hills, and West Los Gatos.",

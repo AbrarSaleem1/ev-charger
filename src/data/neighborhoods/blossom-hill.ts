@@ -4,7 +4,7 @@ export const blossomHillData = {
   zip: "95032",
   metaTitle: "EV Charger Repair Blossom Hill Los Gatos | 24/7 Electricians",
   metaDescription: "Licensed EV charger repair and diagnostics in Blossom Hill, Los Gatos. We fix tripping breakers, replace melted 240V outlets, and repair Tesla Wall Connectors.",
-  h1: "Blossom Hill Los Gatos EV Charger Repair, Diagnostics & Electrical Troubleshooting",
+  h1: "Blossom Hill EV Charger Repair & Breaker Replacement",
   openingText: "Reliable home electric vehicle charging is an everyday necessity for families and commuters living across the Blossom Hill neighborhood of Los Gatos. When your home charging station fails to energize, throws thermal error codes, or continually trips your main breaker, our licensed local electricians deliver swift diagnostics and permanent repairs.",
 
   heroSubheadline: "Fast-response electrical repairs, breaker replacements, and high-speed Level 2 charger diagnostics near Blossom Hill Park and Los Gatos Boulevard.",
